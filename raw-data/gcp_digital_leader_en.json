@@ -1,0 +1,1329 @@
+[
+  {
+    "number_id":1,
+    "text":[
+      "1) Your company uses Google Cloud Platform to house secure customer data. You are a data security",
+      "Manager and want to control which permissions are granted to the users who handle the data. Which of the",
+      "following should you do to control permissions?",
+      "Assign roles",
+      "Use access lists",
+      "Use authentications",
+      "Assign resources",
+      "SOR,",
+      "Correct Answer: A",
+      "Explanation",
+      "In order to assign permissions, you should assign roles. Cloud Identity allows you to manage and authorize your user",
+      "accounts across multiple applications and projects. It also supports SAML 2.0 (Security Assertion Markup Language)",
+      "for single sign-on (SSO), as well as two-factor authentication (2FA). Whichever option you choose, you have full control",
+      "over which permissions are granted to your users.",
+      "User access lists are for customizing access to specific objects within a bucket rather than managing permissions.",
+      "Authentications are not appropriate in this scenario because roles include authentication measures such as SAML 2.0",
+      "(Security Assertion Markup Language) for single sign-on (SSO), as well as two-factor authentication (2FA). Resources",
+      "refer to folders and projects, not users\u2019 permission to access them."
+    ]
+  },
+  {
+    "number_id":2,
+    "text":[
+      "2) Which of the following Google Cloud products can be used to explore and visualize data? (Choose 2",
+      "answers)",
+      "Cloud Composer",
+      "Dataproc",
+      "Datalab",
+      "Data Studio",
+      "SOU,r",
+      "Correct Answer: CD",
+      "Explanation",
+      "Datalab and Data Studio are tools for exploring and visualizing data. Datalab allows you to interactively explore, visualize,",
+      "analyze, and transform data using familiar languages, such as Python and SQL. Pre-installed Jupyter introductory,",
+      "sample, and tutorial notebooks, show you how to access, analyze, monitor, and visualize data. Data Studio is a tool that",
+      "allows you to tell your data story with charts, including line, bar, and pie charts, geo maps, area and bubble graphs,",
+      "paginated data tables, pivot tables, and more.",
+      "Cloud Firestore is a storage tool. It is a NoSQL document database that lets you easily store, sync, and query data for",
+      "your mobile and web apps on a global scale. It is not appropriate in this scenario because it is not a data visualization",
+      "tool.",
+      "Dataproc is a tool for processing and analyzing data. Dataproc is a fully managed and highly scalable service for running",
+      "Apache Spark, Apache Flink, Presto, and 30+ open source tools and frameworks. It is not appropriate in this scenario",
+      "because it is not primarily a data visualization tool as specified in this scenario.",
+      "https:\/\/cloud.google.com\/architecture\/data-lifecycte-cloud-platform"
+    ]
+  },
+  {
+    "number_id":3,
+    "text":[
+      "3) You are migrating workloads to the cloud. The goal of the migration is to serve customers worldwide",
+      "as quickly as possible According to local regulations, certain data is required to be stored in a specific",
+      "geographic area, and it can be served worldwide. You need to design the architecture and deployment",
+      "for your workloads.",
+      "What should you do?",
+      "A. Select a public cloud provider that is only active in the required geographic area",
+      "B. Select a private cloud provider that globally replicates data storage for fast data access",
+      "C. Select a public cloud provider that guarantees data location in the required geographic area",
+      "D. Select a private cloud provider that is only active in the required geographic area",
+      "Correct Answer: C",
+      "A public cloud is an IT model where public cloud service providers make computing services\u2014including",
+      "compute and storage, develop-and-deploy environments, and applications\u2014available on-demand to",
+      "organizations and individuals over the public internet."
+    ]
+  },
+  {
+    "number_id":4,
+    "text":[
+      "4) You are an IT manager who wants to reduce the cost and labor that would be required for a manual",
+      "application modernization project using a Google Cloud solution. You are deciding whether to adopt Migrate",
+      "for Compute Engine or Migrate for Anthos and need to explain the differences between the two solutions to",
+      "management. Which of the following differences would you explain?",
+      "A. Migrate for Compute Engine charges for transferring data to Google, but",
+      "Migrate for Anthos does not.",
+      "B. Migrate for Anthos migrates to containers, and Migrate for Compute Engine",
+      "migrates to virtual machines.",
+      "C. Migrate for Compute Engine requires complex deployment and setup, while",
+      "Migrate for Anthos requires only lift and shift migration.",
+      "D. Migrate for Anthos requires manual operating system upgrades, and Migrate",
+      "C t Al 7B",
+      "orrect Answer for Compute Engine is fully managed.",
+      "Explanation",
+      "The key difference between the two solutions is that Migrate for Anthos migrates to containers, and Migrate for Compute Engine",
+      "migrates to virtual machines.",
+      "A difference between the two solutions is not that Migrate for Compute Engine charges for transferring data to Google, but Migrate",
+      "for Anthos does not. Migrate for Compute Engine does not charge for ingress traffic.",
+      "Migrate for Compute Engine is often associated with lift and shift operations, while Migrate for Anthos may involve a more complex",
+      "to its containerized system depending on the needs of the organization.",
+      "Migrate for Anthos does not require manual operating system upgrades because it is a containerized system, and Migrate for",
+      "Compute Engine is not a fully managed solution. Compute Engine offers two kinds of VM instance groups, managed and unmanaged:",
+      "Managed instance groups (MIGs) let you operate apps on multiple identical VMs. Unmanaged instance groups let you load balance",
+      "across a fleet of VMs that you manage yourself."
+    ]
+  },
+  {
+    "number_id":5,
+    "text":[
+      "5) Your organization needs a large amount of extra computing power within the next two weeks.",
+      "After those two weeks, the need for the additional resources will end.",
+      "Which is the most cost-effective approach?",
+      "A. Use a committed use discount to reserve a very powerful virtual machine",
+      "B. Purchase one very powerful physical computer",
+      "C. Start a very powerful virtual machine without using a committed use discount",
+      "D. Purchase multiple physical computers and scale workload across them",
+      "Correct Answer: C",
+      "\u201cWhen you purchase a committed use contract, you purchase Compute Engine resources\u2014",
+      "such as vCPUs, memory, GPUs, local SSDs, and sole-tenant nodes\u2014at a discounted price in",
+      "return for committing to paying for those resources for 1 year or 3 years.\""
+    ]
+  },
+  {
+    "number_id":6,
+    "text":[
+      "6) Which of the following operations in BigQuery reduce the total cost of ownership (TCO) for",
+      "customers? (Choose 3 answers)",
+      "Queries retrieving results from the cache",
+      "Batch loading data into BigQuery from local files",
+      "Running a query on an external data source from BigQuery",
+      "Deleting a table, view, individual table partitions, and user-",
+      "defined functions",
+      "9SOmPr",
+      "Correct Answer: ABD",
+      "Explanation",
+      "Certain operations in Google BigQuery are free and can result in reductions in the total cost of ownership (TCO) of a business",
+      "using the service. Customers are not charged for queries that retrieve results from a cache, batch loading data into BigQuery",
+      "from local files, or deleting a table, view, individual table partitions, or user-defined functions.",
+      "Customers using Google BigQuery are charged for the amount of Data processed in the selected columns and for running a",
+      "query on an external data source from BigQuery, so those functions performed in BigQuery do not result in TCO reduction.",
+      "https:\/\/cloud.google.com\/bigquery\/pricing#bigquery-pricing"
+    ]
+  },
+  {
+    "number_id":7,
+    "text":[
+      "7) Your organization needs to plan its cloud infrastructure expenditures.",
+      "Which should your organization do?",
+      "A. Review cloud resource costs frequently, because costs change often based on use",
+      "B. Review cloud resource costs annually as part of planning your organization's overall budget",
+      "C. If your organization uses only cloud resources, infrastructure costs are no longer part of your",
+      "overall budget",
+      "D. Involve fewer people in cloud resource planning than your organization did for on-premises",
+      "resource planning",
+      "Correct Answer: A",
+      "Financial governance :- variable nature of cloud resources and their costs, spending must be",
+      "monitored and controlled on an ongoing basis"
+    ]
+  },
+  {
+    "number_id":8,
+    "text":[
+      "8) How can a software developer contribute to Site Reliability Engineering (SRE) within an",
+      "organization?",
+      "By allocating prablem-solving tasks to operations teams",
+      "By manually configuring production systems",
+      "By focusing on implementing automation",
+      "By creating static solutions in order to avoid failure",
+      "Soo,",
+      "Correct Answer: A",
+      "Explanation",
+      "Site Reliability Engineering teams focus on hiring software engineers to run products and create systems to",
+      "accomplish the work that would otherwise be performed, often manually, by sysadmins.",
+      "In a traditional operations model, problem-solving tasks were often allocated to operations teams.",
+      "Site Reliability Engineering focuses on automating production systems rather than manually configuring them.",
+      "Site Reliability Engineering focuses on dynamic, not static solutions to problems. SRE operates with the understanding",
+      "that failure is planned for and expected and that solutions to problems may change as a result."
+    ]
+  },
+  {
+    "number_id":9,
+    "text":[
+      "9) The operating systems of some of your organization's virtual machines may have a security",
+      "vulnerability.",
+      "How can your organization most effectively identify all virtual machines that do not have the latest",
+      "security update?",
+      "A. View the Security Command Center to identify virtual",
+      "machines running vulnerable disk images",
+      "B. View the Compliance Reports Manager to identify and",
+      "download a recent PCI audit",
+      "C. View the Security Command Center to identify virtual",
+      "machines started more than 2 weeks ago",
+      "D. View the Compliance Reports Manager to identify and",
+      "download a recent SOC 1 audit",
+      "Correct Answer: A",
+      "Security Command Center",
+      "\u00abGain centralized visibility and control",
+      "\u00abDiscover misconfigurations and vulnerabilities",
+      "Report on and maintain compliance",
+      "Detect threats targeting your Google Cloud assets _"
+    ]
+  },
+  {
+    "number_id":10,
+    "text":[
+      "10) You are a manager for an energy company that is collecting non-structured key\/value data in the form of",
+      "usage reports from energy meters and home appliance sensors. Your IT department needs to securely",
+      "connect and manage its loT devices. Which of the following solutions would help you to connect and manage",
+      "the loT devices securely?",
+      "A. loT Core",
+      "B. Traffic Director",
+      "C. loT Hub",
+      "D. loT Portal",
+      "Correct Answer: A",
+      "Explanation",
+      "Internet of Things (loT) Core is a fully managed service that allows you to connect to and manages loT devices",
+      "securely.",
+      "Traffic Director helps to deploy global load balancing across clusters and virtual machine (VM) instances.",
+      "loT Hub is not a Google Cloud product.",
+      "loT Portal is not a Google Cloud product.",
+      "https:\/\/cloud.google.com\/solutions\/iot"
+    ]
+  },
+  {
+    "number_id":11,
+    "text":[
+      "11) You are currently managing workloads running on Windows Server for which your company owns the",
+      "licenses. Your workloads are only needed during working hours, which allows you to shut down the",
+      "instances during the weekend. Your Windows Server licenses are up for renewal in a month, and you want",
+      "to optimize your license cost.",
+      "What should you do?",
+      "A. Renew your licenses for an additional period of 3 years. Negotiate a cost reduction with your",
+      "current hosting provider wherein infrastructure cost is reduced when workloads are not in use",
+      "B. Renew your licenses for an additional period of 2 years. Negotiate a cost reduction by committing",
+      "to an automatic renewal of the licenses at the end of the 2 year period",
+      "C. Migrate the workloads to Compute Engine with a bring-your-own-license (BYOL) model",
+      "D. Migrate the workloads to Compute Engine with a pay-as-you-go (PAYG) model",
+      "Correct Answer: C",
+      "\"Bringing your existing physical-core or physical-processor licenses that have dedicated hardware",
+      "requirements requires you to bring your own media and to run that media on hardware configurations,",
+      "such as sole-tenant nodes, that are compliant with your licenses.\""
+    ]
+  },
+  {
+    "number_id":12,
+    "text":[
+      "12) An organization wants to use a Google Cloud service for a time-restricted project with the following guidelines:",
+      "The developers should be free from infrastructure management activities. The chosen service should be able to",
+      "integrate, clean, prepare, blend, transfer, and transform data. Which of the following Google Cloud services should the",
+      "organization use?",
+      "Cloud Data Fusion",
+      "Cloud Composer",
+      "Data Catalog",
+      "Dataproc",
+      "SPORFr",
+      "Correct Answer: A",
+      "Explanation",
+      "Cloud Data Fusion is best suited for the given scenario because it is a fully managed service that helps quickly build and",
+      "manage data pipelines by integrating, cleaning, preparing, blending, transferring, and transforming data.",
+      "Cloud Composer facilitates creating, scheduling, monitoring, and managing workflows. It is not the optimal service for a",
+      "project that requires the integration of data.",
+      "Data Catalog is a fully managed and scalable metadata management service that allows organizations to understand all their",
+      "Google Cloud data by enabling quick discovery and management. Because Data Catalog focuses on metadata management",
+      "tather than data integration, cleaning, preparation, blending, transferral, and transformation, it is not the best solution in this",
+      "scenario.",
+      "Dataproc is a service that facilitates batch processing, querying, and streaming. It is not the best solution for this situation",
+      "because it is primarily used for batch processing rather than managing data pipelines.",
+      "https:\/\/cloud.google.com\/data-fusion\/ : |"
+    ]
+  },
+  {
+    "number_id":13,
+    "text":[
+      "13) Your organization runs a distributed application in the Compute Engine virtual machines. Your",
+      "organization needs redundancy, but it also needs extremely fast communication (less than 10 milliseconds)",
+      "between the parts of the application in different virtual machines.",
+      "Where should your organization locate this virtual machines?",
+      "A. In a single zone within a single region",
+      "B. In different zones within a single region",
+      "C. In multiple regions, using one zone per region",
+      "O. In multiple regions, using multiple zones per region",
+      "Correct Answer: D",
+      "A multi-region architecture can provide higher availability than",
+      "deploying to a single region."
+    ]
+  },
+  {
+    "number_id":14,
+    "text":[
+      "14) You are a Project Manager managing a client project intended to enhance Customer Experience in BFSI by",
+      "providing Smart Communication Solutions. As the solution is being developed for BFSI Industry, your client",
+      "has indicated that they prefer to have complete control of data and operating system, along with runtimes",
+      "and middleware. Which of the following cloud offerings would you suggest to your client?",
+      "Infrastructure as a Service {laaS)",
+      "Platform as a Service (PaaS)",
+      "Function as a Service (FaaS}",
+      "Software as a Service (SaaS)",
+      "VoOoU,r",
+      "Correct Answer: A",
+      "Explanation",
+      "Infrastructure as a Service (laaS) provides complete control over the data, apps, middleware, operating system, automated",
+      "hardware deployment, virtualized management workload.",
+      "https:\/\/cloud.google.com\/learn\/what-is-iaas"
+    ]
+  },
+  {
+    "number_id":15,
+    "text":[
+      "15) An organization decides to migrate their on-premises environment to the cloud. They need to",
+      "determine which resource components still need to be assigned ownership.",
+      "Which two functions does a public cloud provider own? (Choose two.)",
+      "A. Hardware maintenance",
+      "B. Infrastructure architecture",
+      "C. Infrastructure deployment automation",
+      "D. Hardware capacity management",
+      "E. Fixing application security issues",
+      "Correct Answer: AD",
+      "At a minimum when considering laaS, the cloud provider is responsible for Hardware, Boot,",
+      "Hardened Kernel and IPS, Storage and etc."
+    ]
+  },
+  {
+    "number_id":16,
+    "text":[
+      "16) Your client is a banking company that is designing a disaster recovery (DR) plan for its historical",
+      "compliance-oriented data. Speedy access to data is not a requirement of the plan. Which of the",
+      "following disaster recovery patterns would you suggest?",
+      "Cold",
+      "Warm",
+      "Hot",
+      "Live",
+      "vouP",
+      "Correct Answer: A",
+      "Explanation",
+      "There is no spare infrastructure associated with the cold DR pattern, and in case of disaster, the planned strategy is",
+      "implemented for the rapid setup of the cold DR site.",
+      "The infrastructure setup is in place in the warm DR pattern, along with all the required equipment and setup; however, data",
+      "load or restoration is required in case of a disaster.",
+      "The hot DR patterns backup site has the equipment and all the setup along with the current data in the hot DR pattern.",
+      "Live is not a DR pattern type.",
+      "https:\/\/cloud.google.com\/architecture\/dr-scenarios-planning-quide"
+    ]
+  },
+  {
+    "number_id":17,
+    "text":[
+      "17) You are a program manager within a Software as a Service (SaaS) company that offers rendering software",
+      "for animation studios. Your team needs the ability to allow scenes to be scheduled at will and to be interrupted",
+      "at any time to restart later. Any individual scene rendering takes less than 12 hours to complete, and there is no",
+      "service-level agreement (SLA) for the completion time for all scenes. Results will be stored in a global Cloud",
+      "Storage bucket. The compute resources are not bound to any single geographical location, This software needs",
+      "to run on Google Cloud in a cost-optimized way.",
+      "What should you do?",
+      "A. Deploy the application on Compute Engine using preemptible instances",
+      "B. Develop the application so it can run in an unmanaged instance group",
+      "C. Create a reservation for the minimum number of Compute Engine instances you will use",
+      "D. Start more instances with fewer virtual centralized processing units (vCPUs) instead of",
+      "fewer instances with more vCPUs",
+      "Correct Answer: A",
+      "\u201cPreemptible VM instances are available at much lower price\u2014a 60-91% discount\u2014compared to the",
+      "price of standard VMs. However, Compute Engine might stop (preempt) these instances if it needs to",
+      "reclaim the compute capacity for allocation to other VMs\""
+    ]
+  },
+  {
+    "number_id":18,
+    "text":[
+      "18) A global insurance and financial company is planning to adopt cloud services to bring down",
+      "infrastructure costs. The cloud deployment model adopted must meet all relevant international data security",
+      "regulations. To ensure regulation compliance, the customer data with Client Identifying Data (CID) should be",
+      "stored on-premises. Data without Client Identifying Data (CID) will be stored on the public cloud. Which of",
+      "the following Cloud deployment models would you recommend?",
+      "A. Public Cloud",
+      "B. Private Cloud",
+      "C. Community Cloud",
+      "D. Hybrid Cloud",
+      "Correct Answer: D",
+      "Explanation",
+      "As the customer requires storing customer data with CID on-premises and storing other applications and data on the public",
+      "cloud, the hybrid cloud deployment model would be the most appropriate. Hybrid cloud consists of both public cloud and on-",
+      "premises resources.",
+      "As the scenario requires that the customer data with CID be stored on-premises, the public cloud deployment model is",
+      "incorrect.",
+      "A private cloud deployment model would not be cost-efficient because the private cloud is operated solely for a single",
+      "organization.",
+      "A community cloud deployment model would not allow the organization to comply with the regulations to store customer data",
+      "with CID because several organizations from the specific community share the infrastructure."
+    ]
+  },
+  {
+    "number_id":19,
+    "text":[
+      "19) Your manager wants to restrict communication of all virtual machines with internet access; with",
+      "resources in another network; or with a resource outside Compute",
+      "Engine. It is expected that different teams will create new folders and projects in the near future.",
+      "How would you restrict all virtual machines from having an external IP address?",
+      "A. Define an organization policy at the root organization node to restrict virtual machine instances",
+      "from having an external IP address",
+      "B. Define an organization policy on all existing folders to define a constraint to restrict virtual",
+      "machine instances from having an external IP address.",
+      "C. Define an organization policy on all existing projects to restrict virtual machine instances from",
+      "having an external IP address",
+      "D. Communicate with the different teams and agree that each time a virtual machine is created, it",
+      "must be configured without an external IP address",
+      "Correct Answer: A",
+      "The Organization Policy Service gives you centralized and programmatic control over your organization's",
+      "cloud resources. As the organization policy administrator, you will be able to configure constraints",
+      "across your entire resource hierarchy."
+    ]
+  },
+  {
+    "number_id":20,
+    "text":[
+      "20) A company that stores some of its customers\u2019 credit card data on-premises is migrating the data to",
+      "Google Cloud. Prior to the migration, the organization wants to understand how Google will store and process",
+      "the customer data. Which of the following aspects of the Google Cloud platform should the organization learn",
+      "more about?",
+      "Availability",
+      "Compliance",
+      "Privacy",
+      "Security",
+      "SOUPr",
+      "Correct Answer: C",
+      "Explanation",
+      "Privacy in the context of the cloud refers to the data organizations or individuals have access to and share. When the",
+      "organization moves its data to the cloud, the organization retains control of the data. As a Google Cloud customer, the",
+      "organization should learn that when it migrates to the cloud, it continues to own its customers\u2019 data and can control who",
+      "has access to it and who the data can be shared with. Google stores and processes data, but the data remains private",
+      "because access to it is controlled by the organization. Google provides the organization with tools and features to control",
+      "that access, thus helping the organization maintain the privacy of the customers\u2019 data in the cloud.",
+      "https:\/\/cloud.google.com\/privacy"
+    ]
+  },
+  {
+    "number_id":21,
+    "text":[
+      "21) Your multinational organization has servers running mission-critical workloads on its premises",
+      "around the world. You want to be able to manage these workloads consistently and centrally, and you",
+      "want to stop managing infrastructure",
+      "What should your organization do?",
+      "A. Migrate the workloads to a public cloud",
+      "B. Migrate the workloads to a central office building",
+      "C. Migrate the workloads to multiple local co-location facilities",
+      "D. Migrate the workloads to multiple local private clouds",
+      "Correct Answer: A"
+    ]
+  },
+  {
+    "number_id":22,
+    "text":[
+      "22) Cloud Build can deploy to which of these services?",
+      "Kubernetes",
+      "App Engine",
+      "Cloud Functions",
+      "Cloud Build can deploy to all these services",
+      "SOUP",
+      "Correct Answer: D",
+      "Explanation",
+      "As part of your continuous deployment pipeline, Cloud Build can perform deployments using command-line",
+      "tools and deploy to Google Kubernetes Engine (GKE), App Engine, Cloud Functions, and Firebase.",
+      "https:\/\/cloud.google.com\/cloud-build\/docs\/configuring-builds\/build-test-deploy-",
+      "artifacts #deploying_artifacts"
+    ]
+  },
+  {
+    "number_id":23,
+    "text":[
+      "23) Your organization stores highly sensitive data on-premises that cannot be sent over the public",
+      "internet. The data must be processed both on-premises and in the cloud.",
+      "What should your organization do?",
+      "A. Configure Identity-Aware Proxy (IAP) in your Google Cloud VPC network",
+      "B. Create a Cloud VPN tunnel between Google Cloud and your data center",
+      "C. Order a Partner Interconnect connection with your network provider",
+      "O. Enable Private Google Access in your Google Cloud VPC network",
+      "Correct Answer: C",
+      "After the service provider provisions your connection, you can start passing",
+      "traffic between your networks by using the service provider's network."
+    ]
+  },
+  {
+    "number_id":24,
+    "text":[
+      "24) Your organization has planned to implement Site Reliability Engineering (SRE) best practices. You are",
+      "tasked with configuring application-level monitoring and monitoring service-level objectives (SLOs) for",
+      "applications and trigger alerts when SLOs are violated. Which of the following products should you",
+      "choose for these tasks?",
+      "Error reporting",
+      "Cloud Logging",
+      "Cloud Monitoring",
+      "Cloud Trace",
+      "SOuUP,r",
+      "Correct Answer: C",
+      "Explanation",
+      "Cloud Monitoring helps to gain visibility into application and infrastructure performance, availability, and",
+      "health by:",
+      "Automatically collecting system metrics",
+      "Enabling SRE best practices",
+      "Creating custom dashboards",
+      "+Creating alerts in integration with incident management tools."
+    ]
+  },
+  {
+    "number_id":25,
+    "text":[
+      "25) Your company's development team is building an application that will be deployed on Cloud Run.",
+      "You are designing a CI\/CD pipeline so that any new version of the application can be deployed in the",
+      "fewest number of steps possible using the CI\/CD pipeline you are designing. You need to select a",
+      "storage location for the images of the application after the Cl part of your pipeline has built them.",
+      "What should you do?",
+      "A. Create a Compute Engine image containing the application",
+      "B. Store the images in Container Registry",
+      "C. Store the images in Cloud Storage",
+      "D. Create a Compute Engine disk containing the application",
+      "Correct Answer: 8",
+      "Pushing (uploading) and pulling (downloading) images are two of the most",
+      "common Container Registry tasks. This document focuses on pushing and",
+      "pulling images with Docker."
+    ]
+  },
+  {
+    "number_id":26,
+    "text":[
+      "26) You are a manager with an e-retail website. The company has opted for the Standard Support",
+      "customer care plan. The number of users has surged recently, and the company has realized the need",
+      "for responses to its Priority 1 (P1) cases in 1 hour while also maintaining control of cost. Which of the",
+      "following support plans would you suggest?",
+      "Basic",
+      "Standard",
+      "Enhanced",
+      "Premium",
+      "POU,",
+      "Correct Answer: C",
+      "Explanation",
+      "The Enhanced Support customer is the appropriate choice in this scenario because it includes one-hour response times",
+      "but is less costly than the Premium Support care plan. The Enhanced Support includes:",
+      "1.One-hour response time for P1 cases",
+      "2.24\/7 for P1 and P2 cases",
+      "3.Multi-channel support",
+      "4.Technical experts with advanced product knowledge",
+      "5. Third-Party Technology Support"
+    ]
+  },
+  {
+    "number_id":27,
+    "text":[
+      "27) Each of the three cloud service models - infrastructure as a service (laaS), platform as a service (PaaS),",
+      "and software as a service (SaaS) - offers benefits between flexibility and levels of management by the",
+      "cloud provider and the customer.",
+      "Why would SaaS be the right choice of service model?",
+      "A. You want a balance between flexibility for the customer and the level",
+      "of management by the cloud provider",
+      "B. You want to minimize the levet of management by the customer",
+      "C. You want to maximize flexibility for the customer.",
+      "D. You want to be able to shift your emphasis between flexibility and",
+      "management by the cloud provider as business needs change",
+      "Correct Answer: B",
+      "The main benefit of SaaS is that it offloads all infrastructure and",
+      "application management to the SaaS vendor."
+    ]
+  },
+  {
+    "number_id":28,
+    "text":[
+      "28) Which of the following are benefits of Apigee? (Choose 3 answers)",
+      "A. The ability to predict API traffic patterns",
+      "The ability to make backend services visible",
+      "C. The ability to modernize legacy services via RESTful",
+      "interfaces",
+      "D. The ability to record and analyze business metrics",
+      "2",
+      "Correct Answer: ACD",
+      "Explanation",
+      "Apigee allows the user to predict API traffic patterns through metrics that can be used to understand potential traffic",
+      "fluctuations and other information, modernize legacy services via RESTful interfaces by packaging legacy applications,",
+      "and as An API abstraction and modernization layer to insulate client-facing applications from shifting backend services.",
+      "Apigee is an abstraction layer between backend services and the user. It does not make the backend service layer",
+      "visible."
+    ]
+  },
+  {
+    "number_id":29,
+    "text":[
+      "29) As your organization increases its release velocity, the VM-based application upgrades take a",
+      "long time to perform rolling updates due to OS boot times. You need to make the application",
+      "deployments faster.",
+      "What should your organization do?",
+      "A. Migrate your VMs to the cloud, and add more resources to",
+      "them",
+      "B. Convert your applications into containers",
+      "C. Increase the resources of your VMs",
+      "D. Automate your upgrade rollouts",
+      "Correct Answer: B",
+      "Since the problem with the current infrastructure base on YM is with OS boot time in particular,",
+      "so upgrading the workload to containers would be a right choice as then CS boot time problem is",
+      "eliminated which means a faster workload execution."
+    ]
+  },
+  {
+    "number_id":30,
+    "text":[
+      "30) Which of the following Google infrastructure security layers provides",
+      "denial-of-service (DoS) protection?",
+      "Operational Security",
+      "Internet Communication",
+      "Storage Services",
+      "User Identity",
+      "VOU,",
+      "Correct Answer: B",
+      "Explanation",
+      "There are 6 Google infrastructure security layers: Operational Security, Internet Communication, Storage Services, User",
+      "Identity, Service Deployment, and Hardware Infrastructure.",
+      "Google Front End and denial-of-service (DoS) protection are provided at the Internet Communication layer.",
+      "The Operational Security layer addresses Intrusion detection and reducing insider risk are some of the areas addressed at",
+      "Encryption at rest and deletion of data protection are provided at the Storage Services layer.",
+      "Authentication and login abuse protection are found at the User Identity layer.",
+      "https:\/\/cloud.google.com\/security\/infrastructure\/design"
+    ]
+  },
+  {
+    "number_id":31,
+    "text":[
+      "31) Your organization uses Active Directory to authenticate users. Users\u2019 Google account access",
+      "must be removed when their Active Directory account is terminated.",
+      "How should your organization meet this requirement?",
+      "A. Configure two-factor authentication in the Google domain",
+      "B. Remove the Google account from all [AM policies",
+      "C. Configure BeyondCorp and Identity-Aware Proxy in the Google domain",
+      "0. Configure single sign-on in the Google domain",
+      "Correct Answer: D",
+      "Your organization uses Active Directory to authenticate users. Then you need to use Single sign-on (SSQ)",
+      "is an authentication scheme that allows a user to log in with a single ID and password to different systems",
+      "and software. SSO allows IT departments to administrator a single identity that can access many machines",
+      "and cloud services."
+    ]
+  },
+  {
+    "number_id":32,
+    "text":[
+      "32) You are a project manager for a global company that offers high-resolution documentary film editing",
+      "services. Your team of content editors in New York and London needs to collaborate on editing projects",
+      "that are located in Cloud Storage buckets. The maximum time to wait for a video's availability must be",
+      "within a target time of 15 minutes, with minimal loss exposure. Which of the following storage",
+      "configurations should you choose?",
+      "Single region",
+      "Dual-region",
+      "Multi-region with default replication",
+      "Dual-region with turbo replication",
+      "FoOuUP,Fr",
+      "Correct Answer: D",
+      "Explanation",
+      "Dual-region storage with turbo replication enabled would be the appropriate storage configuration in this scenario",
+      "because turbo replication allows you to asynchronously replicate newly written Cloud Storage objects to a separate region",
+      "within a target of 15 minutes, Because turbo replication is applicable only for dual-region buckets, it can be implemented",
+      "in this scenario because the project teams are in London and New York."
+    ]
+  },
+  {
+    "number_id":33,
+    "text":[
+      "33) Your company has recently acquired three growing startups in three different countries. You want to",
+      "reduce overhead in infrastructure management and keep your costs low without sacrificing security and",
+      "quality of service to your customers.",
+      "How should you meet these requirements?",
+      "A. Host all your subsidiaries\u2019 services on-premises together with",
+      "your existing services.",
+      "B. Host all your subsidiaries\u2019 services together with your existing",
+      "services on the public cloud.",
+      "C. Build a homogenous infrastructure at each subsidiary, and",
+      "invest in training their engineers.",
+      "D. Build a homogenous infrastructure at each subsidiary, and",
+      "invest in hiring more engineers.",
+      "Correct Answer: B",
+      "Both maintenance cost becomes cheaper and management becomes easier when",
+      "subsidiaries workloads along with parent organisation's workloads are deployed on the public",
+      "cloud."
+    ]
+  },
+  {
+    "number_id":34,
+    "text":[
+      "34) A startup is planning to adopt Google Cloud Services. As a first step, the company plans to",
+      "migrate its data to Google Cloud. Which of the following should the company use to migrate over 1",
+      "TB of data from a private data center to the cloud while adhering to a strict timeline of 1-2 days and",
+      "accommodating available bandwidth in order to meet the project deadline?",
+      "Storage Transfer Service",
+      "gsutil",
+      "Transfer appliance",
+      "Migrate for Anthos and GKE",
+      "FORD,F",
+      "Correct Answer: A",
+      "Explanation",
+      "Storage Transfer Service allows you to migrate data from a private data center to Google Cloud. With Storage",
+      "transfer, you can move petabytes of data from on-premises sources or other clouds over online networks with",
+      "billions of files and 10s of Gbps. You can also optimize your network bandwidth and accelerate transfers with scale-",
+      "out performance."
+    ]
+  },
+  {
+    "number_id":35,
+    "text":[
+      "35) What is the difference between Standard and Coldline storage?",
+      "A. Coldline storage is for data for which a slow transfer rate is",
+      "acceptable.",
+      "B. Standard and Coldline storage have different durability",
+      "guarantees.",
+      "C. Standard and Coldline storage use different APIs.",
+      "D. Coldline storage |s for infrequently accessed data.",
+      "Correct Answer: D",
+      "The categorization is based on how frequently data is accessed and hence",
+      "charged accordingly"
+    ]
+  },
+  {
+    "number_id":36,
+    "text":[
+      "36) A fitness application company is collecting the health data of its users is adding approximately 50 TBs",
+      "of data every month. The data is expected to grow to 200+ TB every year. Users are primarily concerned with",
+      "the last 30 days of data and will wait for data retrieval if data is older than 30 Days. The company decided",
+      "that they will now store the infrequently accessed data older than 30 days to minimize the cost, as this data",
+      "is typically accessed at max once per quarter or less. Which storage option would be best suited to store",
+      "infrequently accesses data?",
+      "Standard",
+      "Nearline",
+      "Coldline",
+      "Archive",
+      "Four",
+      "Correct Answer: C",
+      "Explanation",
+      "Coldline storage is best suited to store infrequently accessed data that is planned to be read or modified at most once",
+      "per quarter.",
+      "Standard storage is best suited to frequently accessed data also known as \"Hot Data.\u201d",
+      "Nearline storage is best suited to store data that will be read or modified once a month or less.",
+      "Archive storage is best suited to store archive data that is required for legal, regulatory, or disaster recovery reasons."
+    ]
+  },
+  {
+    "number_id":37,
+    "text":[
+      "37) What would provide near-unlimited availability of computing resources without requiring your",
+      "organization to procure and provision new equipment?",
+      "A. Public cloud",
+      "B. Containers",
+      "C. Private cloud",
+      "D. Microservices",
+      "Correct Answer: A"
+    ]
+  },
+  {
+    "number_id":38,
+    "text":[
+      "38) Which of the following defines a private cloud?",
+      "A. Acollection of resources that are not shared with the general",
+      "public",
+      "8. Acollection of virtual on-demand services that are offered to",
+      "the public",
+      "C. Acollection of resources that are shared between private and",
+      "public cloud users",
+      "D. Acollection of resources that are isolated on-premises for",
+      "use by an organization",
+      "Correct Answer: A",
+      "Explanation",
+      "A private cloud is a collection of resources that are not shared with the general public.",
+      "A public cloud is a virtual on-demand service that is offered to the public.",
+      "A hybrid collection of resources that are shared between the private and public.",
+      "An on-site data center is a collection of on-premise resources that are used by an organization."
+    ]
+  },
+  {
+    "number_id":39,
+    "text":[
+      "39) You are a program manager for a team of developers who are building an event-driven application to allow",
+      "users to follow one another's activities in the app. Each time a user adds himself as a follower of another user, a",
+      "write occurs in the real-time database.",
+      "The developers will develop a lightweight piece of code that can respond to database writes and generate a",
+      "Notification to let the appropriate users know that they have gained new followers. The code should integrate with",
+      "other cloud services such as Pub\/Sub, Firebase, and Cloud APIs to streamline the orchestration process. The",
+      "application requires a platform that automatically manages underlying infrastructure and scales to zero when",
+      "there is no activity.",
+      "Which primary compute resource should your developers select, given these requirements?",
+      "Correct Answer: 8",
+      "A. Google Kubernetes Engine",
+      "B. Cloud Functions",
+      "C. App Engine flexible environment",
+      "D. Compute Engine",
+      "Cloud Funchions gives developers access to Firebase and Google Cloud events, along wilh scalable computing power to",
+      "fun code in sesponse to those events While ifs expected that Firebase apps will use Cloud Functions in unique ways to",
+      "\u2018meet their unique requitements, typical use cases might fall into these areas:",
+      "erly Wes mang este",
+      "Review the use cases and examples for each category that interests you, and then proceed to our torial or",
+      "to specific how-to guides for at.\"-eeungtirs = ants, we eivuies \u00a2.9\u00b05, and more, See the eventType -\\\u00a5.-otore for the",
+      "ebimpletrliisy 5\u00b0 supported:event types."
+    ]
+  },
+  {
+    "number_id":40,
+    "text":[
+      "40) To optimize the company\u2019s Google Cloud spend, the management committee team wants an at-a-glance",
+      "waterfall overview of their monthly costs and savings. Which of the following should you use to provide this",
+      "information to the management team?",
+      "Cost Breakdown reports",
+      "Budget notifications",
+      "Cost Table reports",
+      "Pricing table reports",
+      "Four",
+      "Correct Answer: A",
+      "Explanation",
+      "The Cost Breakdown report helps with an at-a-glance waterfall overview of monthly costs and savings.",
+      "Budget notifications facilitate a real-time status of the Cloud Billing budget and are not a method for gaining an overview",
+      "of monthly costs.",
+      "Cost Table reports help access and analyze invoice and statements details but are not an optimal method for providing",
+      "an overview of costs.",
+      "The pricing table report helps access SKU prices for Google's cloud services and is not an efficient method for providing",
+      "a high-level picture of costs.",
+      "https:\/\/cloud.qoogle.com\/billing\/docs\/how-to\/cost-breakdown"
+    ]
+  },
+  {
+    "number_id":41,
+    "text":[
+      "41) Your organization is developing an application that will capture a large amount of data from millions of",
+      "different sensor devices spread all around the world. Your organization needs a database that is suitable for",
+      "worldwide, high-speed data storage of a large amount of unstructured data.",
+      "Which Google Cloud product should your organization choose?",
+      "A. Firestore",
+      "B. Cloud Data Fusion",
+      "C. Cloud SQL",
+      "D. Cloud Bigtable",
+      "Correct Answer: D"
+    ]
+  },
+  {
+    "number_id":42,
+    "text":[
+      "42) Your client is a global packaging and printing company. They want to migrate to a fully managed Google Cloud",
+      "storage solution with the following capabilities:",
+      "+ Web content management",
+      "+ File sharing",
+      "+ Media processing and rendering",
+      "+ Data analysis.",
+      "Which solution should the company use?",
+      "Archive Storage",
+      "Filestore",
+      "Persistent Disk",
+      "Local SSD",
+      "gomE",
+      "Correct Answer: B",
+      "Explanation",
+      "Filestore enables application migration to the cloud without requiring you to rewrite or rearchitect, thus accelerating",
+      "and simplifying your migration. Filestore is a fully managed service suitable for Web content management, file",
+      "sharing, rendering and processing media, and performing data analytics.",
+      "hitps:\/\/cloud.google.com\/products\/storage"
+    ]
+  },
+  {
+    "number_id":43,
+    "text":[
+      "43) Your organization needs to build streaming data pipelines. You don\u2019t want to manage the individual",
+      "servers that do the data processing in the pipelines. Instead, you want a managed service that will",
+      "automatically scale with the amount of data to be processed.",
+      "Which Google Cloud product or feature should your organization choose?",
+      "A. Pub\/Sub",
+      "B. Dataflow",
+      "C. Data Catalog",
+      "D. Dataprep by Trifacta",
+      "Correct Answer: B"
+    ]
+  },
+  {
+    "number_id":44,
+    "text":[
+      "44) Which of the following occurs when an organization adopts cloud technology to create and define new",
+      "ways of communicating and collaborating for its customers, employees, and stakeholders?",
+      "A reduced need for security",
+      "The burning platform effect",
+      "Virtualization of all business operations",
+      "Organizational transformation",
+      "sour",
+      "Correct Answer: D",
+      "Explanation",
+      "The main result of adopting cloud technology is that it transforms the way organizations operate. This operational",
+      "transformation includes changes in the way customers, employees, and stakeholders interact. By adopting cloud",
+      "technologies, organizations can transform how employees collaborate within organizations as well as how they interact and",
+      "share knowledge and information with customers and stakeholders. Adopting cloud technology increases the speed and",
+      "agility with which organizations can share data and analysis, categorize information, make predictions, and share insights.",
+      "Reduced need for security is not a feature of adopting cloud technology. Adopting cloud technologies increases the need for",
+      "security because organizations and cloud platform providers face even greater demands for data security in the cloud."
+    ]
+  },
+  {
+    "number_id":45,
+    "text":[
+      "45) Your organization is building an application running in Google Cloud. Currently, software builds,",
+      "tests, and regular deployments are done manually, but you want to reduce work for the team. Your",
+      "organization wants to use Google Cloud managed solutions to automate your build, testing, and",
+      "deployment process.",
+      "Which Goog!e Cloud product or feature should your organization use?",
+      "A. Cloud Scheduler",
+      "B, Cloud Code",
+      "C. Cloud Build",
+      "D. Cloud Deployment Manager",
+      "Correct Answer: C",
+      "Deploy your application to App Engine using the gcloud app deploy command. This command",
+      "automatically builds a container image by using the Cloud",
+      "Build service and then deploys that image to the App Engine flexible environment."
+    ]
+  },
+  {
+    "number_id":46,
+    "text":[
+      "46) Which of the following is a major cost-benefit of adopting cloud-native",
+      "architecture?",
+      "Managed services with high operational savings",
+      "Managed open source or open source-compatible services",
+      "Continuous Integration\/Continuous Delivery",
+      "Monitoring and automated recovery",
+      "CORE",
+      "Correct Answer: A",
+      "Explanation",
+      "Akey cost-benefit of cloud-native architecture is that it is includes managed services that result in high",
+      "operational savings because the customer is no longer responsible for them. Such managed services could",
+      "include laa\u00a7, in which the cloud provider manages such things as hardware, storage, and encryption, PaaS, in",
+      "which the service provider is responsible for identity and access management features, and SaaS, in which",
+      "operations is to some extent managed.",
+      "https:\/\/cloud.google.com\/blog\/products\/application-development\/5-principles-for-cloud-native-architecture-",
+      "what-it-is-and-how-to-master-it"
+    ]
+  },
+  {
+    "number_id":47,
+    "text":[
+      "47) Which Google Cloud product can report on and maintain compliance on",
+      "your entire Google Cloud organization to cover multiple projects?",
+      "A. Cloud Logging",
+      "B. Identity and Access Management",
+      "C. Google Cloud Armor",
+      "D. Security Command Center",
+      "Correct Answer: D",
+      "Security Command Center is a centralized security and risk management platform for your Google Cloud",
+      "resources. It is a single tool that offers a variety of security features including:",
+      "1. Gain centralized visibility and contro]",
+      "2. Discover misconfigurations and vulnerabilities",
+      "3. Report on and maintain compliance",
+      "4. Detect threats targeting your Google Cloud assets"
+    ]
+  },
+  {
+    "number_id":48,
+    "text":[
+      "48) An organization using Google Cloud wants to hierarchically organize and group resources, as well",
+      "as manage access control and configuration settings for container resources. Which Google product",
+      "or service should the organization use?",
+      "Eventarc",
+      "Artifact Registry",
+      "Container Registry",
+      "Resource Manager AP!",
+      "FOP",
+      "Correct Answer: D",
+      "Explanation",
+      "The Resource Manager API service helps Google Cloud customers programmatically manage the container",
+      "resources by creating, reading, and updating metadata for Google Cloud Platform resource containers."
+    ]
+  },
+  {
+    "number_id":49,
+    "text":[
+      "49) Your organization needs to establish private network connectivity between its on-premises network",
+      "and its workloads running in Google Cloud. You need to be able to set up the connection as soon as",
+      "possible,",
+      "Which Google Cloud product or feature should you use?",
+      "A. Cloud Interconnect",
+      "B. Direct Peering",
+      "C. Cloud VPN",
+      "D0. Cloud CDN",
+      "Correct Answer: C",
+      "Cloud VPN setup can be done instantly and though it travels over",
+      "internet, it is private in nature. Cloud interconnect needs",
+      "physically dedicated connection."
+    ]
+  },
+  {
+    "number_id":50,
+    "text":[
+      "50) A credit card company has moved its applications to Google Cloud. Its customer data is stored across",
+      "Cloud Storage, Datastore, and BigQuery and is used by applications and employees across the firm. Which",
+      "Google Cloud solution should you use for the detection and classification of the stored sensitive data?",
+      "Cloud Armor",
+      "Cloud Data Loss Prevention",
+      "Risk Manager",
+      "Security Command Center",
+      "POUP,r",
+      "Correct Answer: B",
+      "Explanation",
+      "The Cloud Data Loss Prevention service enables the discovery, detection, and classification of stored sensitive",
+      "data. With Cloud Data Loss Prevention, you can create dashboards and audit reports, and automate tagging,",
+      "temediation, or policy based on findings. Connect DLP results into Security Command Center, Data Catalog, or",
+      "export to your own SIEM or governance tool for further analysis.",
+      "https:\/\/cloud.google.com\/dip"
+    ]
+  },
+  {
+    "number_id":51,
+    "text":[
+      "51} Your organization is developing a mobile app and wants to select a fully",
+      "featured cloud-based compute platform for it.",
+      "Which Google Cloud product or feature should your organization use?",
+      "A. Google Kubernetes Engine",
+      "B. Firebase",
+      "C. Cloud Functions",
+      "D. App Engine",
+      "Correct Answer: B",
+      "Firebase is Google's mobile development platform"
+    ]
+  },
+  {
+    "number_id":52,
+    "text":[
+      "52) Your organization is developing a global multi-player game and requires a database that can consistently capture",
+      "player statistics. The most critical requirement of the database is that it can serve information for game leaderboards",
+      "and return consistent rankings at any given time across game players all over the world. The game is rapidly",
+      "developing a following with almost unlimited growth in the number of players. Which Google Cloud product should",
+      "the organization choose?",
+      "Firestore",
+      "Cloud Spanner",
+      "Cloud SQL",
+      "Bare Metal",
+      "GOmE",
+      "Correct Answer: B",
+      "Explanation",
+      "Cloud Spanner is a fully managed relational database with unlimited horizontal scalability, strong consistency, and up to",
+      "99.999% availability. Because it is both global and unlimited in scale, it is the most appropriate choice in this scenario. It is",
+      "highly available with zero scheduled downtime and online schema changes. It allows developers to focus on innovating",
+      "gaming functions because it eliminates manual tasks with capabilities like automatic sharding that are a feature of Cloud",
+      "SQL. Spanner provides a globally consistent database that can keep inventory or match history, such as the player",
+      "information provided in gaming leaderboards, for massive player populations anywhere in the world.",
+      "https:\/\/cloud.google.com\/products"
+    ]
+  },
+  {
+    "number_id":53,
+    "text":[
+      "53) Your company has been using a shared facility for data storage and will be migrating to Google",
+      "Cloud. One of the internal applications uses Linux custom images that need to be migrated.",
+      "Which Google Cloud product should you use to maintain the custom images?",
+      "A. App Engine flexible environment",
+      "B. Compute Engine",
+      "C. App Engine standard environment",
+      "D. Google Kubernetes Engine",
+      "Correct Answer: 8",
+      "You can use one of the following image types: Public and Custom",
+      "images."
+    ]
+  },
+  {
+    "number_id":54,
+    "text":[
+      "54) A news media giant with over 200 publications plans to build a scalable, secure, and serverless",
+      "document database with a powerful query engine that can be added with mobile and web apps. Which",
+      "Google Cloud product or service should the organization use?",
+      "A. Memorystore",
+      "B. Cloud BigTable",
+      "C. Cloud SQL",
+      "D. Firestore",
+      "Correct Answer: D",
+      "Explanation",
+      "Firestore is a scalable, secured, and serverless NoSQL document database with a powerful query engine that can be added to",
+      "mobile and web apps.",
+      "Memorystore is an in-memory data store best used to build application caches.",
+      "Cloud Bigtable is Google's fully managed product and is a NoSQL Big Data database service. It is a Cloud-native NoSQL wide-",
+      "column store for large-scale, low-latency workloads including personalization, Adtech, and recommendation engines. It is not the",
+      "most ideal database for a search engine that can be added with mobile and web apps.",
+      "Cloud SQL is a relational database service and is not suitable for this use case. It is most commonly used in Lift and shift of on-",
+      "premises SQL databases to the cloud, Large-scale SQL data analytics, supporting content management system (CMS) data",
+      "storage and scalability, and managing databases using Infrastructure as Code (laC)"
+    ]
+  },
+  {
+    "number_id":55,
+    "text":[
+      "55) Your organization wants to migrate its data management solutions to Google Cloud because it needs",
+      "to dynamically scale up or down and to run transactional",
+      "SQL queries against historical data at scale. Which Google Cloud product or service should your",
+      "organization use?",
+      "A. BigQuery",
+      "B. Cloud Bigtable",
+      "C. Pub\/Sub",
+      "D. Cloud Spanner",
+      "Correct Answer: D",
+      "Cloud Spanner: Clo.. Sparner ig a tully r",
+      "hat",
+      "ide at",
+      "serie He",
+      "Aagred 10 4",
+      "with high availapility and st",
+      "ong corsistency at glozal scale"
+    ]
+  },
+  {
+    "number_id":56,
+    "text":[
+      "56) Which of the following are always the responsibility of customers using the public cloud? (Choose 2",
+      "answers)",
+      "Web Client protection",
+      "Data protection",
+      "Network Controls",
+      "Patch Management",
+      "POUP,r",
+      "Correct Answer: AB",
+      "Explanation",
+      "The security of the client that is being used by the customers (on Mobile devices, PC, etc.) to access the web content is",
+      "the customer's responsibility.",
+      "Management, classification, and compliance obligation adherence are the customer's responsibility.",
+      "Configuring, managing, and securing Network controls are shared responsibilities in laaS and PaaS models; however, the",
+      "cloud provider is responsible primarily for network controls in the SaaS model.",
+      "Patch Management is a shared responsibility in laaS and PaaS. The cloud provider manages patches in the SaaS model.",
+      "https:\/\/services.google.com\/fh\/files\/misc\/gcp_pci_srm__apr_2019.pdf"
+    ]
+  },
+  {
+    "number_id":57,
+    "text":[
+      "57} Your organization needs to categorize objects in a large group of static images using machine",
+      "learning. Which Google Cloud product or service should your organization use?",
+      "A. BigQuery ML",
+      "B. AutoML Video Intelligence",
+      "C. Cloud Vision API",
+      "D. AutoML Tables",
+      "Correct Answer: C",
+      "Vision AP! can assign labels to images and quickly classify them into millions of",
+      "predefined categories. Detect objects and faces, read printed and handwritten text, and",
+      "build valuable metadata into your image catalog."
+    ]
+  },
+  {
+    "number_id":58,
+    "text":[
+      "58) A DevOps team is responsible for maintaining and analyzing system and application logs for an",
+      "application running across several instances on Google Cloud Platform. What steps should the team take",
+      "to ensure the integrity of the logs generated on these instances? (Choose 2 answers)",
+      "Implement log versioning on log buckets in Cloud Storage.",
+      "Copy the logs to another project with a different owner.",
+      "Set the logging level to only collect log output for critical",
+      "messages.",
+      "D. Export all log files to BigQuery.",
+      "ORF",
+      "Correct Answer: AB",
+      "Explanation",
+      "Here are two things you could do to protect the integrity of your log files:",
+      "\u00abImplement log versioning on log buckets in Cloud Storage to prevent losing or overwritten data if an unauthorized person",
+      "gains access. The Cloud Storage service automatically encrypts all data before it is written to the log buckets. Still, with",
+      "versioning, you can increase security by forcing a new version to be saved whenever an object in a log bucket is changed.",
+      "Copy the logs to another project with a different owner to require two people to have ownership of the logs."
+    ]
+  },
+  {
+    "number_id":59,
+    "text":[
+      "59} Which Google Cloud product is designed to reduce the risks of handling",
+      "personally identifiable information (PII)?",
+      "A. Cloud Storage",
+      "B. Google Cloud Armor",
+      "C. Cloud Data Loss Prevention",
+      "D. Secret Manager",
+      "Correct Answer: C",
+      "Cloud Data Loss Prevention: Fully managed service designed to",
+      "help you discover, classify, and protect your most sensitive data."
+    ]
+  },
+  {
+    "number_id":60,
+    "text":[
+      "60) Your client has multiple ongoing projects and to remove conflicts has asked you to devise a way to",
+      "segregate service-level resources, such as the compute, storage, and networking resources being used by",
+      "various projects. Which of the following should you use?",
+      "Folders",
+      "Projects",
+      "Labels",
+      "Tags",
+      "SorF",
+      "Correct Answer: B",
+      "Explanation",
+      "Projects constitute service-level resources such as compute, storage, and networking resources.",
+      "Folders are used for projects rather than service-level resources.",
+      "Labels are used to annotate resources constituting projects and are the best choice for granular level cost tracking.",
+      "A tag is a string of characters added to a resource tags field. Tags cannot be created separately and are not separate",
+      "resources."
+    ]
+  },
+  {
+    "number_id":61,
+    "text":[
+      "61) Your organization is migrating to Google Cloud. As part of that effort, it needs to move terabytes of",
+      "data from on-premises file servers to Cloud Storage. Your organization wants the migration process to be",
+      "automated and to be managed by Google. Your organization has an existing Dedicated Interconnect",
+      "connection that it wants to use. Which Google Cloud product or feature should your organization use?",
+      "A. Storage Transfer Service",
+      "B. Migrate for Anthos",
+      "C. BigQuery Data Transfer Service",
+      "D. Transfer Appliance",
+      "Correct Answer: A"
+    ]
+  },
+  {
+    "number_id":62,
+    "text":[
+      "62) Your organization is looking for network connectivity with Google Cloud between its on-premises",
+      "network and Google Cloud. The network connectivity must allow encrypted traffic to the Google Cloud",
+      "and have higher throughput. Which of the following networking solutions should you choose?",
+      "Cloud VPN",
+      "Cloud Interconnect",
+      "Cloud Router",
+      "Traffic Director",
+      "SOUP,",
+      "Correct Answer: B",
+      "Explanation",
+      "Cloud Interconnect extends your on-premises network to Google's network through a highly available, low latency",
+      "connection. You can use Dedicated Interconnect to connect directly to Google or use Partner Interconnect to",
+      "connect to Google through a supported service provider."
+    ]
+  },
+  {
+    "number_id":63,
+    "text":[
+      "63) Your organization needs to analyze data in order to gather insights into its daily operations. You only",
+      "want to pay for the data you store and the queries you perform. Which Google Cloud product should your",
+      "organization choose for its data analytics warehouse?",
+      "A. Cloud SQL",
+      "B. Dataproc",
+      "C. Cloud Spanner",
+      "D. BigQuery",
+      "Correct Answer: D",
+      "BigQuery is an enterprise data warehouse for large amounts of",
+      "relational structured data"
+    ]
+  },
+  {
+    "number_id":64,
+    "text":[
+      "64) You are managing the development of a new application. You need a solution that will meet the following",
+      "requirements: The developers should focus on writing code. Deployments should be zero-configuration. The",
+      "developers should not manage infrastructure. The service should be scalable and accommodate surges in",
+      "traffic without provisioning, patching, or monitoring. Applications should be safe from security threats. Which",
+      "Google Cloud solution should you use?",
+      "App Engine",
+      "Cloud Functions",
+      "Confidential VMs",
+      "Eventarc",
+      "Sour",
+      "Correct Answer: A",
+      "Explanation",
+      "App Engine is a fully managed serverless platform that helps to build highly scalable and secure applications. App",
+      "Engine is suited to applications that have multiple functionalities behaving in various inter-related (or even unrelated)",
+      "ways.",
+      "https:\/\/cloud.google.com\/appengine"
+    ]
+  },
+  {
+    "number_id":65,
+    "text":[
+      "65) Your organization wants to run a container-based application on Google Cloud. This application is",
+      "expected to increase in complexity. You have a security need for fine-grained control of traffic between",
+      "the containers. You also have an operational need to exercise fine-grained control over the application's",
+      "scaling policies.",
+      "What Google Cloud product or feature should your organization use?",
+      "A. Google Kubernetes Engine cluster",
+      "B. App Engine",
+      "C. Cloud Run",
+      "D. Compute Engine virtual machines",
+      "Correct Answer: A"
+    ]
+  },
+  {
+    "number_id":66,
+    "text":[
+      "66) A team of Cloud Engineers is working on developing and deploying a containerized application that will",
+      "process and serve a large amount of image data in cloud storage. The data must be invocable via requests",
+      "or events. Which Google Cloud compute service should the team use so that there are no infrastructure",
+      "management problems?",
+      "Cloud Build",
+      "Cloud Code",
+      "Cloud Run",
+      "Cloud Deploy",
+      "SORPPr",
+      "Correct Answer: C",
+      "Explanation",
+      "Cloud Run is a fully managed, serverless compute platform that enables the development and deployment of a",
+      "containerized application invocable via requests or events. Using Cloud Run would avoid the problem of",
+      "infrastructure management because it is a fully managed service."
+    ]
+  },
+  {
+    "number_id":67,
+    "text":[
+      "67) Which Google Cloud product or feature makes specific recommendations",
+      "based on security risks and compliance violations?",
+      "A. Google Cloud firewalls",
+      "B. Security Command Center",
+      "C. Cloud Deployment Manager",
+      "0. Google Cloud Armor",
+      "Correct Answer: 8"
+    ]
+  },
+  {
+    "number_id":68,
+    "text":[
+      "68) Which of the following scenarios is not suitable for a Content Delivery Network",
+      "(CDN)? (Choose 2 answers)",
+      "A.",
+      "B.",
+      "Correct Answer: AC",
+      "Explanation",
+      "A website for a small construction company located in the",
+      "United States",
+      "A global retail company with customers in Europe and the",
+      "Americas",
+      "A family history website with only a few visitors annually",
+      "A global media website that provides news in multiple",
+      "languages",
+      "A website with users located in a specific geographic area would not benefit from a Content Delivery Network. CDNs are",
+      "especially useful for large, complex websites with users spread across the globe, and websites or mobile apps with lots of",
+      "dynamic content. A small company will most likely not need a CDN because its customers are geographically closer to the",
+      "server."
+    ]
+  },
+  {
+    "number_id":69,
+    "text":[
+      "69} Which Google Cloud product provides a consistent platform for multi-cloud application",
+      "deployments and extends other Google Cloud services to your organization's environment?",
+      "A. Google Kubernetes Engine",
+      "B. Virtual Public Cloud",
+      "C. Compute Engine",
+      "D. Anthos",
+      "Correct Answer: D",
+      "Anthos is the leading cloud-centric container platform to run",
+      "modern apps anywhere consistently at scale."
+    ]
+  }
+]

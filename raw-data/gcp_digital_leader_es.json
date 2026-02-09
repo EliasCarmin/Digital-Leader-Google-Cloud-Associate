@@ -1,0 +1,1329 @@
+[
+    {
+        "number_id": 1,
+        "text": [
+            "1) Su empresa utiliza Google Cloud Platform para almacenar datos seguros de los clientes. Eres una seguridad de datos.",
+            "Manager y desea controlar qué permisos se otorgan a los usuarios que manejan los datos. cual de los",
+            "¿Qué debes hacer para controlar los permisos?",
+            "Asignar roles",
+            "Usar listas de acceso",
+            "Usar autenticaciones",
+            "Asignar recursos",
+            "SOR,",
+            "Respuesta correcta: A",
+            "Explicación",
+            "Para asignar permisos, debes asignar roles. Cloud Identity te permite gestionar y autorizar a tu usuario",
+            "cuentas en múltiples aplicaciones y proyectos. También es compatible con SAML 2.0 (lenguaje de marcado de afirmación de seguridad)",
+            "para inicio de sesión único (SSO), así como autenticación de dos factores (2FA). Cualquiera que sea la opción que elijas, tienes control total",
+            "sobre qué permisos se otorgan a sus usuarios.",
+            "Las listas de acceso de usuarios sirven para personalizar el acceso a objetos específicos dentro de un depósito en lugar de administrar permisos.",
+            "Las autenticaciones no son apropiadas en este escenario porque los roles incluyen medidas de autenticación como SAML 2.0.",
+            "(Lenguaje de marcado de afirmación de seguridad) para inicio de sesión único (SSO), así como autenticación de dos factores (2FA). Recursos",
+            "se refieren a carpetas y proyectos, no al permiso de los usuarios para acceder a ellos."
+        ]
+    },
+    {
+        "number_id": 2,
+        "text": [
+            "2) ¿Cuál de los siguientes productos de Google Cloud se puede utilizar para explorar y visualizar datos? (Elija 2",
+            "respuestas)",
+            "Compositor de la nube",
+            "procesamiento de datos",
+            "laboratorio de datos",
+            "Estudio de datos",
+            "Agrio",
+            "Respuesta correcta: CD",
+            "Explicación",
+            "Datalab y Data Studio son herramientas para explorar y visualizar datos. Datalab le permite explorar, visualizar,",
+            "Analice y transforme datos utilizando lenguajes familiares, como Python y SQL. Introducción a Jupyter preinstalado,",
+            "Los cuadernos de muestra y tutoriales le muestran cómo acceder, analizar, monitorear y visualizar datos. Data Studio es una herramienta que",
+            "le permite contar su historia de datos con gráficos, incluidos gráficos de líneas, barras y circulares, mapas geográficos, gráficos de áreas y burbujas,",
+            "tablas de datos paginadas, tablas dinámicas y más.",
+            "Cloud Firestore es una herramienta de almacenamiento. Es una base de datos de documentos NoSQL que le permite almacenar, sincronizar y consultar datos fácilmente para",
+            "sus aplicaciones móviles y web a escala global. No es apropiado en este escenario porque no es una visualización de datos.",
+            "herramienta.",
+            "Dataproc es una herramienta para procesar y analizar datos. Dataproc es un servicio totalmente administrado y altamente escalable para ejecutar",
+            "Apache Spark, Apache Flink, Presto y más de 30 herramientas y marcos de código abierto. No es apropiado en este escenario.",
+            "porque no es principalmente una herramienta de visualización de datos como se especifica en este escenario.",
+            "https://cloud.google.com/architecture/data-lifecycte-cloud-platform"
+        ]
+    },
+    {
+        "number_id": 3,
+        "text": [
+            "3) Estás migrando cargas de trabajo a la nube. El objetivo de la migración es servir a clientes de todo el mundo.",
+            "lo más rápido posible. Según las regulaciones locales, ciertos datos deben almacenarse en un lugar específico.",
+            "área geográfica, y puede ser atendido en todo el mundo. Necesita diseñar la arquitectura y la implementación.",
+            "para tus cargas de trabajo.",
+            "¿Qué deberías hacer?",
+            "A. Seleccione un proveedor de nube pública que solo esté activo en el área geográfica requerida",
+            "B. Seleccione un proveedor de nube privada que replique globalmente el almacenamiento de datos para un acceso rápido a los datos.",
+            "C. Seleccionar un proveedor de nube pública que garantice la ubicación de los datos en el área geográfica requerida",
+            "D. Seleccione un proveedor de nube privada que solo esté activo en el área geográfica requerida",
+            "Respuesta correcta: C",
+            "Una nube pública es un modelo de TI en el que los proveedores de servicios de nube pública ofrecen servicios informáticos, incluidos",
+            "computación y almacenamiento, entornos de desarrollo e implementación y aplicaciones, disponibles bajo demanda para",
+            "organizaciones e individuos a través de la Internet pública."
+        ]
+    },
+    {
+        "number_id": 4,
+        "text": [
+            "4) Usted es un administrador de TI que desea reducir el costo y la mano de obra que se requerirían para un manual.",
+            "Proyecto de modernización de aplicaciones utilizando una solución Google Cloud. Estás decidiendo si adoptar Migrate",
+            "para Compute Engine o Migrate para Anthos y necesito explicar las diferencias entre las dos soluciones para",
+            "gestión. ¿Cuál de las siguientes diferencias explicarías?",
+            "A. Migrate for Compute Engine cobra por transferir datos a Google, pero",
+            "Migrar para Anthos no lo hace.",
+            "B. Migrate para Anthos migra a contenedores y Migrate para Compute Engine",
+            "migra a máquinas virtuales.",
+            "C. Migrate for Compute Engine requiere una implementación y configuración complejas, mientras que",
+            "Migrar para Anthos solo requiere migración de elevación y cambio.",
+            "D. Migrate for Anthos requiere actualizaciones manuales del sistema operativo y Migrate",
+            "C t Al 7B",
+            "La respuesta correcta para Compute Engine está completamente administrada.",
+            "Explicación",
+            "La diferencia clave entre las dos soluciones es que Migrate for Anthos migra a contenedores y Migrate for Compute Engine.",
+            "migra a máquinas virtuales.",
+            "Una diferencia entre las dos soluciones no es que Migrate para Compute Engine cobre por transferir datos a Google, sino que Migrate",
+            "porque Anthos no. Migrate for Compute Engine no cobra por el tráfico de entrada.",
+            "Migrate for Compute Engine a menudo se asocia con operaciones de elevación y cambio, mientras que Migrate for Anthos puede implicar una tarea más compleja.",
+            "a su sistema contenerizado dependiendo de las necesidades de la organización.",
+            "Migrate for Anthos no requiere actualizaciones manuales del sistema operativo porque es un sistema en contenedores, y Migrate for",
+            "Compute Engine no es una solución totalmente administrada. Compute Engine ofrece dos tipos de grupos de instancias de VM, administrados y no administrados:",
+            "Los grupos de instancias administrados (MIG) le permiten operar aplicaciones en varias máquinas virtuales idénticas. Los grupos de instancias no administrados te permiten equilibrar la carga",
+            "en una flota de máquinas virtuales que usted mismo administra."
+        ]
+    },
+    {
+        "number_id": 5,
+        "text": [
+            "5) Su organización necesita una gran cantidad de potencia informática adicional en las próximas dos semanas.",
+            "Después de esas dos semanas, terminará la necesidad de recursos adicionales.",
+            "¿Cuál es el enfoque más rentable?",
+            "A. Utilice un descuento por uso comprometido para reservar una máquina virtual muy potente",
+            "B. Compra una computadora física muy poderosa",
+            "C. Inicie una máquina virtual muy potente sin utilizar un descuento por uso comprometido",
+            "D. Comprar varias computadoras físicas y escalar la carga de trabajo entre ellas",
+            "Respuesta correcta: C",
+            "“Cuando compras un contrato de uso comprometido, compras recursos de Compute Engine.",
+            "como vCPU, memoria, GPU, SSD locales y nodos de inquilino único, a un precio con descuento en",
+            "retorno por comprometerse a pagar esos recursos durante 1 año o 3 años.\""
+        ]
+    },
+    {
+        "number_id": 6,
+        "text": [
+            "6) ¿Cuál de las siguientes operaciones en BigQuery reduce el costo total de propiedad (TCO) para",
+            "¿clientes? (Elija 3 respuestas)",
+            "Consultas que recuperan resultados del caché",
+            "Carga de datos por lotes en BigQuery desde archivos locales",
+            "Ejecutar una consulta en una fuente de datos externa desde BigQuery",
+            "Eliminar una tabla, vista, particiones de tablas individuales y datos de usuario.",
+            "funciones definidas",
+            "9SOmPr",
+            "Respuesta correcta: ABD",
+            "Explicación",
+            "Ciertas operaciones en Google BigQuery son gratuitas y pueden generar reducciones en el costo total de propiedad (TCO) de una empresa.",
+            "utilizando el servicio. A los clientes no se les cobra por las consultas que recuperan resultados de un caché o cargan datos por lotes en BigQuery.",
+            "desde archivos locales, o eliminar una tabla, vista, particiones de tablas individuales o funciones definidas por el usuario.",
+            "A los clientes que utilizan Google BigQuery se les cobra por la cantidad de datos procesados ​​en las columnas seleccionadas y por ejecutar un",
+            "realizar consultas en una fuente de datos externa desde BigQuery, por lo que esas funciones realizadas en BigQuery no resultan en una reducción del TCO.",
+            "https://cloud.google.com/bigquery/pricing#bigquery-pricing"
+        ]
+    },
+    {
+        "number_id": 7,
+        "text": [
+            "7) Su organización necesita planificar sus gastos en infraestructura de nube.",
+            "¿Qué debería hacer su organización?",
+            "A. Revisar los costos de los recursos de la nube con frecuencia, porque los costos cambian a menudo según el uso.",
+            "B. Revisar los costos de los recursos de la nube anualmente como parte de la planificación del presupuesto general de su organización.",
+            "C. Si su organización utiliza solo recursos de la nube, los costos de infraestructura ya no son parte de su",
+            "presupuesto general",
+            "D. Involucrar a menos personas en la planificación de recursos en la nube que su organización en las instalaciones",
+            "planificación de recursos",
+            "Respuesta correcta: A",
+            "Gobernanza financiera: naturaleza variable de los recursos de la nube y sus costos, el gasto debe ser",
+            "monitoreado y controlado de manera continua"
+        ]
+    },
+    {
+        "number_id": 8,
+        "text": [
+            "8) ¿Cómo puede un desarrollador de software contribuir a la ingeniería de confiabilidad del sitio (SRE) dentro de un",
+            "¿organización?",
+            "Asignando tareas de resolución de problemas a los equipos de operaciones.",
+            "Configurando manualmente los sistemas de producción",
+            "Centrándose en implementar la automatización",
+            "Creando soluciones estáticas para evitar fallos.",
+            "Entonces,",
+            "Respuesta correcta: A",
+            "Explicación",
+            "Los equipos de ingeniería de confiabilidad del sitio se enfocan en contratar ingenieros de software para ejecutar productos y crear sistemas para",
+            "realizar el trabajo que de otro modo realizarían, a menudo manualmente, los administradores de sistemas.",
+            "En un modelo de operaciones tradicional, las tareas de resolución de problemas a menudo se asignaban a los equipos de operaciones.",
+            "Site Reliability Engineering se centra en automatizar los sistemas de producción en lugar de configurarlos manualmente.",
+            "Site Reliability Engineering se centra en soluciones dinámicas, no estáticas, a los problemas. SRE opera con el entendimiento",
+            "que el fracaso se planifica y se espera y que, como resultado, las soluciones a los problemas pueden cambiar."
+        ]
+    },
+    {
+        "number_id": 9,
+        "text": [
+            "9) Los sistemas operativos de algunas de las máquinas virtuales de su organización pueden tener una seguridad",
+            "vulnerabilidad.",
+            "¿Cómo puede su organización identificar de manera más efectiva todas las máquinas virtuales que no tienen la última versión?",
+            "actualización de seguridad?",
+            "A. Ver el Centro de Comando de Seguridad para identificar virtuales",
+            "máquinas ejecutando imágenes de disco vulnerable",
+            "B. Ver el Administrador de Informes de Cumplimiento para identificar y",
+            "descargar una auditoría PCI reciente",
+            "C. Ver el Centro de Comando de Seguridad para identificar virtuales",
+            "Las máquinas comenzaron hace más de 2 semanas.",
+            "D. Ver el Administrador de Informes de Cumplimiento para identificar y",
+            "descargar una auditoría SOC 1 reciente",
+            "Respuesta correcta: A",
+            "Centro de comando de seguridad",
+            "«Obtenga visibilidad y control centralizados",
+            "«Descubre configuraciones erróneas y vulnerabilidades",
+            "Informar y mantener el cumplimiento",
+            "Detecte amenazas dirigidas a sus activos de Google Cloud _"
+        ]
+    },
+    {
+        "number_id": 10,
+        "text": [
+            "10) Usted es gerente de una empresa de energía que recopila datos clave/valor no estructurados en forma de",
+            "informes de uso de medidores de energía y sensores de electrodomésticos. Su departamento de TI necesita de forma segura",
+            "conecte y administre sus dispositivos mucho. ¿Cuál de las siguientes soluciones le ayudaría a conectarse y gestionar",
+            "¿Los dispositivos LoT de forma segura?",
+            "A. Núcleo mucho",
+            "B. Director de tráfico",
+            "C. Centro de lotes",
+            "D. Portal mucho",
+            "Respuesta correcta: A",
+            "Explicación",
+            "Internet of Things (loT) Core es un servicio totalmente administrado que le permite conectarse y administrar dispositivos loT",
+            "de forma segura.",
+            "Traffic Director ayuda a implementar el equilibrio de carga global entre clústeres e instancias de máquinas virtuales (VM).",
+            "loT Hub no es un producto de Google Cloud.",
+            "loT Portal no es un producto de Google Cloud.",
+            "https://cloud.google.com/solutions/iot"
+        ]
+    },
+    {
+        "number_id": 11,
+        "text": [
+            "11) Actualmente está administrando cargas de trabajo que se ejecutan en Windows Server para las cuales su empresa posee el",
+            "licencias. Sus cargas de trabajo solo son necesarias durante el horario laboral, lo que le permite apagar el",
+            "casos durante el fin de semana. Sus licencias de Windows Server deben renovarse en un mes y desea",
+            "para optimizar el coste de su licencia.",
+            "¿Qué deberías hacer?",
+            "A. Renueve sus licencias por un período adicional de 3 años. Negocie una reducción de costos con su",
+            "Proveedor de alojamiento actual en el que el costo de infraestructura se reduce cuando las cargas de trabajo no están en uso.",
+            "B. Renovar sus licencias por un período adicional de 2 años. Negociar una reducción de costes comprometiéndonos",
+            "a una renovación automática de las licencias al final del período de 2 años",
+            "C. Migrar las cargas de trabajo a Compute Engine con un modelo de traer su propia licencia (BYOL)",
+            "D. Migrar las cargas de trabajo a Compute Engine con un modelo de pago por uso (PAYG)",
+            "Respuesta correcta: C",
+            "\"Traer sus licencias existentes de núcleo físico o procesador físico que tienen hardware dedicado",
+            "Los requisitos requieren que usted traiga sus propios medios y los ejecute en configuraciones de hardware,",
+            "como nodos de único inquilino, que cumplan con sus licencias\"."
+        ]
+    },
+    {
+        "number_id": 12,
+        "text": [
+            "12) Una organización desea utilizar un servicio de Google Cloud para un proyecto de tiempo limitado con las siguientes pautas:",
+            "Los desarrolladores deberían estar libres de actividades de gestión de infraestructura. El servicio elegido debe poder",
+            "integrar, limpiar, preparar, combinar, transferir y transformar datos. ¿Cuál de los siguientes servicios de Google Cloud debería",
+            "uso de la organización?",
+            "Fusión de datos en la nube",
+            "Compositor de la nube",
+            "Catálogo de datos",
+            "procesamiento de datos",
+            "ESPORFr",
+            "Respuesta correcta: A",
+            "Explicación",
+            "Cloud Data Fusion es el más adecuado para el escenario dado porque es un servicio totalmente administrado que ayuda a construir y desarrollar rápidamente.",
+            "Gestione los canales de datos integrando, limpiando, preparando, combinando, transfiriendo y transformando datos.",
+            "Cloud Composer facilita la creación, programación, seguimiento y gestión de flujos de trabajo. No es el servicio óptimo para un",
+            "proyecto que requiere la integración de datos.",
+            "Data Catalog es un servicio de gestión de metadatos totalmente gestionado y escalable que permite a las organizaciones comprender todos sus",
+            "Datos de Google Cloud al permitir un rápido descubrimiento y administración. Porque Data Catalog se centra en la gestión de metadatos",
+            "Además de la integración, limpieza, preparación, combinación, transferencia y transformación de datos, no es la mejor solución en este",
+            "guión.",
+            "Dataproc es un servicio que facilita el procesamiento, las consultas y la transmisión por lotes. No es la mejor solución para esta situación.",
+            "porque se utiliza principalmente para el procesamiento por lotes en lugar de gestionar canalizaciones de datos.",
+            "https://cloud.google.com/data-fusion/ : |"
+        ]
+    },
+    {
+        "number_id": 13,
+        "text": [
+            "13) Su organización ejecuta una aplicación distribuida en las máquinas virtuales de Compute Engine. Su",
+            "La organización necesita redundancia, pero también necesita una comunicación extremadamente rápida (menos de 10 milisegundos).",
+            "entre las partes de la aplicación en diferentes máquinas virtuales.",
+            "¿Dónde debería ubicar su organización estas máquinas virtuales?",
+            "A. En una sola zona dentro de una sola región",
+            "B. En diferentes zonas dentro de una misma región",
+            "C. En varias regiones, utilizando una zona por región",
+            "O. En múltiples regiones, usando múltiples zonas por región",
+            "Respuesta correcta: D.",
+            "Una arquitectura multirregional puede proporcionar una mayor disponibilidad que",
+            "implementar en una sola región."
+        ]
+    },
+    {
+        "number_id": 14,
+        "text": [
+            "14) Usted es un gerente de proyecto que administra un proyecto de cliente destinado a mejorar la experiencia del cliente en BFSI mediante",
+            "brindando soluciones de comunicación inteligente. Mientras se desarrolla la solución para BFSI Industry, su cliente",
+            "ha indicado que prefieren tener un control total de los datos y del sistema operativo, junto con los tiempos de ejecución",
+            "y software intermedio. ¿Cuál de las siguientes ofertas de nube le sugeriría a su cliente?",
+            "Infraestructura como servicio (laaS)",
+            "Plataforma como servicio (PaaS)",
+            "Función como servicio (FaaS)",
+            "Software como servicio (SaaS)",
+            "VoOoU,r",
+            "Respuesta correcta: A",
+            "Explicación",
+            "La infraestructura como servicio (laaS) proporciona control total sobre los datos, las aplicaciones, el middleware, el sistema operativo y la automatización.",
+            "implementación de hardware, carga de trabajo de gestión virtualizada.",
+            "https://cloud.google.com/learn/what-is-iaas"
+        ]
+    },
+    {
+        "number_id": 15,
+        "text": [
+            "15) Una organización decide migrar su entorno local a la nube. ellos necesitan",
+            "determinar qué componentes de recursos aún necesitan ser asignados como propietarios.",
+            "¿Qué dos funciones posee un proveedor de nube pública? (Elija dos.)",
+            "A. Mantenimiento de hardware",
+            "B. Arquitectura de infraestructura",
+            "C. Automatización del despliegue de infraestructura",
+            "D. Gestión de la capacidad del hardware",
+            "E. Solucionar problemas de seguridad de la aplicación",
+            "Respuesta correcta: ANUNCIO",
+            "Como mínimo, al considerar laaS, el proveedor de la nube es responsable del hardware, el arranque y",
+            "Kernel endurecido e IPS, almacenamiento, etc."
+        ]
+    },
+    {
+        "number_id": 16,
+        "text": [
+            "16) Su cliente es una empresa bancaria que está diseñando un plan de recuperación ante desastres (DR) para su negocio histórico.",
+            "datos orientados al cumplimiento. El acceso rápido a los datos no es un requisito del plan. cual de los",
+            "¿Sugeriría seguir los siguientes patrones de recuperación ante desastres?",
+            "Frío",
+            "Cálido",
+            "Caliente",
+            "Vivir",
+            "Voup",
+            "Respuesta correcta: A",
+            "Explicación",
+            "No hay infraestructura de repuesto asociada con el patrón de DR en frío y, en caso de desastre, la estrategia planificada es",
+            "implementado para la configuración rápida del sitio DR frío.",
+            "La configuración de la infraestructura está implementada en el patrón DR cálido, junto con todo el equipo y la configuración necesarios; sin embargo, datos",
+            "Se requiere carga o restauración en caso de un desastre.",
+            "El sitio de respaldo de patrones de DR activo tiene el equipo y toda la configuración junto con los datos actuales en el patrón de DR activo.",
+            "Live no es un tipo de patrón DR.",
+            "https://cloud.google.com/architecture/dr-scenarios-planning-quide"
+        ]
+    },
+    {
+        "number_id": 17,
+        "text": [
+            "17) Usted es administrador de programas dentro de una empresa de software como servicio (SaaS) que ofrece software de renderizado.",
+            "para estudios de animación. Su equipo necesita la capacidad de permitir que las escenas se programen a voluntad y se interrumpan",
+            "en cualquier momento para reiniciar más tarde. Cualquier renderizado de una escena individual tarda menos de 12 horas en completarse y no hay",
+            "acuerdo de nivel de servicio (SLA) para el tiempo de finalización de todas las escenas. Los resultados se almacenarán en una nube global.",
+            "Cubo de almacenamiento. Los recursos informáticos no están vinculados a una única ubicación geográfica. Este software necesita",
+            "para ejecutarse en Google Cloud de forma rentable.",
+            "¿Qué deberías hacer?",
+            "A. Implementar la aplicación en Compute Engine usando instancias interrumpibles",
+            "B. Desarrollar la aplicación para que pueda ejecutarse en un grupo de instancias no administrado.",
+            "C. Cree una reserva para la cantidad mínima de instancias de Compute Engine que usará",
+            "D. Iniciar más instancias con menos unidades virtuales de procesamiento centralizado (vCPU) en lugar de",
+            "menos instancias con más vCPU",
+            "Respuesta correcta: A",
+            "“Las instancias de VM interrumpibles están disponibles a un precio mucho más bajo (un descuento del 60 al 91%) en comparación con las",
+            "precio de las máquinas virtuales estándar. Sin embargo, Compute Engine podría detener (adelantar) estas instancias si es necesario.",
+            "recuperar la capacidad informática para asignarla a otras máquinas virtuales\""
+        ]
+    },
+    {
+        "number_id": 18,
+        "text": [
+            "18) Una compañía financiera y de seguros global planea adoptar servicios en la nube para reducir",
+            "costos de infraestructura. El modelo de implementación de la nube adoptado debe cumplir con todas las normas internacionales de seguridad de datos pertinentes.",
+            "regulaciones. Para garantizar el cumplimiento de la normativa, los datos del cliente con datos de identificación del cliente (CID) deben ser",
+            "almacenado en las instalaciones. Los datos sin datos de identificación del cliente (CID) se almacenarán en la nube pública. cual de",
+            "¿Cuáles son los siguientes modelos de implementación en la nube que recomendaría?",
+            "A. Nube pública",
+            "B. Nube privada",
+            "C. Nube comunitaria",
+            "D. Nube híbrida",
+            "Respuesta correcta: D.",
+            "Explicación",
+            "Dado que el cliente requiere almacenar datos del cliente con CID local y almacenar otras aplicaciones y datos en el público",
+            "nube, el modelo de implementación de nube híbrida sería el más apropiado. La nube híbrida consta tanto de nube pública como de nube",
+            "recursos del local.",
+            "Como el escenario requiere que los datos del cliente con CID se almacenen localmente, el modelo de implementación de nube pública es",
+            "incorrecto.",
+            "Un modelo de implementación de nube privada no sería rentable porque la nube privada se opera únicamente para un único",
+            "organización.",
+            "Un modelo de implementación de nube comunitaria no permitiría a la organización cumplir con las regulaciones para almacenar datos de clientes",
+            "con CID porque varias organizaciones de la comunidad específica comparten la infraestructura."
+        ]
+    },
+    {
+        "number_id": 19,
+        "text": [
+            "19) Su administrador quiere restringir la comunicación de todas las máquinas virtuales con acceso a Internet; con",
+            "recursos en otra red; o con un recurso fuera de Compute",
+            "Motor. Se espera que diferentes equipos creen nuevas carpetas y proyectos en un futuro próximo.",
+            "¿Cómo restringiría que todas las máquinas virtuales tengan una dirección IP externa?",
+            "A. Definir una política de organización en el nodo raíz de la organización para restringir las instancias de máquinas virtuales.",
+            "de tener una dirección IP externa",
+            "B. Definir una política de organización en todas las carpetas existentes para definir una restricción para restringir las carpetas virtuales.",
+            "que las instancias de la máquina tengan una dirección IP externa.",
+            "C. Definir una política de organización en todos los proyectos existentes para restringir las instancias de máquinas virtuales de",
+            "tener una dirección IP externa",
+            "D. Comunicarse con los diferentes equipos y acordar que cada vez que se cree una máquina virtual, ésta",
+            "debe configurarse sin una dirección IP externa",
+            "Respuesta correcta: A",
+            "El Servicio de Políticas de Organización le brinda control centralizado y programático sobre las políticas de su organización.",
+            "recursos de la nube. Como administrador de políticas de la organización, podrá configurar restricciones",
+            "en toda su jerarquía de recursos."
+        ]
+    },
+    {
+        "number_id": 20,
+        "text": [
+            "20) Una empresa que almacena algunos de los datos de tarjetas de crédito de sus clientes en sus instalaciones está migrando los datos a",
+            "Nube de Google. Antes de la migración, la organización quiere entender cómo Google almacenará y procesará",
+            "los datos del cliente. ¿Cuál de los siguientes aspectos de la plataforma Google Cloud debería aprender la organización?",
+            "más sobre?",
+            "Disponibilidad",
+            "Cumplimiento",
+            "Privacidad",
+            "Seguridad",
+            "SOPAr",
+            "Respuesta correcta: C",
+            "Explicación",
+            "La privacidad en el contexto de la nube se refiere a los datos a los que las organizaciones o los individuos tienen acceso y comparten. cuando el",
+            "La organización mueve sus datos a la nube, la organización retiene el control de los datos. Como cliente de Google Cloud, el",
+            "La organización debe aprender que cuando migra a la nube, continúa siendo propietaria de los datos de sus clientes y puede controlar quiénes son sus clientes.",
+            "tiene acceso a ellos y con quién se pueden compartir los datos. Google almacena y procesa datos, pero los datos siguen siendo privados",
+            "porque el acceso al mismo está controlado por la organización. Google proporciona a la organización herramientas y funciones para controlar",
+            "ese acceso, ayudando así a la organización a mantener la privacidad de los datos de los clientes en la nube.",
+            "https://cloud.google.com/privacy"
+        ]
+    },
+    {
+        "number_id": 21,
+        "text": [
+            "21) Su organización multinacional tiene servidores que ejecutan cargas de trabajo de misión crítica en sus instalaciones.",
+            "alrededor del mundo. Quiere poder gestionar estas cargas de trabajo de forma coherente y centralizada, y",
+            "quieren dejar de gestionar infraestructuras",
+            "¿Qué debería hacer su organización?",
+            "A. Migrar las cargas de trabajo a una nube pública",
+            "B. Migrar las cargas de trabajo a un edificio de oficinas central",
+            "C. Migrar las cargas de trabajo a múltiples instalaciones locales de ubicación conjunta",
+            "D. Migrar las cargas de trabajo a múltiples nubes privadas locales",
+            "Respuesta correcta: A"
+        ]
+    },
+    {
+        "number_id": 22,
+        "text": [
+            "22) ¿En cuál de estos servicios se puede implementar Cloud Build?",
+            "Kubernetes",
+            "Motor de aplicaciones",
+            "Funciones de la nube",
+            "Cloud Build puede implementarse en todos estos servicios",
+            "SOPA",
+            "Respuesta correcta: D.",
+            "Explicación",
+            "Como parte de su proceso de implementación continua, Cloud Build puede realizar implementaciones mediante la línea de comandos.",
+            "herramientas e implementación en Google Kubernetes Engine (GKE), App Engine, Cloud Functions y Firebase.",
+            "https://cloud.google.com/cloud-build/docs/configuring-builds/build-test-deploy-",
+            "artefactos #deploying_artifacts"
+        ]
+    },
+    {
+        "number_id": 23,
+        "text": [
+            "23) Su organización almacena datos altamente confidenciales en las instalaciones que no se pueden enviar al público.",
+            "Internet. Los datos deben procesarse tanto localmente como en la nube.",
+            "¿Qué debería hacer su organización?",
+            "A. Configure Identity-Aware Proxy (IAP) en su red de Google Cloud VPC",
+            "B. Cree un túnel Cloud VPN entre Google Cloud y su centro de datos",
+            "C. Solicite una conexión de Partner Interconnect con su proveedor de red",
+            "O. Habilite el acceso privado a Google en su red Google Cloud VPC",
+            "Respuesta correcta: C",
+            "Después de que el proveedor de servicios proporcione su conexión, puede comenzar a pasar",
+            "tráfico entre sus redes utilizando la red del proveedor de servicios."
+        ]
+    },
+    {
+        "number_id": 24,
+        "text": [
+            "24) Su organización ha planeado implementar las mejores prácticas de ingeniería de confiabilidad del sitio (SRE). Eres",
+            "encargado de configurar el monitoreo a nivel de aplicación y monitorear los objetivos de nivel de servicio (SLO) para",
+            "aplicaciones y activar alertas cuando se violan los SLO. ¿Cuál de los siguientes productos debería",
+            "elegir para estas tareas?",
+            "Informe de errores",
+            "Registro en la nube",
+            "Monitoreo de la nube",
+            "Seguimiento de la nube",
+            "SOPA,r",
+            "Respuesta correcta: C",
+            "Explicación",
+            "Cloud Monitoring ayuda a obtener visibilidad del rendimiento, la disponibilidad y la disponibilidad de las aplicaciones y la infraestructura.",
+            "salud por:",
+            "Recopilación automática de métricas del sistema",
+            "Habilitando las mejores prácticas de SRE",
+            "Crear paneles personalizados",
+            "+Creación de alertas en integración con herramientas de gestión de incidentes."
+        ]
+    },
+    {
+        "number_id": 25,
+        "text": [
+            "25) El equipo de desarrollo de su empresa está creando una aplicación que se implementará en Cloud Run.",
+            "Está diseñando una canalización de CI/CD para que cualquier versión nueva de la aplicación pueda implementarse en el",
+            "la menor cantidad de pasos posible utilizando la canalización de CI/CD que está diseñando. Necesitas seleccionar un",
+            "Ubicación de almacenamiento para las imágenes de la aplicación después de que la parte Cl de su canalización las haya creado.",
+            "¿Qué deberías hacer?",
+            "A. Crear una imagen de Compute Engine que contenga la aplicación.",
+            "B. Almacenar las imágenes en Container Registry",
+            "C. Almacenar las imágenes en Cloud Storage",
+            "D. Crear un disco de Compute Engine que contenga la aplicación.",
+            "Respuesta correcta: 8",
+            "Empujar (cargar) y extraer (descargar) imágenes son dos de las tareas más",
+            "tareas comunes de Registro de Contenedores. Este documento se centra en impulsar y",
+            "extrayendo imágenes con Docker."
+        ]
+    },
+    {
+        "number_id": 26,
+        "text": [
+            "26) Eres administrador de un sitio web de venta minorista. La empresa ha optado por el Soporte Estándar",
+            "plan de atención al cliente. El número de usuarios ha aumentado recientemente y la empresa se ha dado cuenta de la necesidad",
+            "para respuestas a sus casos de Prioridad 1 (P1) en 1 hora y al mismo tiempo mantiene el control de costos. cual de los",
+            "¿Sugeriría los siguientes planes de soporte?",
+            "Básico",
+            "Estándar",
+            "Mejorado",
+            "De primera calidad",
+            "POU,",
+            "Respuesta correcta: C",
+            "Explicación",
+            "El cliente de soporte mejorado es la opción adecuada en este escenario porque incluye tiempos de respuesta de una hora.",
+            "pero es menos costoso que el plan de atención Premium Support. El soporte mejorado incluye:",
+            "1.Tiempo de respuesta de una hora para casos P1",
+            "2.24/7 para casos P1 y P2",
+            "3.Soporte multicanal",
+            "4.Expertos técnicos con conocimiento avanzado del producto.",
+            "5. Soporte tecnológico de terceros"
+        ]
+    },
+    {
+        "number_id": 27,
+        "text": [
+            "27) Cada uno de los tres modelos de servicios en la nube: infraestructura como servicio (laaS), plataforma como servicio (PaaS),",
+            "y software como servicio (SaaS) - ofrece beneficios entre flexibilidad y niveles de gestión por parte del",
+            "proveedor de la nube y el cliente.",
+            "¿Por qué SaaS sería la elección correcta de modelo de servicio?",
+            "R. Quiere un equilibrio entre la flexibilidad para el cliente y el nivel",
+            "de gestión por parte del proveedor de la nube",
+            "B. Quiere minimizar el nivel de gestión por parte del cliente.",
+            "C. Quiere maximizar la flexibilidad para el cliente.",
+            "D. Quiere poder cambiar su énfasis entre flexibilidad y",
+            "Gestión por parte del proveedor de la nube a medida que cambian las necesidades del negocio.",
+            "Respuesta correcta: B",
+            "El principal beneficio de SaaS es que descarga toda la infraestructura y",
+            "gestión de aplicaciones al proveedor de SaaS."
+        ]
+    },
+    {
+        "number_id": 28,
+        "text": [
+            "28) ¿Cuáles de los siguientes son beneficios de Apigee? (Elija 3 respuestas)",
+            "A. La capacidad de predecir patrones de tráfico API",
+            "La capacidad de hacer visibles los servicios backend.",
+            "C. La capacidad de modernizar los servicios heredados a través de RESTful",
+            "interfaces",
+            "D. La capacidad de registrar y analizar métricas comerciales.",
+            "2",
+            "Respuesta correcta: ACD",
+            "Explicación",
+            "Apigee permite al usuario predecir patrones de tráfico API a través de métricas que pueden usarse para comprender el tráfico potencial.",
+            "fluctuaciones y otra información, modernizar los servicios heredados a través de interfaces RESTful empaquetando aplicaciones heredadas,",
+            "y como una capa de abstracción y modernización de API para aislar las aplicaciones orientadas al cliente de los cambios en los servicios backend.",
+            "Apigee es una capa de abstracción entre los servicios backend y el usuario. No crea la capa de servicio backend.",
+            "visible."
+        ]
+    },
+    {
+        "number_id": 29,
+        "text": [
+            "29) A medida que su organización aumenta su velocidad de lanzamiento, las actualizaciones de aplicaciones basadas en VM toman un tiempo.",
+            "mucho tiempo para realizar actualizaciones continuas debido a los tiempos de arranque del sistema operativo. Necesitas hacer la solicitud.",
+            "implementaciones más rápidas.",
+            "¿Qué debería hacer su organización?",
+            "A. Migre sus máquinas virtuales a la nube y agregue más recursos a",
+            "a ellos",
+            "B. Convierta sus aplicaciones en contenedores",
+            "C. Aumente los recursos de sus VM",
+            "D. Automatiza las implementaciones de tus actualizaciones",
+            "Respuesta correcta: B",
+            "Dado que el problema con la infraestructura actual basada en YM es el tiempo de arranque del sistema operativo en particular,",
+            "por lo que actualizar la carga de trabajo a contenedores sería una opción correcta, ya que entonces el problema del tiempo de arranque de CS es",
+            "eliminado, lo que significa una ejecución más rápida de la carga de trabajo."
+        ]
+    },
+    {
+        "number_id": 30,
+        "text": [
+            "30) ¿Cuál de las siguientes capas de seguridad de la infraestructura de Google proporciona",
+            "¿Protección contra denegación de servicio (DoS)?",
+            "Seguridad operativa",
+            "comunicación por Internet",
+            "Servicios de almacenamiento",
+            "Identidad de usuario",
+            "VOU,",
+            "Respuesta correcta: B",
+            "Explicación",
+            "Hay 6 capas de seguridad de la infraestructura de Google: seguridad operativa, comunicación por Internet, servicios de almacenamiento y usuario.",
+            "Identidad, implementación de servicios e infraestructura de hardware.",
+            "La protección de Google Front End y de denegación de servicio (DoS) se proporciona en la capa de comunicación de Internet.",
+            "La capa de Seguridad Operacional aborda la detección de intrusiones y la reducción del riesgo interno son algunas de las áreas abordadas en",
+            "El cifrado en reposo y la eliminación de la protección de datos se proporcionan en la capa de Servicios de almacenamiento.",
+            "La autenticación y la protección contra el abuso de inicio de sesión se encuentran en la capa de identidad del usuario.",
+            "https://cloud.google.com/security/infrastructure/design"
+        ]
+    },
+    {
+        "number_id": 31,
+        "text": [
+            "31) Su organización utiliza Active Directory para autenticar usuarios. Acceso a la cuenta de Google de los usuarios",
+            "debe eliminarse cuando se cancele su cuenta de Active Directory.",
+            "¿Cómo debería su organización cumplir con este requisito?",
+            "A. Configurar la autenticación de dos factores en el dominio de Google",
+            "B. Eliminar la cuenta de Google de todas las [políticas de AM",
+            "C. Configurar BeyondCorp y Identity-Aware Proxy en el dominio de Google",
+            "0. Configurar el inicio de sesión único en el dominio de Google",
+            "Respuesta correcta: D.",
+            "Su organización utiliza Active Directory para autenticar usuarios. Entonces necesitas usar el inicio de sesión único (SSQ)",
+            "Es un esquema de autenticación que permite a un usuario iniciar sesión con una única identificación y contraseña en diferentes sistemas.",
+            "y software. SSO permite a los departamentos de TI administrar una identidad única que puede acceder a muchas máquinas",
+            "y servicios en la nube."
+        ]
+    },
+    {
+        "number_id": 32,
+        "text": [
+            "32) Eres director de proyectos para una empresa global que ofrece edición de películas documentales de alta resolución.",
+            "servicios. Su equipo de editores de contenido en Nueva York y Londres necesita colaborar en proyectos de edición.",
+            "que se encuentran en depósitos de Cloud Storage. El tiempo máximo de espera por la disponibilidad de un video debe ser",
+            "en un tiempo objetivo de 15 minutos, con una mínima exposición a pérdidas. ¿Cuál de los siguientes almacenamiento",
+            "¿Qué configuraciones deberías elegir?",
+            "Región única",
+            "Región dual",
+            "Multirregión con replicación predeterminada",
+            "Región dual con replicación turbo",
+            "FoouUP, fr.",
+            "Respuesta correcta: D.",
+            "Explicación",
+            "El almacenamiento de doble región con replicación turbo habilitada sería la configuración de almacenamiento adecuada en este escenario.",
+            "porque la replicación turbo te permite replicar de forma asincrónica objetos de Cloud Storage recién escritos en una región separada",
+            "dentro de un objetivo de 15 minutos. Debido a que la replicación turbo es aplicable solo para depósitos de dos regiones, se puede implementar",
+            "en este escenario porque los equipos del proyecto están en Londres y Nueva York."
+        ]
+    },
+    {
+        "number_id": 33,
+        "text": [
+            "33) Su empresa adquirió recientemente tres nuevas empresas en crecimiento en tres países diferentes. Tú quieres",
+            "reduzca los gastos generales en la gestión de infraestructura y mantenga sus costos bajos sin sacrificar la seguridad y",
+            "calidad de servicio a sus clientes.",
+            "¿Cómo se deben cumplir estos requisitos?",
+            "A. Aloje todos los servicios de sus subsidiarias en las instalaciones junto con",
+            "sus servicios existentes.",
+            "B. Aloje todos los servicios de sus subsidiarias junto con sus existentes",
+            "Servicios en la nube pública.",
+            "C. Construir una infraestructura homogénea en cada filial, y",
+            "invertir en la formación de sus ingenieros.",
+            "D. Construir una infraestructura homogénea en cada filial, y",
+            "invertir en contratar más ingenieros.",
+            "Respuesta correcta: B",
+            "Ambos costos de mantenimiento se abaratan y la gestión se vuelve más fácil cuando",
+            "Las cargas de trabajo de las subsidiarias junto con las cargas de trabajo de la organización matriz se implementan en el público.",
+            "nube."
+        ]
+    },
+    {
+        "number_id": 34,
+        "text": [
+            "34) Una startup planea adoptar los servicios de Google Cloud. Como primer paso, la empresa planea",
+            "migrar sus datos a Google Cloud. ¿Cuál de los siguientes debería utilizar la empresa para migrar a más de 1",
+            "TB de datos desde un centro de datos privado a la nube respetando un cronograma estricto de 1 a 2 días y",
+            "¿Acomodar el ancho de banda disponible para cumplir con el plazo del proyecto?",
+            "Servicio de transferencia de almacenamiento",
+            "gsutil",
+            "Aparato de transferencia",
+            "Migrar a Anthos y GKE",
+            "FORD,F",
+            "Respuesta correcta: A",
+            "Explicación",
+            "El servicio de transferencia de almacenamiento le permite migrar datos desde un centro de datos privado a Google Cloud. Con almacenamiento",
+            "transferencia, puede mover petabytes de datos desde fuentes locales u otras nubes a través de redes en línea con",
+            "miles de millones de archivos y decenas de Gbps. También puede optimizar el ancho de banda de su red y acelerar las transferencias con escalabilidad.",
+            "nuestro rendimiento."
+        ]
+    },
+    {
+        "number_id": 35,
+        "text": [
+            "35) ¿Cuál es la diferencia entre almacenamiento Estándar y Coldline?",
+            "R. El almacenamiento Coldline es para datos para los cuales se requiere una velocidad de transferencia lenta.",
+            "aceptable.",
+            "B. El almacenamiento estándar y Coldline tienen diferente durabilidad",
+            "garantías.",
+            "C. El almacenamiento estándar y Coldline utiliza API diferentes.",
+            "D. Almacenamiento en línea fría para datos a los que se accede con poca frecuencia.",
+            "Respuesta correcta: D.",
+            "La categorización se basa en la frecuencia con la que se accede a los datos y, por lo tanto,",
+            "cargado en consecuencia"
+        ]
+    },
+    {
+        "number_id": 36,
+        "text": [
+            "36) Una empresa de aplicaciones de fitness está recopilando datos de salud de sus usuarios y está agregando aproximadamente 50 TB.",
+            "de datos cada mes. Se espera que los datos aumenten a más de 200 TB cada año. Los usuarios se preocupan principalmente por",
+            "los últimos 30 días de datos y esperará la recuperación de datos si los datos tienen más de 30 días. La empresa decidió",
+            "que ahora almacenarán los datos a los que se accede con poca frecuencia durante más de 30 días para minimizar el costo, ya que estos datos",
+            "Por lo general, se accede a él como máximo una vez por trimestre o menos. ¿Qué opción de almacenamiento sería la más adecuada para almacenar?",
+            "¿Accede con poca frecuencia a los datos?",
+            "Estándar",
+            "Cerca de la línea",
+            "Línea fría",
+            "Archivo",
+            "cuatro",
+            "Respuesta correcta: C",
+            "Explicación",
+            "El almacenamiento Coldline es más adecuado para almacenar datos a los que se accede con poca frecuencia y que se planea leer o modificar como máximo una vez.",
+            "por trimestre.",
+            "El almacenamiento estándar es más adecuado para los datos a los que se accede con frecuencia, también conocidos como \"datos candentes\".",
+            "El almacenamiento nearline es más adecuado para almacenar datos que se leerán o modificarán una vez al mes o menos.",
+            "El almacenamiento de archivos es más adecuado para almacenar datos de archivos necesarios por motivos legales, normativos o de recuperación ante desastres."
+        ]
+    },
+    {
+        "number_id": 37,
+        "text": [
+            "37) ¿Qué proporcionaría una disponibilidad casi ilimitada de recursos informáticos sin necesidad de su",
+            "organización para adquirir y suministrar nuevos equipos?",
+            "A. Nube pública",
+            "B. Contenedores",
+            "C. Nube privada",
+            "D. Microservicios",
+            "Respuesta correcta: A"
+        ]
+    },
+    {
+        "number_id": 38,
+        "text": [
+            "38) ¿Cuál de las siguientes define una nube privada?",
+            "A. Colección de recursos que no se comparten con el general.",
+            "público",
+            "8. Una colección de servicios virtuales bajo demanda que se ofrecen a",
+            "el publico",
+            "C. Colección de recursos que se comparten entre empresas privadas y",
+            "usuarios de la nube pública",
+            "D. Una colección de recursos que están aislados localmente para",
+            "uso por una organización",
+            "Respuesta correcta: A",
+            "Explicación",
+            "Una nube privada es una colección de recursos que no se comparten con el público en general.",
+            "Una nube pública es un servicio virtual bajo demanda que se ofrece al público.",
+            "Una colección híbrida de recursos que se comparten entre lo público y lo privado.",
+            "Un centro de datos en el sitio es una colección de recursos locales que utiliza una organización."
+        ]
+    },
+    {
+        "number_id": 39,
+        "text": [
+            "39) Eres administrador de programas para un equipo de desarrolladores que están creando una aplicación basada en eventos para permitir",
+            "los usuarios puedan seguir las actividades de los demás en la aplicación. Cada vez que un usuario se añade como seguidor de otro usuario, se",
+            "La escritura se produce en la base de datos en tiempo real.",
+            "Los desarrolladores desarrollarán un código liviano que pueda responder a las escrituras de la base de datos y generar un",
+            "Notificación para informar a los usuarios correspondientes que han ganado nuevos seguidores. El código debe integrarse con",
+            "otros servicios en la nube, como Pub/Sub, Firebase y API en la nube, para agilizar el proceso de orquestación. El",
+            "La aplicación requiere una plataforma que administre automáticamente la infraestructura subyacente y escale a cero cuando",
+            "no hay actividad.",
+            "¿Qué recurso informático principal deberían seleccionar sus desarrolladores, teniendo en cuenta estos requisitos?",
+            "Respuesta correcta: 8",
+            "A. Motor Google Kubernetes",
+            "B. Funciones de la nube",
+            "C. Entorno flexible de App Engine",
+            "D. Motor de cálculo",
+            "Cloud Funchions brinda a los desarrolladores acceso a eventos de Firebase y Google Cloud, junto con potencia informática escalable para",
+            "código divertido en respuesta a esos eventos. Si bien se espera que las aplicaciones de Firebase utilicen Cloud Functions de maneras únicas para",
+            "\"cumplen sus requisitos únicos, los casos de uso típicos pueden caer en estas áreas:",
+            "erly wes mang este",
+            "Revise los casos de uso y ejemplos para cada categoría que le interese y luego continúe con nuestro tutorial o",
+            "a guías prácticas específicas para at.\"-eeungtirs = ants, we eivuies ¢.9°5, y más. Consulte eventType -\\¥.-otore para obtener más información.",
+            "ebimpletrliisy 5° compatible: tipos de eventos."
+        ]
+    },
+    {
+        "number_id": 40,
+        "text": [
+            "40) Para optimizar el gasto en Google Cloud de la empresa, el equipo del comité de gestión quiere un vistazo",
+            "descripción general en cascada de sus costos y ahorros mensuales. ¿Cuál de los siguientes debería utilizar para proporcionar este",
+            "información al equipo directivo?",
+            "Informes de desglose de costos",
+            "Notificaciones de presupuesto",
+            "Informes de tabla de costos",
+            "Informes de tablas de precios",
+            "cuatro",
+            "Respuesta correcta: A",
+            "Explicación",
+            "El informe Desglose de costos ayuda a obtener una descripción general en cascada de los costos y ahorros mensuales.",
+            "Las notificaciones de presupuesto facilitan un estado en tiempo real del presupuesto de facturación de la nube y no son un método para obtener una descripción general.",
+            "de costos mensuales.",
+            "Los informes de la tabla de costos ayudan a acceder y analizar los detalles de las facturas y los extractos, pero no son un método óptimo para proporcionar",
+            "una visión general de los costos.",
+            "El informe de la tabla de precios ayuda a acceder a los precios de SKU de los servicios en la nube de Google y no es un método eficaz para proporcionar",
+            "una imagen de alto nivel de los costos.",
+            "https://cloud.qoogle.com/billing/docs/how-to/cost-breakdown"
+        ]
+    },
+    {
+        "number_id": 41,
+        "text": [
+            "41) Su organización está desarrollando una aplicación que capturará una gran cantidad de datos de millones de",
+            "Diferentes dispositivos sensores repartidos por todo el mundo. Su organización necesita una base de datos adecuada para",
+            "Almacenamiento de datos de alta velocidad en todo el mundo de una gran cantidad de datos no estructurados.",
+            "¿Qué producto de Google Cloud debería elegir su organización?",
+            "A. Tienda de fuego",
+            "B. Fusión de datos en la nube",
+            "C. SQL en la nube",
+            "D. Gran mesa en la nube",
+            "Respuesta correcta: D."
+        ]
+    },
+    {
+        "number_id": 42,
+        "text": [
+            "42) Su cliente es una empresa global de embalaje e impresión. Quieren migrar a un Google Cloud totalmente gestionado",
+            "Solución de almacenamiento con las siguientes capacidades:",
+            "+ Gestión de contenidos web",
+            "+ Compartir archivos",
+            "+ Procesamiento y renderizado de medios",
+            "+ Análisis de datos.",
+            "¿Qué solución debería utilizar la empresa?",
+            "Almacenamiento de archivos",
+            "almacén de archivos",
+            "Disco persistente",
+            "SSD locales",
+            "gome",
+            "Respuesta correcta: B",
+            "Explicación",
+            "Filestore permite la migración de aplicaciones a la nube sin necesidad de reescribir o rediseñar, acelerando así",
+            "y simplificando su migración. Filestore es un servicio totalmente administrado adecuado para la gestión de contenido web, archivos",
+            "compartir, renderizar y procesar medios, y realizar análisis de datos.",
+            "visitaps://cloud.google.com/products/storage"
+        ]
+    },
+    {
+        "number_id": 43,
+        "text": [
+            "43) Su organización necesita crear canales de transmisión de datos. No quieres gestionar al individuo.",
+            "servidores que realizan el procesamiento de datos en las tuberías. En lugar de ello, desea un servicio administrado que",
+            "escala automáticamente con la cantidad de datos a procesar.",
+            "¿Qué producto o función de Google Cloud debería elegir su organización?",
+            "A. Pub/Sub",
+            "B. Flujo de datos",
+            "C. Catálogo de datos",
+            "D. Preparación de datos por Trifacta",
+            "Respuesta correcta: B"
+        ]
+    },
+    {
+        "number_id": 44,
+        "text": [
+            "44) ¿Cuál de las siguientes situaciones ocurre cuando una organización adopta la tecnología de la nube para crear y definir nuevos",
+            "¿Formas de comunicación y colaboración para sus clientes, empleados y partes interesadas?",
+            "Una menor necesidad de seguridad",
+            "El efecto plataforma en llamas",
+            "Virtualización de todas las operaciones comerciales.",
+            "Transformación organizacional",
+            "agrio",
+            "Respuesta correcta: D.",
+            "Explicación",
+            "El principal resultado de la adopción de la tecnología en la nube es que transforma la forma en que operan las organizaciones. Este operativo",
+            "La transformación incluye cambios en la forma en que interactúan los clientes, empleados y partes interesadas. Al adoptar la nube",
+            "tecnologías, las organizaciones pueden transformar la forma en que los empleados colaboran dentro de las organizaciones, así como la forma en que interactúan y",
+            "compartir conocimientos e información con clientes y partes interesadas. La adopción de la tecnología en la nube aumenta la velocidad y",
+            "agilidad con la que las organizaciones pueden compartir datos y análisis, categorizar información, hacer predicciones y compartir conocimientos.",
+            "La reducción de la necesidad de seguridad no es una característica de la adopción de tecnología en la nube. La adopción de tecnologías en la nube aumenta la necesidad de",
+            "seguridad porque las organizaciones y los proveedores de plataformas en la nube enfrentan demandas aún mayores de seguridad de los datos en la nube."
+        ]
+    },
+    {
+        "number_id": 45,
+        "text": [
+            "45) Su organización está creando una aplicación que se ejecuta en Google Cloud. Actualmente, el software construye,",
+            "Las pruebas y las implementaciones regulares se realizan manualmente, pero desea reducir el trabajo para el equipo. Su",
+            "La organización desea utilizar las soluciones administradas de Google Cloud para automatizar la creación, las pruebas y la",
+            "proceso de implementación.",
+            "¿Qué producto o función de Goog!e Cloud debería utilizar su organización?",
+            "A. Programador de la nube",
+            "B, código de nube",
+            "C. Construcción de la nube",
+            "D. Gerente de implementación en la nube",
+            "Respuesta correcta: C",
+            "Implementa tu aplicación en App Engine usando el comando de implementación de aplicaciones de gcloud. este comando",
+            "crea automáticamente una imagen de contenedor utilizando la nube",
+            "Cree el servicio y luego implemente esa imagen en el entorno flexible de App Engine."
+        ]
+    },
+    {
+        "number_id": 46,
+        "text": [
+            "46) ¿Cuál de las siguientes opciones representa un importante costo-beneficio de adoptar soluciones nativas de la nube?",
+            "¿arquitectura?",
+            "Servicios gestionados con alto ahorro operativo",
+            "Servicios gestionados de código abierto o compatibles con código abierto",
+            "Integración continua/entrega continua",
+            "Monitoreo y recuperación automatizada",
+            "CENTRO",
+            "Respuesta correcta: A",
+            "Explicación",
+            "Un costo-beneficio clave de la arquitectura nativa de la nube es que incluye servicios administrados que resultan en una alta",
+            "Ahorros operativos porque el cliente ya no es responsable de ellos. Estos servicios gestionados podrían",
+            "incluyen laa§, en el que el proveedor de la nube gestiona elementos como hardware, almacenamiento y cifrado, PaaS, en",
+            "en el que el proveedor de servicios es responsable de las funciones de gestión de identidad y acceso, y SaaS, en el que",
+            "las operaciones se gestionan hasta cierto punto.",
+            "https://cloud.google.com/blog/products/application-development/5-principles-for-cloud-native-architecture-",
+            "qué-es-y-cómo-dominarlo"
+        ]
+    },
+    {
+        "number_id": 47,
+        "text": [
+            "47) ¿Qué producto de Google Cloud puede informar y mantener el cumplimiento?",
+            "¿Toda tu organización de Google Cloud puede cubrir múltiples proyectos?",
+            "A. Registro en la nube",
+            "B. Gestión de identidad y acceso",
+            "C. Armadura de nube de Google",
+            "D. Centro de comando de seguridad",
+            "Respuesta correcta: D.",
+            "Security Command Center es una plataforma centralizada de gestión de riesgos y seguridad para su Google Cloud",
+            "recursos. Es una herramienta única que ofrece una variedad de características de seguridad que incluyen:",
+            "1. Obtenga visibilidad y control centralizados]",
+            "2. Descubra configuraciones erróneas y vulnerabilidades",
+            "3. Informar y mantener el cumplimiento",
+            "4. Detecte amenazas dirigidas a sus activos de Google Cloud"
+        ]
+    },
+    {
+        "number_id": 48,
+        "text": [
+            "48) Una organización que utiliza Google Cloud también quiere organizar y agrupar recursos jerárquicamente",
+            "así como gestionar el control de acceso y los ajustes de configuración de los recursos del contenedor. ¿Qué producto de Google?",
+            "o servicio debería utilizar la organización?",
+            "Eventarc",
+            "Registro de artefactos",
+            "Registro de contenedores",
+            "Administrador de recursos AP!",
+            "PETIMETRE",
+            "Respuesta correcta: D.",
+            "Explicación",
+            "El servicio API de Resource Manager ayuda a los clientes de Google Cloud a administrar el contenedor mediante programación.",
+            "recursos mediante la creación, lectura y actualización de metadatos para contenedores de recursos de Google Cloud Platform."
+        ]
+    },
+    {
+        "number_id": 49,
+        "text": [
+            "49) Su organización necesita establecer conectividad de red privada entre su red local",
+            "y sus cargas de trabajo ejecutándose en Google Cloud. Debe poder configurar la conexión tan pronto como",
+            "posible,",
+            "¿Qué producto o función de Google Cloud debería utilizar?",
+            "A. Interconexión en la nube",
+            "B. Emparejamiento directo",
+            "C. VPN en la nube",
+            "D0. CDN en la nube",
+            "Respuesta correcta: C",
+            "La configuración de Cloud VPN se puede realizar instantáneamente y aunque viaja",
+            "Internet, es de naturaleza privada. Necesidades de interconexión en la nube",
+            "conexión físicamente dedicada."
+        ]
+    },
+    {
+        "number_id": 50,
+        "text": [
+            "50) Una empresa de tarjetas de crédito ha trasladado sus aplicaciones a Google Cloud. Los datos de sus clientes se almacenan en",
+            "Cloud Storage, Datastore y BigQuery y lo utilizan aplicaciones y empleados de toda la empresa. Cual",
+            "¿Debería utilizar la solución Google Cloud para la detección y clasificación de los datos confidenciales almacenados?",
+            "Armadura de nube",
+            "Prevención de pérdida de datos en la nube",
+            "Gerente de Riesgos",
+            "Centro de comando de seguridad",
+            "POUP,r",
+            "Respuesta correcta: B",
+            "Explicación",
+            "El servicio Cloud Data Loss Prevention permite descubrir, detectar y clasificar datos confidenciales almacenados.",
+            "datos. Con Cloud Data Loss Prevention, puede crear paneles e informes de auditoría y automatizar el etiquetado.",
+            "mediación o política basada en hallazgos. Conecte los resultados de DLP al Security Command Center, al catálogo de datos o",
+            "exporte a su propio SIEM o herramienta de gobernanza para un análisis más detallado.",
+            "https://cloud.google.com/dip"
+        ]
+    },
+    {
+        "number_id": 51,
+        "text": [
+            "51} Su organización está desarrollando una aplicación móvil y quiere seleccionar una completamente",
+            "presentó una plataforma informática basada en la nube.",
+            "¿Qué producto o función de Google Cloud debería utilizar su organización?",
+            "A. Motor Google Kubernetes",
+            "B. Base de fuego",
+            "C. Funciones de la nube",
+            "D. Motor de aplicaciones",
+            "Respuesta correcta: B",
+            "Firebase es la plataforma de desarrollo móvil de Google"
+        ]
+    },
+    {
+        "number_id": 52,
+        "text": [
+            "52) Su organización está desarrollando un juego multijugador global y requiere una base de datos que pueda capturar consistentemente",
+            "estadísticas del jugador. El requisito más crítico de la base de datos es que pueda proporcionar información para las tablas de clasificación del juego.",
+            "y obtener clasificaciones consistentes en cualquier momento entre jugadores de todo el mundo. El juego es rápidamente.",
+            "desarrollando seguidores con un crecimiento casi ilimitado en el número de jugadores. ¿Qué producto de Google Cloud debería",
+            "¿La organización elige?",
+            "Tienda de fuego",
+            "Llave de nube",
+            "SQL en la nube",
+            "metal desnudo",
+            "irme",
+            "Respuesta correcta: B",
+            "Explicación",
+            "Cloud Spanner es una base de datos relacional totalmente administrada con escalabilidad horizontal ilimitada, consistencia sólida y hasta",
+            "99,999% de disponibilidad. Debido a que es a la vez global e ilimitada en escala, es la opción más apropiada en este escenario. Es",
+            "alta disponibilidad sin tiempo de inactividad programado ni cambios de esquema en línea. Permite a los desarrolladores centrarse en innovar.",
+            "funciones de juego porque elimina las tareas manuales con capacidades como la fragmentación automática que son una característica de la nube",
+            "SQL. Spanner proporciona una base de datos globalmente consistente que puede mantener un inventario o un historial de partidos, como el jugador.",
+            "información proporcionada en tablas de clasificación de juegos, para poblaciones masivas de jugadores en cualquier parte del mundo.",
+            "https://cloud.google.com/products"
+        ]
+    },
+    {
+        "number_id": 53,
+        "text": [
+            "53) Su empresa ha estado utilizando una instalación compartida para el almacenamiento de datos y migrará a Google",
+            "Nube. Una de las aplicaciones internas utiliza imágenes personalizadas de Linux que deben migrarse.",
+            "¿Qué producto de Google Cloud debería utilizar para mantener las imágenes personalizadas?",
+            "A. Entorno flexible de App Engine",
+            "B. Motor de cálculo",
+            "C. Entorno estándar de App Engine",
+            "D. Motor Google Kubernetes",
+            "Respuesta correcta: 8",
+            "Puede utilizar uno de los siguientes tipos de imágenes: Pública y Personalizada",
+            "imágenes."
+        ]
+    },
+    {
+        "number_id": 54,
+        "text": [
+            "54) Un gigante de los medios de noticias con más de 200 publicaciones planea construir una plataforma escalable, segura y sin servidor.",
+            "Base de datos de documentos con un potente motor de consultas que se puede agregar con aplicaciones móviles y web. Cual",
+            "¿Producto o servicio de Google Cloud debería utilizar la organización?",
+            "A. Almacén de memoria",
+            "B. Nube BigTable",
+            "C. SQL en la nube",
+            "D. Firestore",
+            "Respuesta correcta: D.",
+            "Explicación",
+            "Firestore es una base de datos de documentos NoSQL escalable, segura y sin servidor con un potente motor de consultas que se puede agregar a",
+            "aplicaciones móviles y web.",
+            "Memorystore es un almacén de datos en memoria que se utiliza mejor para crear cachés de aplicaciones.",
+            "Cloud Bigtable es el producto totalmente administrado de Google y es un servicio de base de datos NoSQL Big Data. Es un software NoSQL nativo de la nube",
+            "Almacén de columnas para cargas de trabajo a gran escala y de baja latencia, incluidos motores de personalización, Adtech y recomendaciones. no es el",
+            "La base de datos más ideal para un motor de búsqueda que se puede agregar con aplicaciones móviles y web.",
+            "Cloud SQL es un servicio de base de datos relacional y no es adecuado para este caso de uso. Se utiliza más comúnmente en elevación y cambio de marchas.",
+            "bases de datos SQL locales a la nube, análisis de datos SQL a gran escala, soporte de datos del sistema de gestión de contenido (CMS)",
+            "almacenamiento y escalabilidad, y gestión de bases de datos utilizando Infraestructura como Código (laC)"
+        ]
+    },
+    {
+        "number_id": 55,
+        "text": [
+            "55) Su organización quiere migrar sus soluciones de gestión de datos a Google Cloud porque necesita",
+            "escalar dinámicamente hacia arriba o hacia abajo y ejecutar transacciones",
+            "Consultas SQL contra datos históricos a escala. ¿Qué producto o servicio de Google Cloud debería",
+            "uso de la organización?",
+            "A. Gran consulta",
+            "B. Gran mesa en la nube",
+            "C. Pub/Sub",
+            "D. Llave de nube",
+            "Respuesta correcta: D.",
+            "Cloud Spanner: Clo.. Sparner ig a tully r",
+            "sombrero",
+            "idea en",
+            "serie el",
+            "Acordado 10 4",
+            "con alta disponibilidad y st",
+            "larga coherencia a escala glozal"
+        ]
+    },
+    {
+        "number_id": 56,
+        "text": [
+            "56) ¿Cuáles de las siguientes son siempre responsabilidad de los clientes que utilizan la nube pública? (Elija 2",
+            "respuestas)",
+            "Protección del cliente web",
+            "Protección de datos",
+            "Controles de red",
+            "Gestión de parches",
+            "POUP,r",
+            "Respuesta correcta: AB",
+            "Explicación",
+            "La seguridad del cliente que utilizan los clientes (en dispositivos móviles, PC, etc.) para acceder al contenido web es",
+            "responsabilidad del cliente.",
+            "La gestión, clasificación y cumplimiento de las obligaciones son responsabilidad del cliente.",
+            "Configurar, administrar y asegurar los controles de red son responsabilidades compartidas en los modelos laaS y PaaS; sin embargo, el",
+            "El proveedor de la nube es responsable principalmente de los controles de red en el modelo SaaS.",
+            "La gestión de parches es una responsabilidad compartida en laaS y PaaS. El proveedor de la nube gestiona parches en el modelo SaaS.",
+            "https://services.google.com/fh/files/misc/gcp_pci_srm__apr_2019.pdf"
+        ]
+    },
+    {
+        "number_id": 57,
+        "text": [
+            "57} Su organización necesita categorizar objetos en un gran grupo de imágenes estáticas usando la máquina",
+            "aprendiendo. ¿Qué producto o servicio de Google Cloud debería utilizar su organización?",
+            "A. BigQuery ML",
+            "B. Inteligencia de vídeo de AutoML",
+            "C. API de visión de la nube",
+            "D. Tablas de AutoML",
+            "Respuesta correcta: C",
+            "¡Visión AP! Puede asignar etiquetas a imágenes y clasificarlas rápidamente en millones de",
+            "categorías predefinidas. Detectar objetos y rostros, leer texto impreso y escrito a mano, y",
+            "Cree metadatos valiosos en su catálogo de imágenes."
+        ]
+    },
+    {
+        "number_id": 58,
+        "text": [
+            "58) Un equipo de DevOps es responsable de mantener y analizar los registros del sistema y de las aplicaciones para un",
+            "aplicación que se ejecuta en varias instancias en Google Cloud Platform. ¿Qué pasos debe tomar el equipo?",
+            "¿Para garantizar la integridad de los registros generados en estas instancias? (Elija 2 respuestas)",
+            "Implemente control de versiones de registros en depósitos de registros en Cloud Storage.",
+            "Copie los registros a otro proyecto con un propietario diferente.",
+            "Establezca el nivel de registro para recopilar únicamente la salida del registro para casos críticos.",
+            "mensajes.",
+            "D. Exportar todos los archivos de registro a BigQuery.",
+            "ORF",
+            "Respuesta correcta: AB",
+            "Explicación",
+            "Aquí hay dos cosas que puede hacer para proteger la integridad de sus archivos de registro:",
+            "«Implemente control de versiones de registros en depósitos de registros en Cloud Storage para evitar la pérdida o sobrescritura de datos si una persona no autorizada",
+            "obtiene acceso. El servicio Cloud Storage cifra automáticamente todos los datos antes de escribirlos en los depósitos de registros. Aún así, con",
+            "control de versiones, puede aumentar la seguridad forzando que se guarde una nueva versión cada vez que se cambia un objeto en un depósito de registro.",
+            "Copie los registros a otro proyecto con un propietario diferente para requerir que dos personas sean dueñas de los registros."
+        ]
+    },
+    {
+        "number_id": 59,
+        "text": [
+            "59} ¿Qué producto de Google Cloud está diseñado para reducir los riesgos de manipulación?",
+            "¿Información de identificación personal (PII)?",
+            "A. Almacenamiento en la nube",
+            "B. Armadura en la nube de Google",
+            "C. Prevención de pérdida de datos en la nube",
+            "D. Gerente secreto",
+            "Respuesta correcta: C",
+            "Prevención de pérdida de datos en la nube: servicio totalmente administrado diseñado para",
+            "ayudarle a descubrir, clasificar y proteger sus datos más confidenciales."
+        ]
+    },
+    {
+        "number_id": 60,
+        "text": [
+            "60) Su cliente tiene múltiples proyectos en curso y para eliminar conflictos le ha pedido que idee una manera de",
+            "Segregar los recursos de nivel de servicio, como los recursos informáticos, de almacenamiento y de red que utiliza.",
+            "diversos proyectos. ¿Cuál de los siguientes debería utilizar?",
+            "Carpetas",
+            "Proyectos",
+            "Etiquetas",
+            "Etiquetas",
+            "SorF",
+            "Respuesta correcta: B",
+            "Explicación",
+            "Los proyectos constituyen recursos de nivel de servicio, como recursos de computación, almacenamiento y redes.",
+            "Las carpetas se utilizan para proyectos en lugar de recursos de nivel de servicio.",
+            "Las etiquetas se utilizan para anotar los recursos que constituyen proyectos y son la mejor opción para el seguimiento de costos a nivel granular.",
+            "Una etiqueta es una cadena de caracteres agregada a un campo de etiquetas de recursos. Las etiquetas no se pueden crear por separado y no están separadas",
+            "recursos."
+        ]
+    },
+    {
+        "number_id": 61,
+        "text": [
+            "61) Tu organización está migrando a Google Cloud. Como parte de ese esfuerzo, necesita mover terabytes de",
+            "datos de servidores de archivos locales a Cloud Storage. Su organización quiere que el proceso de migración sea",
+            "automatizado y gestionado por Google. Su organización tiene una interconexión dedicada existente",
+            "conexión que desea utilizar. ¿Qué producto o función de Google Cloud debería utilizar su organización?",
+            "A. Servicio de transferencia de almacenamiento",
+            "B. Migrar a Anthos",
+            "C. Servicio de transferencia de datos de BigQuery",
+            "D. Dispositivo de transferencia",
+            "Respuesta correcta: A"
+        ]
+    },
+    {
+        "number_id": 62,
+        "text": [
+            "62) Su organización busca conectividad de red con Google Cloud entre sus instalaciones locales",
+            "Red y Google Cloud. La conectividad de red debe permitir el tráfico cifrado a Google Cloud.",
+            "y tener un mayor rendimiento. ¿Cuál de las siguientes soluciones de red debería elegir?",
+            "VPN en la nube",
+            "Interconexión en la nube",
+            "Enrutador en la nube",
+            "Director de tráfico",
+            "SOPA,",
+            "Respuesta correcta: B",
+            "Explicación",
+            "Cloud Interconnect extiende su red local a la red de Google a través de una baja latencia y alta disponibilidad",
+            "conexión. Puede utilizar la interconexión dedicada para conectarse directamente a Google o utilizar la interconexión de socios para",
+            "conectarse a Google a través de un proveedor de servicios compatible."
+        ]
+    },
+    {
+        "number_id": 63,
+        "text": [
+            "63) Su organización necesita analizar datos para recopilar información sobre sus operaciones diarias. tu solo",
+            "quiere pagar por los datos que almacena y las consultas que realiza. ¿Qué producto de Google Cloud debería",
+            "¿Qué organización elige para su almacén de análisis de datos?",
+            "A. SQL en la nube",
+            "B. Proceso de datos",
+            "C. Llave de nube",
+            "D.Gran consulta",
+            "Respuesta correcta: D.",
+            "BigQuery es un almacén de datos empresarial para grandes cantidades de",
+            "datos estructurados relacionales"
+        ]
+    },
+    {
+        "number_id": 64,
+        "text": [
+            "64) Estás gestionando el desarrollo de una nueva aplicación. Necesita una solución que cumpla con lo siguiente",
+            "Requisitos: los desarrolladores deben centrarse en escribir código. Las implementaciones deben ser sin configuración. El",
+            "los desarrolladores no deben gestionar la infraestructura. El servicio debe ser escalable y adaptarse a los aumentos repentinos de",
+            "tráfico sin aprovisionamiento, parches o monitoreo. Las aplicaciones deben estar a salvo de amenazas a la seguridad. Cual",
+            "¿Debería utilizar la solución Google Cloud?",
+            "Motor de aplicaciones",
+            "Funciones de la nube",
+            "VM confidenciales",
+            "Eventarc",
+            "Agrio",
+            "Respuesta correcta: A",
+            "Explicación",
+            "App Engine es una plataforma sin servidor totalmente administrada que ayuda a crear aplicaciones seguras y altamente escalables. Aplicación",
+            "Engine es adecuado para aplicaciones que tienen múltiples funcionalidades y se comportan de forma interrelacionada (o incluso no relacionada).",
+            "maneras.",
+            "https://cloud.google.com/appengine"
+        ]
+    },
+    {
+        "number_id": 65,
+        "text": [
+            "65) Su organización quiere ejecutar una aplicación basada en contenedores en Google Cloud. Esta aplicación es",
+            "Se espera que aumente en complejidad. Tiene una necesidad de seguridad para un control detallado del tráfico entre",
+            "los contenedores. También tiene la necesidad operativa de ejercer un control detallado sobre la información de la aplicación.",
+            "políticas de escalamiento.",
+            "¿Qué producto o función de Google Cloud debería utilizar su organización?",
+            "A. Clúster de Google Kubernetes Engine",
+            "B. Motor de aplicaciones",
+            "C. Ejecución en la nube",
+            "D. Máquinas virtuales de Compute Engine",
+            "Respuesta correcta: A"
+        ]
+    },
+    {
+        "number_id": 66,
+        "text": [
+            "66) Un equipo de ingenieros de la nube está trabajando en el desarrollo e implementación de una aplicación en contenedores que",
+            "procesar y servir una gran cantidad de datos de imágenes en el almacenamiento en la nube. Los datos deben ser invocables mediante solicitudes.",
+            "o eventos. ¿Qué servicio informático de Google Cloud debería utilizar el equipo para que no haya infraestructura?",
+            "¿Problemas de gestión?",
+            "Construcción de nube",
+            "Código de nube",
+            "Ejecutar en la nube",
+            "Implementación en la nube",
+            "SORPPR",
+            "Respuesta correcta: C",
+            "Explicación",
+            "Cloud Run es una plataforma informática sin servidor totalmente administrada que permite el desarrollo y la implementación de una",
+            "Aplicación en contenedores invocable a través de solicitudes o eventos. Usar Cloud Run evitaría el problema de",
+            "gestión de infraestructura porque es un servicio totalmente gestionado."
+        ]
+    },
+    {
+        "number_id": 67,
+        "text": [
+            "67) ¿Qué producto o función de Google Cloud hace recomendaciones específicas?",
+            "¿Basado en riesgos de seguridad y violaciones de cumplimiento?",
+            "A. Cortafuegos de Google Cloud",
+            "B. Centro de comando de seguridad",
+            "C. Administrador de implementación en la nube",
+            "0. Armadura de la nube de Google",
+            "Respuesta correcta: 8"
+        ]
+    },
+    {
+        "number_id": 68,
+        "text": [
+            "68) ¿Cuál de los siguientes escenarios no es adecuado para una red de entrega de contenido?",
+            "(CDN)? (Elija 2 respuestas)",
+            "A.",
+            "B.",
+            "Respuesta correcta: CA",
+            "Explicación",
+            "Un sitio web para una pequeña empresa constructora ubicada en el",
+            "Estados Unidos",
+            "Una empresa minorista global con clientes en Europa y el",
+            "Américas",
+            "Un sitio web de historia familiar con sólo unos pocos visitantes al año.",
+            "Un sitio web de medios global que ofrece noticias en múltiples",
+            "idiomas",
+            "Un sitio web con usuarios ubicados en un área geográfica específica no se beneficiaría de una red de entrega de contenido. Las CDN son",
+            "especialmente útil para sitios web grandes y complejos con usuarios repartidos por todo el mundo, y sitios web o aplicaciones móviles con una gran cantidad de",
+            "contenido dinámico. Lo más probable es que una empresa pequeña no necesite una CDN porque sus clientes están geográficamente más cerca del",
+            "servidor."
+        ]
+    },
+    {
+        "number_id": 69,
+        "text": [
+            "69} ¿Qué producto de Google Cloud proporciona una plataforma consistente para aplicaciones de múltiples nubes?",
+            "implementaciones y extiende otros servicios de Google Cloud al entorno de su organización?",
+            "A. Motor Google Kubernetes",
+            "B. Nube pública virtual",
+            "C. Motor de cálculo",
+            "D. Anthos",
+            "Respuesta correcta: D.",
+            "Anthos es la plataforma líder de contenedores centrada en la nube para ejecutar",
+            "aplicaciones modernas en cualquier lugar de forma consistente y a escala."
+        ]
+    }
+]
