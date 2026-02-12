@@ -617,10 +617,10 @@
     "number_id": 52,
     "question": "52) Su organización está desarrollando un juego multijugador global y requiere una base de datos que pueda capturar consistentemente estadísticas del jugador. El requisito más crítico de la base de datos es que pueda proporcionar información para las tablas de clasificación del juego. y obtener clasificaciones consistentes en cualquier momento entre jugadores de todo el mundo. El juego es rápidamente. desarrollando seguidores con un crecimiento casi ilimitado en el número de jugadores. ¿Qué producto de Google Cloud debería ¿La organización elige?",
     "alternatives": [
-      "Tienda de fuego",
-      "Llave de nube",
-      "SQL en la nube",
-      "metal desnudo"
+      "A. Firestore",
+      "B. Cloud Spanner",
+      "C. Cloud SQL",
+      "D. Bare Metal"
     ],
     "correct_answer": "B",
     "explanation": "Cloud Spanner es una base de datos relacional totalmente administrada con escalabilidad horizontal ilimitada, consistencia sólida y hasta 99,999% de disponibilidad. Debido a que es a la vez global e ilimitada en escala, es la opción más apropiada en este escenario. Es alta disponibilidad sin tiempo de inactividad programado ni cambios de esquema en línea. Permite a los desarrolladores centrarse en innovar. funciones de juego porque elimina las tareas manuales con capacidades como la fragmentación automática que son una característica de la nube SQL. Spanner proporciona una base de datos globalmente consistente que puede mantener un inventario o un historial de partidos, como el jugador. información proporcionada en tablas de clasificación de juegos, para poblaciones masivas de jugadores en cualquier parte del mundo. https://cloud.google.com/products"
@@ -630,20 +630,20 @@
     "question": "53) Su empresa ha estado utilizando una instalación compartida para el almacenamiento de datos y migrará a Google Nube. Una de las aplicaciones internas utiliza imágenes personalizadas de Linux que deben migrarse. ¿Qué producto de Google Cloud debería utilizar para mantener las imágenes personalizadas?",
     "alternatives": [
       "A. Entorno flexible de App Engine",
-      "B. Motor de cálculo",
+      "B. Compute Engine",
       "C. Entorno estándar de App Engine",
-      "D. Motor Google Kubernetes"
+      "D. Google Kubernetess Engine"
     ],
-    "correct_answer": "",
+    "correct_answer": "B",
     "explanation": "Puede utilizar uno de los siguientes tipos de imágenes: Pública y Personalizada imágenes."
   },
   {
     "number_id": 54,
     "question": "54) Un gigante de los medios de noticias con más de 200 publicaciones planea construir una plataforma escalable, segura y sin servidor. Base de datos de documentos con un potente motor de consultas que se puede agregar con aplicaciones móviles y web. Cual ¿Producto o servicio de Google Cloud debería utilizar la organización?",
     "alternatives": [
-      "A. Almacén de memoria",
-      "B. Nube BigTable",
-      "C. SQL en la nube",
+      "A. Memorystore",
+      "B. Cloud BigTable",
+      "C. Cloud SQL",
       "D. Firestore"
     ],
     "correct_answer": "D",
@@ -653,57 +653,58 @@
     "number_id": 55,
     "question": "55) Su organización quiere migrar sus soluciones de gestión de datos a Google Cloud porque necesita escalar dinámicamente hacia arriba o hacia abajo y ejecutar transacciones Consultas SQL contra datos históricos a escala. ¿Qué producto o servicio de Google Cloud debería uso de la organización?",
     "alternatives": [
-      "A. Gran consulta",
-      "B. Gran mesa en la nube",
+      "A. BigQuery",
+      "B. Cloud BigTable",
       "C. Pub/Sub",
-      "D. Llave de nube"
+      "D. Cloud Spanner"
     ],
     "correct_answer": "D",
-    "explanation": "Cloud Spanner: Clo.. Sparner ig a tully r sombrero idea en serie el Acordado 10 4 con alta disponibilidad y st larga coherencia a escala glozal"
+    "explanation": "Cloud Spanner es un servicio de base de datos relacional de misión crítica y totalmente administrado. Está diseñado para proporcionar una base de datos escalable de procesamiento de transacciones en línea (OLTP) con alta disponibilidad y sólida consistencia a escala global."
   },
   {
     "number_id": 56,
-    "question": "56) ¿Cuáles de las siguientes son siempre responsabilidad de los clientes que utilizan la nube pública? (Elija 2",
+    "question": "56) ¿Cuáles de las siguientes son siempre responsabilidad de los clientes que utilizan la nube pública? (Elija 2 respuestas)",
     "alternatives": [
-      "respuestas)",
       "Protección del cliente web",
       "Protección de datos",
       "Controles de red",
-      "Gestión de parches",
-      "POUP,r"
+      "Gestión de parches"
     ],
     "correct_answer": "AB",
     "explanation": "La seguridad del cliente que utilizan los clientes (en dispositivos móviles, PC, etc.) para acceder al contenido web es responsabilidad del cliente. La gestión, clasificación y cumplimiento de las obligaciones son responsabilidad del cliente. Configurar, administrar y asegurar los controles de red son responsabilidades compartidas en los modelos laaS y PaaS; sin embargo, el El proveedor de la nube es responsable principalmente de los controles de red en el modelo SaaS. La gestión de parches es una responsabilidad compartida en laaS y PaaS. El proveedor de la nube gestiona parches en el modelo SaaS. https://services.google.com/fh/files/misc/gcp_pci_srm__apr_2019.pdf"
   },
   {
     "number_id": 57,
-    "question": "57} Su organización necesita categorizar objetos en un gran grupo de imágenes estáticas usando la máquina aprendiendo. ¿Qué producto o servicio de Google Cloud debería utilizar su organización?",
+    "question": "57) Su organización necesita categorizar objetos en un gran grupo de imágenes estáticas usando la máquina aprendiendo. ¿Qué producto o servicio de Google Cloud debería utilizar su organización?",
     "alternatives": [
       "A. BigQuery ML",
-      "B. Inteligencia de vídeo de AutoML",
-      "C. API de visión de la nube",
-      "D. Tablas de AutoML"
+      "B. AutoML Video Intelligence",
+      "C. Cloud Vision API",
+      "D. AutoML Tables"
     ],
     "correct_answer": "C",
     "explanation": "¡Visión AP! Puede asignar etiquetas a imágenes y clasificarlas rápidamente en millones de categorías predefinidas. Detectar objetos y rostros, leer texto impreso y escrito a mano, y Cree metadatos valiosos en su catálogo de imágenes."
   },
   {
     "number_id": 58,
-    "question": "58) Un equipo de DevOps es responsable de mantener y analizar los registros del sistema y de las aplicaciones para un aplicación que se ejecuta en varias instancias en Google Cloud Platform. ¿Qué pasos debe tomar el equipo? ¿Para garantizar la integridad de los registros generados en estas instancias? (Elija 2 respuestas) Implemente control de versiones de registros en depósitos de registros en Cloud Storage. Copie los registros a otro proyecto con un propietario diferente. Establezca el nivel de registro para recopilar únicamente la salida del registro para casos críticos. mensajes.",
+    "question": "58) Un equipo de DevOps es responsable de mantener y analizar los registros del sistema y de las aplicaciones para un aplicación que se ejecuta en varias instancias en Google Cloud Platform. ¿Qué pasos debe tomar el equipo? ¿Para garantizar la integridad de los registros generados en estas instancias? (Elija 2 respuestas).",
     "alternatives": [
-      "D. Exportar todos los archivos de registro a BigQuery. ORF"
+      "A. Implementar control de versiones de registros en depósitos de registros en Cloud Storage.",
+      "B. Copiar los registros a otro proyecto con un propietario diferente.",
+      "C. Establezca el nivel de registro para recopilar únicamente la salida del registro para casos críticos. mensajes.",
+      "D. Exportar todos los archivos de registro a BigQuery"
     ],
     "correct_answer": "AB",
     "explanation": "Aquí hay dos cosas que puede hacer para proteger la integridad de sus archivos de registro: «Implemente control de versiones de registros en depósitos de registros en Cloud Storage para evitar la pérdida o sobrescritura de datos si una persona no autorizada obtiene acceso. El servicio Cloud Storage cifra automáticamente todos los datos antes de escribirlos en los depósitos de registros. Aún así, con control de versiones, puede aumentar la seguridad forzando que se guarde una nueva versión cada vez que se cambia un objeto en un depósito de registro. Copie los registros a otro proyecto con un propietario diferente para requerir que dos personas sean dueñas de los registros."
   },
   {
     "number_id": 59,
-    "question": "59} ¿Qué producto de Google Cloud está diseñado para reducir los riesgos de manipulación? ¿Información de identificación personal (PII)?",
+    "question": "59) ¿Qué producto de Google Cloud está diseñado para reducir los riesgos del manejo de información de identificación personal (PII)?",
     "alternatives": [
-      "A. Almacenamiento en la nube",
-      "B. Armadura en la nube de Google",
-      "C. Prevención de pérdida de datos en la nube",
-      "D. Gerente secreto"
+      "A. Cloud Storage",
+      "B. Google Cloud Armor",
+      "C. Cloud Data Loss Prevention",
+      "D. Secret Manager"
     ],
     "correct_answer": "C",
     "explanation": "Prevención de pérdida de datos en la nube: servicio totalmente administrado diseñado para ayudarle a descubrir, clasificar y proteger sus datos más confidenciales."
@@ -712,10 +713,10 @@
     "number_id": 60,
     "question": "60) Su cliente tiene múltiples proyectos en curso y para eliminar conflictos le ha pedido que idee una manera de Segregar los recursos de nivel de servicio, como los recursos informáticos, de almacenamiento y de red que utiliza. diversos proyectos. ¿Cuál de los siguientes debería utilizar?",
     "alternatives": [
-      "Carpetas",
-      "Proyectos",
-      "Etiquetas",
-      "Etiquetas"
+      "A. Carpetas",
+      "B. Proyectos",
+      "C. Labels",
+      "D. Tags"
     ],
     "correct_answer": "B",
     "explanation": "Los proyectos constituyen recursos de nivel de servicio, como recursos de computación, almacenamiento y redes. Las carpetas se utilizan para proyectos en lugar de recursos de nivel de servicio. Las etiquetas se utilizan para anotar los recursos que constituyen proyectos y son la mejor opción para el seguimiento de costos a nivel granular. Una etiqueta es una cadena de caracteres agregada a un campo de etiquetas de recursos. Las etiquetas no se pueden crear por separado y no están separadas recursos."
@@ -724,10 +725,10 @@
     "number_id": 61,
     "question": "61) Tu organización está migrando a Google Cloud. Como parte de ese esfuerzo, necesita mover terabytes de datos de servidores de archivos locales a Cloud Storage. Su organización quiere que el proceso de migración sea automatizado y gestionado por Google. Su organización tiene una interconexión dedicada existente conexión que desea utilizar. ¿Qué producto o función de Google Cloud debería utilizar su organización?",
     "alternatives": [
-      "A. Servicio de transferencia de almacenamiento",
+      "A. Storage Transfer Service",
       "B. Migrar a Anthos",
       "C. Servicio de transferencia de datos de BigQuery",
-      "D. Dispositivo de transferencia"
+      "D. Transfer Appliance"
     ],
     "correct_answer": "A",
     "explanation": null
@@ -736,33 +737,34 @@
     "number_id": 62,
     "question": "62) Su organización busca conectividad de red con Google Cloud entre sus instalaciones locales Red y Google Cloud. La conectividad de red debe permitir el tráfico cifrado a Google Cloud. y tener un mayor rendimiento. ¿Cuál de las siguientes soluciones de red debería elegir?",
     "alternatives": [
-      "VPN en la nube",
-      "Interconexión en la nube",
-      "Enrutador en la nube",
-      "Director de tráfico"
+      "A. Cloud VPN",
+      "B. Cloud Interconnect",
+      "C. Cloud Router",
+      "D. Traffic Director"
     ],
     "correct_answer": "B",
     "explanation": "Cloud Interconnect extiende su red local a la red de Google a través de una baja latencia y alta disponibilidad conexión. Puede utilizar la interconexión dedicada para conectarse directamente a Google o utilizar la interconexión de socios para conectarse a Google a través de un proveedor de servicios compatible."
   },
   {
     "number_id": 63,
-    "question": "63) Su organización necesita analizar datos para recopilar información sobre sus operaciones diarias. tu solo quiere pagar por los datos que almacena y las consultas que realiza. ¿Qué producto de Google Cloud debería ¿Qué organización elige para su almacén de análisis de datos?",
+    "question": "63) Su organización necesita analizar datos para recopilar información sobre sus operaciones diarias, tu solo quieres pagar por los datos que almacena y las consultas que realiza. ¿Qué producto de Google Cloud debería ¿Qué organización elige para su almacén de análisis de datos?",
     "alternatives": [
-      "A. SQL en la nube",
-      "B. Proceso de datos",
-      "C. Llave de nube D.Gran consulta"
+      "A. Cloud SQL",
+      "B. DataProc",
+      "C. Cloud Spanner",
+      "D. BigQuery"
     ],
     "correct_answer": "D",
     "explanation": "BigQuery es un almacén de datos empresarial para grandes cantidades de datos estructurados relacionales"
   },
   {
     "number_id": 64,
-    "question": "64) Estás gestionando el desarrollo de una nueva aplicación. Necesita una solución que cumpla con lo siguiente Requisitos: los desarrolladores deben centrarse en escribir código. Las implementaciones deben ser sin configuración. El los desarrolladores no deben gestionar la infraestructura. El servicio debe ser escalable y adaptarse a los aumentos repentinos de tráfico sin aprovisionamiento, parches o monitoreo. Las aplicaciones deben estar a salvo de amenazas a la seguridad. Cual ¿Debería utilizar la solución Google Cloud?",
+    "question": "64) Estás gestionando el desarrollo de una nueva aplicación. Necesitas una solución que cumpla con los siguientes Requisitos: Los desarrolladores deben centrarse en escribir código. Las implementaciones deben ser sin configuración. Los desarrolladores no deben gestionar la infraestructura. El servicio debe ser escalable y adaptarse a los aumentos repentinos de tráfico sin aprovisionamiento, parches o monitoreo. Las aplicaciones deben estar a salvo de amenazas a la seguridad. Cual ¿Debería utilizar la solución Google Cloud?",
     "alternatives": [
-      "Motor de aplicaciones",
-      "Funciones de la nube",
-      "VM confidenciales",
-      "Eventarc"
+      "A. App Engine",
+      "B. Cloud Functions",
+      "C. Confidential VMs",
+      "D. Eventrac"
     ],
     "correct_answer": "A",
     "explanation": "App Engine es una plataforma sin servidor totalmente administrada que ayuda a crear aplicaciones seguras y altamente escalables. Aplicación Engine es adecuado para aplicaciones que tienen múltiples funcionalidades y se comportan de forma interrelacionada (o incluso no relacionada). maneras. https://cloud.google.com/appengine"
@@ -772,8 +774,8 @@
     "question": "65) Su organización quiere ejecutar una aplicación basada en contenedores en Google Cloud. Esta aplicación es Se espera que aumente en complejidad. Tiene una necesidad de seguridad para un control detallado del tráfico entre los contenedores. También tiene la necesidad operativa de ejercer un control detallado sobre la información de la aplicación. políticas de escalamiento. ¿Qué producto o función de Google Cloud debería utilizar su organización?",
     "alternatives": [
       "A. Clúster de Google Kubernetes Engine",
-      "B. Motor de aplicaciones",
-      "C. Ejecución en la nube",
+      "B. App Engine",
+      "C. Cloud Run",
       "D. Máquinas virtuales de Compute Engine"
     ],
     "correct_answer": "A",
@@ -783,10 +785,10 @@
     "number_id": 66,
     "question": "66) Un equipo de ingenieros de la nube está trabajando en el desarrollo e implementación de una aplicación en contenedores que procesar y servir una gran cantidad de datos de imágenes en el almacenamiento en la nube. Los datos deben ser invocables mediante solicitudes. o eventos. ¿Qué servicio informático de Google Cloud debería utilizar el equipo para que no haya infraestructura? ¿Problemas de gestión?",
     "alternatives": [
-      "Construcción de nube",
-      "Código de nube",
-      "Ejecutar en la nube",
-      "Implementación en la nube"
+      "A. Cloud Build",
+      "B. Cloud Code",
+      "C. Cloud Run",
+      "D. Cloud Deploy"
     ],
     "correct_answer": "C",
     "explanation": "Cloud Run es una plataforma informática sin servidor totalmente administrada que permite el desarrollo y la implementación de una Aplicación en contenedores invocable a través de solicitudes o eventos. Usar Cloud Run evitaría el problema de gestión de infraestructura porque es un servicio totalmente gestionado."
@@ -795,27 +797,33 @@
     "number_id": 67,
     "question": "67) ¿Qué producto o función de Google Cloud hace recomendaciones específicas? ¿Basado en riesgos de seguridad y violaciones de cumplimiento?",
     "alternatives": [
-      "A. Cortafuegos de Google Cloud",
-      "B. Centro de comando de seguridad",
-      "C. Administrador de implementación en la nube 0. Armadura de la nube de Google"
+      "A. Google Cloud firewalls",
+      "B. Security Command Center",
+      "C. Cloud Deployment Manager",
+      "D. Google Cloud Armor"
     ],
-    "correct_answer": "",
+    "correct_answer": "B",
     "explanation": null
   },
   {
     "number_id": 68,
     "question": "68) ¿Cuál de los siguientes escenarios no es adecuado para una red de entrega de contenido? (CDN)? (Elija 2 respuestas)",
-    "alternatives": [],
+    "alternatives": [
+      "A. Un sitio web para una pequeña empresa constructora ubicada en el Estados Unidos",
+      "B. Una empresa minorista global con clientes en Europa y el Américas",
+      "C. Un sitio web de historia familiar con sólo unos pocos visitantes al año.",
+      "D. Un sitio web de medios global que ofrece noticias en múltiples idiomas"
+    ],
     "correct_answer": "CA",
-    "explanation": "Un sitio web para una pequeña empresa constructora ubicada en el Estados Unidos Una empresa minorista global con clientes en Europa y el Américas Un sitio web de historia familiar con sólo unos pocos visitantes al año. Un sitio web de medios global que ofrece noticias en múltiples idiomas Un sitio web con usuarios ubicados en un área geográfica específica no se beneficiaría de una red de entrega de contenido. Las CDN son especialmente útil para sitios web grandes y complejos con usuarios repartidos por todo el mundo, y sitios web o aplicaciones móviles con una gran cantidad de contenido dinámico. Lo más probable es que una empresa pequeña no necesite una CDN porque sus clientes están geográficamente más cerca del servidor."
+    "explanation": "Un sitio web con usuarios ubicados en un área geográfica específica no se beneficiaría de una red de entrega de contenido. Las CDN son especialmente útil para sitios web grandes y complejos con usuarios repartidos por todo el mundo, y sitios web o aplicaciones móviles con una gran cantidad de contenido dinámico. Lo más probable es que una empresa pequeña no necesite una CDN porque sus clientes están geográficamente más cerca del servidor."
   },
   {
     "number_id": 69,
-    "question": "69} ¿Qué producto de Google Cloud proporciona una plataforma consistente para aplicaciones de múltiples nubes? implementaciones y extiende otros servicios de Google Cloud al entorno de su organización?",
+    "question": "69) ¿Qué producto de Google Cloud proporciona una plataforma consistente para aplicaciones de múltiples nubes? implementaciones y extiende otros servicios de Google Cloud al entorno de su organización?",
     "alternatives": [
-      "A. Motor Google Kubernetes",
-      "B. Nube pública virtual",
-      "C. Motor de cálculo",
+      "A. Google Kubernetes Engine",
+      "B. Virtual Public Cloud",
+      "C. Compute Engine",
       "D. Anthos"
     ],
     "correct_answer": "D",
