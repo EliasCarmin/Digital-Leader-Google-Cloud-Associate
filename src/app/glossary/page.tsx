@@ -37,18 +37,22 @@ export default function GlossaryPage() {
         <div className="container py-10">
             <h1 className="text-3xl font-bold mb-6">Glosario de Términos GCP</h1>
             <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
-                {terms.map((item, index) => (
-                    <Card key={index} className="h-full">
-                        <CardHeader className="pb-3">
-                            <CardTitle>{item.term}</CardTitle>
-                        </CardHeader>
-                        <CardContent>
-                            <CardDescription className="text-base text-foreground/80">
-                                {item.definition}
-                            </CardDescription>
-                        </CardContent>
-                    </Card>
-                ))}
+                {terms.map((item, index) => {
+                    const colors = ["border-t-google-blue", "border-t-google-red", "border-t-google-yellow", "border-t-google-green"];
+                    const colorClass = colors[index % colors.length];
+                    return (
+                        <Card key={index} className={`h-full border-t-4 ${colorClass} hover:shadow-md transition-shadow`}>
+                            <CardHeader className="pb-3">
+                                <CardTitle>{item.term}</CardTitle>
+                            </CardHeader>
+                            <CardContent>
+                                <CardDescription className="text-base text-foreground/80">
+                                    {item.definition}
+                                </CardDescription>
+                            </CardContent>
+                        </Card>
+                    );
+                })}
             </div>
         </div>
     )

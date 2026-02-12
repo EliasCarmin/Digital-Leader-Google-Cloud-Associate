@@ -14,34 +14,34 @@ export function Header() {
         <header className="sticky top-0 z-50 w-full border-b bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60">
             <div className="container mx-auto flex h-14 items-center px-4 md:px-6">
                 <div className="mr-4 hidden md:flex">
-                    <Link href="/" className="mr-6 flex items-center space-x-2">
-                        <LayoutDashboard className="h-6 w-6 text-primary" />
+                    <Link href="/" className="mr-6 flex items-center space-x-2 group">
+                        <LayoutDashboard className="h-6 w-6 text-google-blue group-hover:rotate-12 transition-transform" />
                         <span className="hidden font-bold sm:inline-block">
-                            GCP Digital Leader
+                            <span className="text-google-blue">GCP</span> Digital Leader
                         </span>
                     </Link>
                     <nav className="flex items-center space-x-6 text-sm font-medium">
                         <Link
                             href="/study"
-                            className="transition-colors hover:text-foreground/80 text-foreground/60"
+                            className="transition-colors hover:text-google-blue text-foreground/60"
                         >
                             Study Mode
                         </Link>
                         <Link
                             href="/exam"
-                            className="transition-colors hover:text-foreground/80 text-foreground/60"
+                            className="transition-colors hover:text-google-red text-foreground/60"
                         >
                             Exam Simulator
                         </Link>
                         <Link
                             href="/glossary"
-                            className="transition-colors hover:text-foreground/80 text-foreground/60"
+                            className="transition-colors hover:text-google-yellow-dark text-foreground/60"
                         >
                             Glossary
                         </Link>
                         <Link
                             href="/about"
-                            className="transition-colors hover:text-foreground/80 text-foreground/60"
+                            className="transition-colors hover:text-google-green text-foreground/60"
                         >
                             About
                         </Link>

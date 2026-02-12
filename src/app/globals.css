@@ -36,6 +36,13 @@
   --radius-md: calc(var(--radius) - 2px);
   --radius-sm: calc(var(--radius) - 4px);
 
+  --color-google-blue: #4285F4;
+  --color-google-red: #DB4437;
+  --color-google-yellow: #F4B400;
+  --color-google-yellow-dark: #C69000;
+  --color-google-green: #0F9D58;
+  --color-google-gray: #5f6368;
+
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 

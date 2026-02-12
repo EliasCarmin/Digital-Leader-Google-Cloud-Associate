@@ -61,50 +61,58 @@ export function QuestionCard({
         if (!showFeedback) return ""
 
         if (isCorrect(optionLetter)) {
-            return "bg-green-100 border-green-500 dark:bg-green-900/30 dark:border-green-500"
+            return "bg-google-green/10 border-google-green text-google-green font-bold shadow-sm shadow-google-green/10"
         }
         if (isSelected(optionLetter) && !isCorrect(optionLetter)) {
-            return "bg-red-100 border-red-500 dark:bg-red-900/30 dark:border-red-500"
+            return "bg-google-red/10 border-google-red text-google-red font-bold shadow-sm shadow-google-red/10"
         }
-        return ""
+        return "opacity-50"
     }
 
     return (
-        <Card className={cn("w-full max-w-3xl mx-auto", className)}>
-            <CardHeader>
-                <CardTitle className="text-xl font-medium leading-relaxed">
-                    <span className="mr-2 text-muted-foreground">#{question.number_id}</span>
+        <Card className={cn("w-full max-w-3xl mx-auto overflow-hidden border-2 shadow-lg", className)}>
+            <div className="h-1.5 w-full bg-gradient-to-r from-google-blue via-google-red to-google-yellow"></div>
+            <CardHeader className="pt-8 px-8">
+                <CardTitle className="text-2xl font-bold leading-tight">
+                    <span className="inline-flex items-center justify-center w-10 h-10 rounded-full bg-slate-100 text-google-blue mr-3 text-sm">
+                        {question.number_id}
+                    </span>
                     {question.question}
                 </CardTitle>
-                <CardDescription>
-                    {isMultiSelect ? "Selecciona múltiples opciones." : "Selecciona una opción."}
+                <CardDescription className="text-base pt-2 font-medium">
+                    {isMultiSelect ? (
+                        <span className="text-google-red">Selecciona múltiples opciones (Casillas)</span>
+                    ) : (
+                        <span className="text-google-blue">Selecciona una sola opción (Radio)</span>
+                    )}
                 </CardDescription>
             </CardHeader>
-            <CardContent className="space-y-4">
+            <CardContent className="space-y-6 px-8 py-6">
                 {isMultiSelect ? (
-                    <div className="grid gap-3">
+                    <div className="grid gap-4">
                         {question.alternatives.map((alt, index) => {
                             const letter = getLetter(index)
                             return (
                                 <div
                                     key={index}
                                     className={cn(
-                                        "flex items-start space-x-3 rounded-md border p-4 transition-colors hover:bg-accent hover:text-accent-foreground",
-                                        isSelected(letter) && "border-primary bg-accent/50",
+                                        "flex items-start space-x-4 rounded-xl border-2 p-5 transition-all duration-200 cursor-pointer",
+                                        isSelected(letter) ? "border-google-blue bg-google-blue/5" : "hover:border-slate-300 hover:bg-slate-50",
                                         getOptionStyle(letter)
                                     )}
+                                    onClick={() => !showFeedback && handleCheckboxChange(letter, !isSelected(letter))}
                                 >
                                     <Checkbox
                                         id={`q-${question.number_id}-${index}`}
                                         checked={isSelected(letter)}
-                                        onCheckedChange={(checked) => handleCheckboxChange(letter, checked as boolean)}
+                                        className="mt-1 border-2 border-slate-300 data-[state=checked]:bg-google-blue data-[state=checked]:border-google-blue"
                                         disabled={showFeedback}
                                     />
                                     <Label
                                         htmlFor={`q-${question.number_id}-${index}`}
-                                        className="flex-1 cursor-pointer font-normal leading-snug"
+                                        className="flex-1 cursor-pointer font-medium text-lg leading-relaxed select-none"
                                     >
-                                        <span className="font-semibold mr-2">{letter}.</span>
+                                        <span className="font-extrabold mr-3 opacity-60">{letter}.</span>
                                         {alt}
                                     </Label>
                                 </div>
@@ -115,7 +123,7 @@ export function QuestionCard({
                     <RadioGroup
                         value={selectedAnswer as string}
                         onValueChange={handleRadioChange}
-                        className="grid gap-3"
+                        className="grid gap-4"
                         disabled={showFeedback}
                     >
                         {question.alternatives.map((alt, index) => {
@@ -124,17 +132,22 @@ export function QuestionCard({
                                 <div
                                     key={index}
                                     className={cn(
-                                        "flex items-start space-x-3 space-y-0 rounded-md border p-4 transition-colors hover:bg-accent hover:text-accent-foreground",
-                                        isSelected(letter) && "border-primary bg-accent/50",
+                                        "flex items-start space-x-4 rounded-xl border-2 p-5 transition-all duration-200 cursor-pointer",
+                                        isSelected(letter) ? "border-google-blue bg-google-blue/5" : "hover:border-slate-300 hover:bg-slate-50",
                                         getOptionStyle(letter)
                                     )}
+                                    onClick={() => !showFeedback && handleRadioChange(letter)}
                                 >
-                                    <RadioGroupItem value={letter} id={`q-${question.number_id}-${index}`} className="mt-1" />
+                                    <RadioGroupItem
+                                        value={letter}
+                                        id={`q-${question.number_id}-${index}`}
+                                        className="mt-1.5 border-2 border-slate-300 data-[state=checked]:border-google-blue data-[state=checked]:text-google-blue"
+                                    />
                                     <Label
                                         htmlFor={`q-${question.number_id}-${index}`}
-                                        className="flex-1 cursor-pointer font-normal leading-snug"
+                                        className="flex-1 cursor-pointer font-medium text-lg leading-relaxed select-none"
                                     >
-                                        <span className="font-semibold mr-2">{letter}.</span>
+                                        <span className="font-extrabold mr-3 opacity-60">{letter}.</span>
                                         {alt}
                                     </Label>
                                 </div>
@@ -144,23 +157,34 @@ export function QuestionCard({
                 )}
 
                 {showFeedback && (
-                    <div className="mt-6 rounded-lg border bg-muted/50 p-4">
-                        <div className="flex items-center gap-2 mb-2 font-semibold">
-                            <HelpCircle className="h-5 w-5 text-primary" />
-                            Explicación
+                    <div className="mt-8 rounded-2xl border-2 bg-slate-50 dark:bg-slate-900 shadow-inner overflow-hidden">
+                        <div className="bg-google-blue/5 px-6 py-4 flex items-center gap-3 border-b-2">
+                            <HelpCircle className="h-6 w-6 text-google-blue" />
+                            <h4 className="font-bold text-lg">Análisis de la Respuesta</h4>
                         </div>
-                        <p className="text-sm leading-relaxed text-muted-foreground whitespace-pre-wrap">
-                            {question.explanation || "No hay explicación disponible."}
-                        </p>
-                        <div className="mt-2 text-sm font-medium">
-                            Respuesta correcta: <span className="text-green-600 dark:text-green-400">{question.correct_answer}</span>
+                        <div className="p-6 space-y-4">
+                            <p className="text-base leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-wrap italic">
+                                "{question.explanation || "No hay explicación disponible para esta pregunta."}"
+                            </p>
+                            <div className="flex items-center gap-3 p-4 rounded-xl bg-google-green/10 border-2 border-google-green/20">
+                                <CheckCircle2 className="h-6 w-6 text-google-green" />
+                                <div className="text-base">
+                                    <span className="font-bold text-google-green">Respuesta Correcta:</span>
+                                    <span className="ml-2 font-mono text-xl font-black">{question.correct_answer}</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 )}
             </CardContent>
-            <CardFooter className="justify-end">
+            <CardFooter className="px-8 pb-8 pt-2 justify-end">
                 {!showFeedback && onCheckAnswer && (
-                    <Button onClick={onCheckAnswer} disabled={!selectedAnswer || selectedAnswer.length === 0}>
+                    <Button
+                        onClick={onCheckAnswer}
+                        disabled={!selectedAnswer || (Array.isArray(selectedAnswer) && selectedAnswer.length === 0)}
+                        size="lg"
+                        className="bg-google-blue hover:bg-google-blue/90 px-8 py-6 text-lg font-bold shadow-lg shadow-google-blue/20"
+                    >
                         Verificar Respuesta
                     </Button>
                 )}

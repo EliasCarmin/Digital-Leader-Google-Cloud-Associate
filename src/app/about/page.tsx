@@ -7,16 +7,16 @@ export default function AboutPage() {
 
             <div className="space-y-8">
                 <section>
-                    <h2 className="text-2xl font-semibold mb-4 text-primary">¿Qué es Google Cloud Digital Leader?</h2>
+                    <h2 className="text-2xl font-semibold mb-4 text-google-blue">¿Qué es Google Cloud Digital Leader?</h2>
                     <p className="text-lg text-muted-foreground leading-relaxed">
                         La certificación Google Cloud Digital Leader está diseñada para cualquier persona que desee demostrar sus conocimientos sobre los conceptos básicos de la nube y cómo los productos y servicios de Google Cloud pueden utilizarse para alcanzar los objetivos de una organización.
                     </p>
                 </section>
 
                 <div className="grid gap-6 md:grid-cols-2">
-                    <Card>
+                    <Card className="border-l-4 border-l-google-red shadow-sm">
                         <CardHeader>
-                            <CardTitle>Detalles del Examen</CardTitle>
+                            <CardTitle className="text-google-red">Detalles del Examen</CardTitle>
                         </CardHeader>
                         <CardContent className="space-y-2">
                             <div className="flex justify-between border-b pb-2">
@@ -38,24 +38,27 @@ export default function AboutPage() {
                         </CardContent>
                     </Card>
 
-                    <Card>
+                    <Card className="border-l-4 border-l-google-green shadow-sm">
                         <CardHeader>
-                            <CardTitle>Áreas de Conocimiento</CardTitle>
+                            <CardTitle className="text-google-green">Áreas de Conocimiento</CardTitle>
                         </CardHeader>
                         <CardContent>
-                            <ul className="list-disc pl-5 space-y-1 text-muted-foreground">
-                                <li>Transformación digital con Google Cloud</li>
-                                <li>Innovación con datos y Google Cloud</li>
-                                <li>Modernización de infraestructura y aplicaciones</li>
-                                <li>Seguridad y operaciones en la nube de Google</li>
+                            <ul className="list-disc pl-5 space-y-1 text-muted-foreground font-medium">
+                                <li className="hover:text-google-green transition-colors">Transformación digital con Google Cloud</li>
+                                <li className="hover:text-google-green transition-colors">Innovación con datos y Google Cloud</li>
+                                <li className="hover:text-google-green transition-colors">Modernización de infraestructura y aplicaciones</li>
+                                <li className="hover:text-google-green transition-colors">Seguridad y operaciones en la nube de Google</li>
                             </ul>
                         </CardContent>
                     </Card>
                 </div>
 
-                <section className="bg-muted p-6 rounded-lg">
-                    <h3 className="text-xl font-bold mb-2">¿Por qué obtener esta certificación?</h3>
-                    <p className="text-muted-foreground">
+                <section className="bg-slate-100 dark:bg-slate-900 p-8 rounded-2xl border-2 border-dashed border-google-yellow/40">
+                    <h3 className="text-xl font-bold mb-4 text-google-yellow-dark flex items-center gap-2">
+                        <span className="w-2 h-8 bg-google-yellow rounded-full"></span>
+                        ¿Por qué obtener esta certificación?
+                    </h3>
+                    <p className="text-muted-foreground leading-relaxed">
                         Esta certificación valida tu capacidad para articular las capacidades de los productos y servicios principales de Google Cloud y cómo benefician a las organizaciones. Es un excelente punto de partida para roles no técnicos o como primer paso hacia certificaciones técnicas como Associate Cloud Engineer.
                     </p>
                 </section>
