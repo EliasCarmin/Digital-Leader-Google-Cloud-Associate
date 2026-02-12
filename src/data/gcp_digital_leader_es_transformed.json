@@ -1,7 +1,7 @@
 [
   {
     "number_id": 1,
-    "question": "1) Su empresa utiliza Google Cloud Platform para almacenar datos seguros de los clientes. Eres un administrador de seguridad de datos y quieres controlar qué permisos se otorgan a los usuarios que manejan los datos. cual de los ¿Qué debes hacer para controlar los permisos?",
+    "question": "1) Su empresa utiliza Google Cloud Platform para almacenar datos seguros de los clientes. Eres un administrador de seguridad de datos y quieres controlar qué permisos se otorgan a los usuarios que manejan los datos. ¿Cuál de las siguientes acciones debería realizar para controlar los permisos?",
     "alternatives": [
       "Asignar roles",
       "Usar listas de acceso",
@@ -98,7 +98,7 @@
   },
   {
     "number_id": 9,
-    "question": "9) Los sistemas operativos de algunas de las máquinas virtuales de su organización pueden tener una seguridad vulnerabilidad. ¿Cómo puede su organización identificar de manera más efectiva todas las máquinas virtuales que no tienen la última versión? actualización de seguridad?",
+    "question": "9) Los sistemas operativos de algunas de las máquinas virtuales de su organización pueden tener una seguridad vulnerabilidad. ¿Cómo puede su organización identificar de manera más efectiva todas las máquinas virtuales que no tienen la última versión de actualización de seguridad?",
     "alternatives": [
       "A. Ver el Centro de Comando de Seguridad para identificar virtuales máquinas ejecutando imágenes de disco vulnerable",
       "B. Ver el Administrador de Informes de Cumplimiento para identificar y descargar una auditoría PCI reciente",
@@ -112,17 +112,17 @@
     "number_id": 10,
     "question": "10) Usted es gerente de una empresa de energía que recopila datos clave/valor no estructurados en forma de informes de uso de medidores de energía y sensores de electrodomésticos. Su departamento de TI necesita de forma segura conecte y administre sus dispositivos mucho. ¿Cuál de las siguientes soluciones le ayudaría a conectarse y gestionar ¿Los dispositivos LoT de forma segura?",
     "alternatives": [
-      "A. Núcleo mucho",
-      "B. Director de tráfico",
-      "C. Centro de lotes",
-      "D. Portal mucho"
+      "A. IoT Core",
+      "B. Traffic Director",
+      "C. IoT Hub",
+      "D. IoT Portal"
     ],
     "correct_answer": "A",
     "explanation": "Internet of Things (loT) Core es un servicio totalmente administrado que le permite conectarse y administrar dispositivos loT de forma segura. Traffic Director ayuda a implementar el equilibrio de carga global entre clústeres e instancias de máquinas virtuales (VM). loT Hub no es un producto de Google Cloud. loT Portal no es un producto de Google Cloud. https://cloud.google.com/solutions/iot"
   },
   {
     "number_id": 11,
-    "question": "11) Actualmente está administrando cargas de trabajo que se ejecutan en Windows Server para las cuales su empresa posee el licencias. Sus cargas de trabajo solo son necesarias durante el horario laboral, lo que le permite apagar el casos durante el fin de semana. Sus licencias de Windows Server deben renovarse en un mes y desea para optimizar el coste de su licencia. ¿Qué deberías hacer?",
+    "question": "11) Actualmente está administrando cargas de trabajo que se ejecutan en Windows Server para las cuales su empresa posee licencias. Sus cargas de trabajo solo son necesarias durante el horario laboral, lo que le permite apagarlas durante el fin de semana. Sus licencias de Windows Server deben renovarse en un mes y desea para optimizar el coste de su licencia. ¿Qué deberías hacer?",
     "alternatives": [
       "A. Renueve sus licencias por un período adicional de 3 años. Negocie una reducción de costos con su Proveedor de alojamiento actual en el que el costo de infraestructura se reduce cuando las cargas de trabajo no están en uso.",
       "B. Renovar sus licencias por un período adicional de 2 años. Negociar una reducción de costes comprometiéndonos a una renovación automática de las licencias al final del período de 2 años",
@@ -136,11 +136,10 @@
     "number_id": 12,
     "question": "12) Una organización desea utilizar un servicio de Google Cloud para un proyecto de tiempo limitado con las siguientes pautas: Los desarrolladores deberían estar libres de actividades de gestión de infraestructura. El servicio elegido debe poder integrar, limpiar, preparar, combinar, transferir y transformar datos. ¿Cuál de los siguientes servicios de Google Cloud debería uso de la organización?",
     "alternatives": [
-      "Fusión de datos en la nube",
-      "Compositor de la nube",
-      "Catálogo de datos",
-      "procesamiento de datos",
-      "ESPORFr"
+      "Cloud Data Fusion",
+      "Cloud Composer",
+      "Cloud Catalog",
+      "Dataproc"
     ],
     "correct_answer": "A",
     "explanation": "Cloud Data Fusion es el más adecuado para el escenario dado porque es un servicio totalmente administrado que ayuda a construir y desarrollar rápidamente. Gestione los canales de datos integrando, limpiando, preparando, combinando, transfiriendo y transformando datos. Cloud Composer facilita la creación, programación, seguimiento y gestión de flujos de trabajo. No es el servicio óptimo para un proyecto que requiere la integración de datos. Data Catalog es un servicio de gestión de metadatos totalmente gestionado y escalable que permite a las organizaciones comprender todos sus Datos de Google Cloud al permitir un rápido descubrimiento y administración. Porque Data Catalog se centra en la gestión de metadatos Además de la integración, limpieza, preparación, combinación, transferencia y transformación de datos, no es la mejor solución en este guión. Dataproc es un servicio que facilita el procesamiento, las consultas y la transmisión por lotes. No es la mejor solución para esta situación. porque se utiliza principalmente para el procesamiento por lotes en lugar de gestionar canalizaciones de datos. https://cloud.google.com/data-fusion/ : |"
@@ -159,13 +158,12 @@
   },
   {
     "number_id": 14,
-    "question": "14) Usted es un gerente de proyecto que administra un proyecto de cliente destinado a mejorar la experiencia del cliente en BFSI mediante brindando soluciones de comunicación inteligente. Mientras se desarrolla la solución para BFSI Industry, su cliente ha indicado que prefieren tener un control total de los datos y del sistema operativo, junto con los tiempos de ejecución y software intermedio. ¿Cuál de las siguientes ofertas de nube le sugeriría a su cliente?",
+    "question": "14) Usted es un gerente de proyecto que administra un proyecto de cliente destinado a mejorar la experiencia del cliente en BFSI brindando soluciones de comunicación inteligente. Mientras se desarrolla la solución para BFSI Industry, su cliente ha indicado que prefieren tener un control total de los datos y del sistema operativo, junto con los tiempos de ejecución y software intermedio. ¿Cuál de las siguientes ofertas de nube le sugeriría a su cliente?",
     "alternatives": [
       "Infraestructura como servicio (laaS)",
       "Plataforma como servicio (PaaS)",
       "Función como servicio (FaaS)",
-      "Software como servicio (SaaS)",
-      "VoOoU,r"
+      "Software como servicio (SaaS)"
     ],
     "correct_answer": "A",
     "explanation": "La infraestructura como servicio (laaS) proporciona control total sobre los datos, las aplicaciones, el middleware, el sistema operativo y la automatización. implementación de hardware, carga de trabajo de gestión virtualizada. https://cloud.google.com/learn/what-is-iaas"
@@ -187,8 +185,10 @@
     "number_id": 16,
     "question": "16) Su cliente es una empresa bancaria que está diseñando un plan de recuperación ante desastres (DR) para su negocio histórico. datos orientados al cumplimiento. El acceso rápido a los datos no es un requisito del plan. cual de los ¿Sugeriría seguir los siguientes patrones de recuperación ante desastres?",
     "alternatives": [
-      "Cálido",
-      "Caliente"
+      "Cold",
+      "Warm",
+      "Hot",
+      "Live"
     ],
     "correct_answer": "A",
     "explanation": "No hay infraestructura de repuesto asociada con el patrón de DR en frío y, en caso de desastre, la estrategia planificada es implementado para la configuración rápida del sitio DR frío. La configuración de la infraestructura está implementada en el patrón DR cálido, junto con todo el equipo y la configuración necesarios; sin embargo, datos Se requiere carga o restauración en caso de un desastre. El sitio de respaldo de patrones de DR activo tiene el equipo y toda la configuración junto con los datos actuales en el patrón de DR activo. Live no es un tipo de patrón DR. https://cloud.google.com/architecture/dr-scenarios-planning-quide"
@@ -258,8 +258,8 @@
     "question": "22) ¿En cuál de estos servicios se puede implementar Cloud Build?",
     "alternatives": [
       "Kubernetes",
-      "Motor de aplicaciones",
-      "Funciones de la nube",
+      "App Engine",
+      "Cloud Functions",
       "Cloud Build puede implementarse en todos estos servicios"
     ],
     "correct_answer": "D",
@@ -281,11 +281,10 @@
     "number_id": 24,
     "question": "24) Su organización ha planeado implementar las mejores prácticas de ingeniería de confiabilidad del sitio (SRE). Eres encargado de configurar el monitoreo a nivel de aplicación y monitorear los objetivos de nivel de servicio (SLO) para aplicaciones y activar alertas cuando se violan los SLO. ¿Cuál de los siguientes productos debería elegir para estas tareas?",
     "alternatives": [
-      "Informe de errores",
-      "Registro en la nube",
-      "Monitoreo de la nube",
-      "Seguimiento de la nube",
-      "SOPA,r"
+      "Error Reporting",
+      "Cloud Logging",
+      "Cloud Monitoring",
+      "Cloud Trace"
     ],
     "correct_answer": "C",
     "explanation": "Cloud Monitoring ayuda a obtener visibilidad del rendimiento, la disponibilidad y la disponibilidad de las aplicaciones y la infraestructura. salud por: Recopilación automática de métricas del sistema Habilitando las mejores prácticas de SRE Crear paneles personalizados +Creación de alertas en integración con herramientas de gestión de incidentes."
@@ -299,7 +298,7 @@
       "C. Almacenar las imágenes en Cloud Storage",
       "D. Crear un disco de Compute Engine que contenga la aplicación."
     ],
-    "correct_answer": "",
+    "correct_answer": "B",
     "explanation": "Empujar (cargar) y extraer (descargar) imágenes son dos de las tareas más tareas comunes de Registro de Contenedores. Este documento se centra en impulsar y extrayendo imágenes con Docker."
   },
   {
@@ -330,7 +329,8 @@
     "number_id": 28,
     "question": "28) ¿Cuáles de los siguientes son beneficios de Apigee? (Elija 3 respuestas)",
     "alternatives": [
-      "A. La capacidad de predecir patrones de tráfico API La capacidad de hacer visibles los servicios backend.",
+      "A. La capacidad de predecir patrones de tráfico API",
+      "B. La capacidad de hacer visibles los servicios backend",
       "C. La capacidad de modernizar los servicios heredados a través de RESTful interfaces",
       "D. La capacidad de registrar y analizar métricas comerciales. 2"
     ],
@@ -367,7 +367,8 @@
     "alternatives": [
       "A. Configurar la autenticación de dos factores en el dominio de Google",
       "B. Eliminar la cuenta de Google de todas las [políticas de AM",
-      "C. Configurar BeyondCorp y Identity-Aware Proxy en el dominio de Google 0. Configurar el inicio de sesión único en el dominio de Google"
+      "C. Configurar BeyondCorp y Identity-Aware Proxy en el domini.o de Google 0",
+      "D. Configurar el inicio de sesión único en el dominio de Google"
     ],
     "correct_answer": "D",
     "explanation": "Su organización utiliza Active Directory para autenticar usuarios. Entonces necesitas usar el inicio de sesión único (SSQ) Es un esquema de autenticación que permite a un usuario iniciar sesión con una única identificación y contraseña en diferentes sistemas. y software. SSO permite a los departamentos de TI administrar una identidad única que puede acceder a muchas máquinas y servicios en la nube."
