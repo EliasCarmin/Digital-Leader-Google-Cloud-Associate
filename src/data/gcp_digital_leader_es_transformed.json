@@ -366,7 +366,7 @@
     "question": "31) Su organización utiliza Active Directory para autenticar usuarios. Acceso a la cuenta de Google de los usuarios debe eliminarse cuando se cancele su cuenta de Active Directory. ¿Cómo debería su organización cumplir con este requisito?",
     "alternatives": [
       "A. Configurar la autenticación de dos factores en el dominio de Google",
-      "B. Eliminar la cuenta de Google de todas las [políticas de AM",
+      "B. Eliminar la cuenta de Google de todas las políticas de IAM",
       "C. Configurar BeyondCorp y Identity-Aware Proxy en el domini.o de Google 0",
       "D. Configurar el inicio de sesión único en el dominio de Google"
     ],
@@ -380,8 +380,7 @@
       "Región única",
       "Región dual",
       "Multirregión con replicación predeterminada",
-      "Región dual con replicación turbo",
-      "FoouUP, fr."
+      "Región dual con replicación turbo"
     ],
     "correct_answer": "D",
     "explanation": "El almacenamiento de doble región con replicación turbo habilitada sería la configuración de almacenamiento adecuada en este escenario. porque la replicación turbo te permite replicar de forma asincrónica objetos de Cloud Storage recién escritos en una región separada dentro de un objetivo de 15 minutos. Debido a que la replicación turbo es aplicable solo para depósitos de dos regiones, se puede implementar en este escenario porque los equipos del proyecto están en Londres y Nueva York."
@@ -402,11 +401,10 @@
     "number_id": 34,
     "question": "34) Una startup planea adoptar los servicios de Google Cloud. Como primer paso, la empresa planea migrar sus datos a Google Cloud. ¿Cuál de los siguientes debería utilizar la empresa para migrar a más de 1 TB de datos desde un centro de datos privado a la nube respetando un cronograma estricto de 1 a 2 días y ¿Acomodar el ancho de banda disponible para cumplir con el plazo del proyecto?",
     "alternatives": [
-      "Servicio de transferencia de almacenamiento",
+      "Storage Transfer Service",
       "gsutil",
-      "Aparato de transferencia",
-      "Migrar a Anthos y GKE",
-      "FORD,F"
+      "Transfe Appliance",
+      "Migrar a Anthos y GKE"
     ],
     "correct_answer": "A",
     "explanation": "El servicio de transferencia de almacenamiento le permite migrar datos desde un centro de datos privado a Google Cloud. Con almacenamiento transferencia, puede mover petabytes de datos desde fuentes locales u otras nubes a través de redes en línea con miles de millones de archivos y decenas de Gbps. También puede optimizar el ancho de banda de su red y acelerar las transferencias con escalabilidad. nuestro rendimiento."
@@ -418,7 +416,7 @@
       "R. El almacenamiento Coldline es para datos para los cuales se requiere una velocidad de transferencia lenta. aceptable.",
       "B. El almacenamiento estándar y Coldline tienen diferente durabilidad garantías.",
       "C. El almacenamiento estándar y Coldline utiliza API diferentes.",
-      "D. Almacenamiento en línea fría para datos a los que se accede con poca frecuencia."
+      "D. El almacenamiento Coldline para datos a los que se accede con poca frecuencia."
     ],
     "correct_answer": "D",
     "explanation": "La categorización se basa en la frecuencia con la que se accede a los datos y, por lo tanto, cargado en consecuencia"
@@ -428,10 +426,9 @@
     "question": "36) Una empresa de aplicaciones de fitness está recopilando datos de salud de sus usuarios y está agregando aproximadamente 50 TB. de datos cada mes. Se espera que los datos aumenten a más de 200 TB cada año. Los usuarios se preocupan principalmente por los últimos 30 días de datos y esperará la recuperación de datos si los datos tienen más de 30 días. La empresa decidió que ahora almacenarán los datos a los que se accede con poca frecuencia durante más de 30 días para minimizar el costo, ya que estos datos Por lo general, se accede a él como máximo una vez por trimestre o menos. ¿Qué opción de almacenamiento sería la más adecuada para almacenar? ¿Accede con poca frecuencia a los datos?",
     "alternatives": [
       "Estándar",
-      "Cerca de la línea",
-      "Línea fría",
-      "Archivo",
-      "cuatro"
+      "NearnLine",
+      "Coldlne",
+      "Archive"
     ],
     "correct_answer": "C",
     "explanation": "El almacenamiento Coldline es más adecuado para almacenar datos a los que se accede con poca frecuencia y que se planea leer o modificar como máximo una vez. por trimestre. El almacenamiento estándar es más adecuado para los datos a los que se accede con frecuencia, también conocidos como \"datos candentes\". El almacenamiento nearline es más adecuado para almacenar datos que se leerán o modificarán una vez al mes o menos. El almacenamiento de archivos es más adecuado para almacenar datos de archivos necesarios por motivos legales, normativos o de recuperación ante desastres."
@@ -452,7 +449,8 @@
     "number_id": 38,
     "question": "38) ¿Cuál de las siguientes define una nube privada?",
     "alternatives": [
-      "A. Colección de recursos que no se comparten con el general. público 8. Una colección de servicios virtuales bajo demanda que se ofrecen a el publico",
+      "A. Colección de recursos que no se comparten con el público general",
+      "B. Una colección de servicios virtuales bajo demanda que se ofrecen a el publico",
       "C. Colección de recursos que se comparten entre empresas privadas y usuarios de la nube pública",
       "D. Una colección de recursos que están aislados localmente para uso por una organización"
     ],
@@ -461,12 +459,15 @@
   },
   {
     "number_id": 39,
-    "question": "39) Eres administrador de programas para un equipo de desarrolladores que están creando una aplicación basada en eventos para permitir los usuarios puedan seguir las actividades de los demás en la aplicación. Cada vez que un usuario se añade como seguidor de otro usuario, se La escritura se produce en la base de datos en tiempo real. Los desarrolladores desarrollarán un código liviano que pueda responder a las escrituras de la base de datos y generar un Notificación para informar a los usuarios correspondientes que han ganado nuevos seguidores. El código debe integrarse con otros servicios en la nube, como Pub/Sub, Firebase y API en la nube, para agilizar el proceso de orquestación. El La aplicación requiere una plataforma que administre automáticamente la infraestructura subyacente y escale a cero cuando",
+    "question": "39) Eres administrador de programas para un equipo de desarrolladores que están creando una aplicación basada en eventos para permitir los usuarios puedan seguir las actividades de los demás en la aplicación. Cada vez que un usuario se añade como seguidor de otro usuario, se La escritura se produce en la base de datos en tiempo real. Los desarrolladores desarrollarán un código liviano que pueda responder a las escrituras de la base de datos y generar un Notificación para informar a los usuarios correspondientes que han ganado nuevos seguidores. El código debe integrarse con otros servicios en la nube, como Pub/Sub, Firebase y API en la nube, para agilizar el proceso de orquestación. El La aplicación requiere una plataforma que administre automáticamente la infraestructura subyacente y escale a cero cuando no hay actividad. ¿Qué recurso computacional primario deberían seleccionar sus desarrolladores, considerando estos requisitos?",
     "alternatives": [
-      "no hay actividad."
+      "A. Google Kubernetes Engine",
+      "B. Cloud Functions",
+      "C. App Engine environment",
+      "D. Compute Engine"
     ],
-    "correct_answer": "",
-    "explanation": "A. Motor Google Kubernetes B. Funciones de la nube C. Entorno flexible de App Engine D. Motor de cálculo Cloud Funchions brinda a los desarrolladores acceso a eventos de Firebase y Google Cloud, junto con potencia informática escalable para código divertido en respuesta a esos eventos. Si bien se espera que las aplicaciones de Firebase utilicen Cloud Functions de maneras únicas para \"cumplen sus requisitos únicos, los casos de uso típicos pueden caer en estas áreas: erly wes mang este Revise los casos de uso y ejemplos para cada categoría que le interese y luego continúe con nuestro tutorial o a guías prácticas específicas para at.\"-eeungtirs = ants, we eivuies ¢.9°5, y más. Consulte eventType -\\¥.-otore para obtener más información. ebimpletrliisy 5° compatible: tipos de eventos."
+    "correct_answer": "B",
+    "explanation": "Cloud Functions brinda a los desarrolladores acceso a eventos de Firebase y Google Cloud, junto con potencia informática escalable para código divertido en respuesta a esos eventos. Si bien se espera que las aplicaciones de Firebase utilicen Cloud Functions de maneras únicas para \"cumplen sus requisitos únicos, los casos de uso típicos pueden caer en estas áreas: erly wes mang este Revise los casos de uso y ejemplos para cada categoría que le interese y luego continúe con nuestro tutorial o a guías prácticas específicas para at.\"-eeungtirs = ants, we eivuies ¢.9°5, y más. Consulte eventType -\\¥.-otore para obtener más información. ebimpletrliisy 5° compatible: tipos de eventos."
   },
   {
     "number_id": 40,
@@ -475,8 +476,7 @@
       "Informes de desglose de costos",
       "Notificaciones de presupuesto",
       "Informes de tabla de costos",
-      "Informes de tablas de precios",
-      "cuatro"
+      "Informes de tablas de precios"
     ],
     "correct_answer": "A",
     "explanation": "El informe Desglose de costos ayuda a obtener una descripción general en cascada de los costos y ahorros mensuales. Las notificaciones de presupuesto facilitan un estado en tiempo real del presupuesto de facturación de la nube y no son un método para obtener una descripción general. de costos mensuales. Los informes de la tabla de costos ayudan a acceder y analizar los detalles de las facturas y los extractos, pero no son un método óptimo para proporcionar una visión general de los costos. El informe de la tabla de precios ayuda a acceder a los precios de SKU de los servicios en la nube de Google y no es un método eficaz para proporcionar una imagen de alto nivel de los costos. https://cloud.qoogle.com/billing/docs/how-to/cost-breakdown"
@@ -485,17 +485,17 @@
     "number_id": 41,
     "question": "41) Su organización está desarrollando una aplicación que capturará una gran cantidad de datos de millones de Diferentes dispositivos sensores repartidos por todo el mundo. Su organización necesita una base de datos adecuada para Almacenamiento de datos de alta velocidad en todo el mundo de una gran cantidad de datos no estructurados. ¿Qué producto de Google Cloud debería elegir su organización?",
     "alternatives": [
-      "A. Tienda de fuego",
-      "B. Fusión de datos en la nube",
-      "C. SQL en la nube",
-      "D. Gran mesa en la nube"
+      "A. Firestore",
+      "B. Cloud Data Fusion",
+      "C. Cloud SQL",
+      "D. Cloud BigTable"
     ],
     "correct_answer": "D",
     "explanation": null
   },
   {
     "number_id": 42,
-    "question": "42) Su cliente es una empresa global de embalaje e impresión. Quieren migrar a un Google Cloud totalmente gestionado Solución de almacenamiento con las siguientes capacidades: + Gestión de contenidos web + Compartir archivos + Procesamiento y renderizado de medios + Análisis de datos. ¿Qué solución debería utilizar la empresa?",
+    "question": "42) Su cliente es una empresa global de embalaje e impresión. Quieren migrar a un Google Cloud totalmente gestionado Solución de almacenamiento con las siguientes capacidades: Gestión de contenidos web, Compartir archivos, Procesamiento y renderizado de medios y Análisis de datos. ¿Qué solución debería utilizar la empresa?",
     "alternatives": [
       "Almacenamiento de archivos",
       "almacén de archivos",
@@ -507,19 +507,19 @@
   },
   {
     "number_id": 43,
-    "question": "43) Su organización necesita crear canales de transmisión de datos. No quieres gestionar al individuo. servidores que realizan el procesamiento de datos en las tuberías. En lugar de ello, desea un servicio administrado que escala automáticamente con la cantidad de datos a procesar. ¿Qué producto o función de Google Cloud debería elegir su organización?",
+    "question": "43) Su organización necesita crear canales de transmisión de datos. No quieres gestionar servidores individuales que realizan el procesamiento de datos en las tuberías. En lugar de ello, desea un servicio administrado que escala automáticamente con la cantidad de datos a procesar. ¿Qué producto o función de Google Cloud debería elegir su organización?",
     "alternatives": [
       "A. Pub/Sub",
-      "B. Flujo de datos",
-      "C. Catálogo de datos",
-      "D. Preparación de datos por Trifacta"
+      "B. DataFlow",
+      "C. Data Catalog",
+      "D. Dataprep por Trifacta"
     ],
     "correct_answer": "B",
     "explanation": null
   },
   {
     "number_id": 44,
-    "question": "44) ¿Cuál de las siguientes situaciones ocurre cuando una organización adopta la tecnología de la nube para crear y definir nuevos ¿Formas de comunicación y colaboración para sus clientes, empleados y partes interesadas?",
+    "question": "44) ¿Cuál de las siguientes situaciones ocurre cuando una organización adopta la tecnología de la nube para crear y definir nuevas formas de comunicación y colaboración para sus clientes, empleados y partes interesadas?",
     "alternatives": [
       "Una menor necesidad de seguridad",
       "El efecto plataforma en llamas",
@@ -531,36 +531,36 @@
   },
   {
     "number_id": 45,
-    "question": "45) Su organización está creando una aplicación que se ejecuta en Google Cloud. Actualmente, el software construye, Las pruebas y las implementaciones regulares se realizan manualmente, pero desea reducir el trabajo para el equipo. Su La organización desea utilizar las soluciones administradas de Google Cloud para automatizar la creación, las pruebas y la proceso de implementación. ¿Qué producto o función de Goog!e Cloud debería utilizar su organización?",
+    "question": "45) Su organización está creando una aplicación que se ejecuta en Google Cloud. Actualmente, las compilaciones de software, las pruebas y las implementaciones regulares se realizan manualmente., pero desea reducir el trabajo para el equipo. Su La organización desea utilizar las soluciones administradas de Google Cloud para automatizar la creación, las pruebas y la proceso de implementación. ¿Qué producto o función de Goog!e Cloud debería utilizar su organización?",
     "alternatives": [
-      "A. Programador de la nube B, código de nube",
-      "C. Construcción de la nube",
-      "D. Gerente de implementación en la nube"
+      "A. Cloud Scheduler",
+      "B. Cloud Code",
+      "C. Cloud Build",
+      "D. Cloud Deployment Manager"
     ],
     "correct_answer": "C",
     "explanation": "Implementa tu aplicación en App Engine usando el comando de implementación de aplicaciones de gcloud. este comando crea automáticamente una imagen de contenedor utilizando la nube Cree el servicio y luego implemente esa imagen en el entorno flexible de App Engine."
   },
   {
     "number_id": 46,
-    "question": "46) ¿Cuál de las siguientes opciones representa un importante costo-beneficio de adoptar soluciones nativas de la nube? ¿arquitectura?",
+    "question": "46) ¿Cuál de las siguientes opciones representa un importante costo-beneficio de adoptar soluciones de arquitectura nativas en la nube?",
     "alternatives": [
       "Servicios gestionados con alto ahorro operativo",
       "Servicios gestionados de código abierto o compatibles con código abierto",
       "Integración continua/entrega continua",
-      "Monitoreo y recuperación automatizada",
-      "CENTRO"
+      "Monitoreo y recuperación automatizada"
     ],
     "correct_answer": "A",
     "explanation": "Un costo-beneficio clave de la arquitectura nativa de la nube es que incluye servicios administrados que resultan en una alta Ahorros operativos porque el cliente ya no es responsable de ellos. Estos servicios gestionados podrían incluyen laa§, en el que el proveedor de la nube gestiona elementos como hardware, almacenamiento y cifrado, PaaS, en en el que el proveedor de servicios es responsable de las funciones de gestión de identidad y acceso, y SaaS, en el que las operaciones se gestionan hasta cierto punto. https://cloud.google.com/blog/products/application-development/5-principles-for-cloud-native-architecture- qué-es-y-cómo-dominarlo"
   },
   {
     "number_id": 47,
-    "question": "47) ¿Qué producto de Google Cloud puede informar y mantener el cumplimiento? ¿Toda tu organización de Google Cloud puede cubrir múltiples proyectos?",
+    "question": "47) ¿Qué producto de Google Cloud puede informar y mantener el cumplimiento en toda tu organización de Google Cloud para cubrir múltiples proyectos?",
     "alternatives": [
-      "A. Registro en la nube",
-      "B. Gestión de identidad y acceso",
-      "C. Armadura de nube de Google",
-      "D. Centro de comando de seguridad"
+      "A. Cloud Logging",
+      "B. Identity and Acces Management",
+      "C. Google Cloud Armor",
+      "D. Security Command Center"
     ],
     "correct_answer": "D",
     "explanation": "Security Command Center es una plataforma centralizada de gestión de riesgos y seguridad para su Google Cloud recursos. Es una herramienta única que ofrece una variedad de características de seguridad que incluyen: 1. Obtenga visibilidad y control centralizados] 2. Descubra configuraciones erróneas y vulnerabilidades 3. Informar y mantener el cumplimiento 4. Detecte amenazas dirigidas a sus activos de Google Cloud"
@@ -569,11 +569,10 @@
     "number_id": 48,
     "question": "48) Una organización que utiliza Google Cloud también quiere organizar y agrupar recursos jerárquicamente así como gestionar el control de acceso y los ajustes de configuración de los recursos del contenedor. ¿Qué producto de Google? o servicio debería utilizar la organización?",
     "alternatives": [
-      "Eventarc",
-      "Registro de artefactos",
-      "Registro de contenedores",
-      "Administrador de recursos AP!",
-      "PETIMETRE"
+      "A. Eventarc",
+      "B. Artifact Registry",
+      "C. Container Registry",
+      "D. Resource Manager API"
     ],
     "correct_answer": "D",
     "explanation": "El servicio API de Resource Manager ayuda a los clientes de Google Cloud a administrar el contenedor mediante programación. recursos mediante la creación, lectura y actualización de metadatos para contenedores de recursos de Google Cloud Platform."
@@ -582,34 +581,34 @@
     "number_id": 49,
     "question": "49) Su organización necesita establecer conectividad de red privada entre su red local y sus cargas de trabajo ejecutándose en Google Cloud. Debe poder configurar la conexión tan pronto como posible, ¿Qué producto o función de Google Cloud debería utilizar?",
     "alternatives": [
-      "A. Interconexión en la nube",
-      "B. Emparejamiento directo",
-      "C. VPN en la nube D0. CDN en la nube"
+      "A. Cloud Interconnect",
+      "B. Direct Peering",
+      "C. Cloud VPN",
+      "D. Cloud CDN"
     ],
     "correct_answer": "C",
     "explanation": "La configuración de Cloud VPN se puede realizar instantáneamente y aunque viaja Internet, es de naturaleza privada. Necesidades de interconexión en la nube conexión físicamente dedicada."
   },
   {
     "number_id": 50,
-    "question": "50) Una empresa de tarjetas de crédito ha trasladado sus aplicaciones a Google Cloud. Los datos de sus clientes se almacenan en Cloud Storage, Datastore y BigQuery y lo utilizan aplicaciones y empleados de toda la empresa. Cual ¿Debería utilizar la solución Google Cloud para la detección y clasificación de los datos confidenciales almacenados?",
+    "question": "50) Una empresa de tarjetas de crédito ha trasladado sus aplicaciones a Google Cloud. Los datos de sus clientes se almacenan en Cloud Storage, Datastore y BigQuery y lo utilizan aplicaciones y empleados de toda la empresa. Que solución debería utilizar Google Cloud para la detección y clasificación de los datos confidenciales almacenados?",
     "alternatives": [
-      "Armadura de nube",
-      "Prevención de pérdida de datos en la nube",
-      "Gerente de Riesgos",
-      "Centro de comando de seguridad",
-      "POUP,r"
+      "A. Cloud Armor",
+      "B. Cloud Data Loss Prevention",
+      "C. Risk Manager",
+      "D. Security Command Center"
     ],
     "correct_answer": "B",
     "explanation": "El servicio Cloud Data Loss Prevention permite descubrir, detectar y clasificar datos confidenciales almacenados. datos. Con Cloud Data Loss Prevention, puede crear paneles e informes de auditoría y automatizar el etiquetado. mediación o política basada en hallazgos. Conecte los resultados de DLP al Security Command Center, al catálogo de datos o exporte a su propio SIEM o herramienta de gobernanza para un análisis más detallado. https://cloud.google.com/dip"
   },
   {
     "number_id": 51,
-    "question": "51} Su organización está desarrollando una aplicación móvil y quiere seleccionar una completamente presentó una plataforma informática basada en la nube. ¿Qué producto o función de Google Cloud debería utilizar su organización?",
+    "question": "51} Su organización está desarrollando una aplicación móvil y desea seleccionar una plataforma informática basada en la nube con todas las funciones para ella. ¿Qué producto o función de Google Cloud debería utilizar su organización?",
     "alternatives": [
-      "A. Motor Google Kubernetes",
-      "B. Base de fuego",
-      "C. Funciones de la nube",
-      "D. Motor de aplicaciones"
+      "A. Google Kubernetes Engine",
+      "B. Firebase",
+      "C. Cloud Functions",
+      "D. App Engine"
     ],
     "correct_answer": "B",
     "explanation": "Firebase es la plataforma de desarrollo móvil de Google"
