@@ -1,5 +1,4 @@
-import fs from 'fs';
-import path from 'path';
+
 
 export interface Question {
     number_id: number;
@@ -17,25 +16,44 @@ const normalizeAnswer = (answer: string): string => {
     return answer.toUpperCase().replace(/[^A-Z]/g, '');
 };
 
-export const getQuestions = (): Question[] => {
-    try {
-        const filePath = path.join(process.cwd(), 'src', 'data', 'gcp_digital_leader_es_transformed.json');
-        const fileContents = fs.readFileSync(filePath, 'utf8');
-        const questions: Question[] = JSON.parse(fileContents);
+const API_URL = "https://gcpquestions-187204921288.us-central1.run.app";
 
-        return questions.map(q => ({
-            ...q,
-            correct_answer: normalizeAnswer(q.correct_answer),
-            // Clean alternatives potentially?
-            alternatives: q.alternatives.map(a => a.trim())
-        }));
+export const getQuestions = async (): Promise<Question[]> => {
+    try {
+        const response = await fetch(API_URL);
+        if (!response.ok) {
+            throw new Error(`Error fetching questions: ${response.statusText}`);
+        }
+        const result = await response.json();
+
+        // The API returns { data: Question[], count: number, status: "ok" }
+        const questionsData = Array.isArray(result) ? result : (result.data || []);
+
+        return questionsData.map((q: any, index: number) => {
+            // Extract a number for number_id. If q.id is a string number, use it.
+            // Otherwise, try to extract from the question text (e.g. "1) ...")
+            // Or just use index + 1 as fallback.
+            let numId = parseInt(q.id);
+            if (isNaN(numId)) {
+                const match = q.question.match(/^(\d+)/);
+                numId = match ? parseInt(match[1]) : index + 1;
+            }
+
+            return {
+                number_id: numId,
+                question: q.question,
+                alternatives: Array.isArray(q.alternatives) ? q.alternatives.map((a: string) => a.trim()) : [],
+                correct_answer: normalizeAnswer(q.correct_answer || ""),
+                explanation: q.explanation
+            };
+        });
     } catch (error) {
         console.error("Error loading questions:", error);
         return [];
     }
 };
 
-export const getQuestionById = (id: number): Question | undefined => {
-    const questions = getQuestions();
+export const getQuestionById = async (id: number): Promise<Question | undefined> => {
+    const questions = await getQuestions();
     return questions.find(q => q.number_id === id);
 };

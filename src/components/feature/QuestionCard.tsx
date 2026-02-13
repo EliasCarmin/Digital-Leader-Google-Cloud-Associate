@@ -164,7 +164,7 @@ export function QuestionCard({
                         </div>
                         <div className="p-6 space-y-4">
                             <p className="text-base leading-relaxed text-slate-700 dark:text-slate-300 whitespace-pre-wrap italic">
-                                "{question.explanation || "No hay explicación disponible para esta pregunta."}"
+                                &quot;{question.explanation || "No hay explicación disponible para esta pregunta."}&quot;
                             </p>
                             <div className="flex items-center gap-3 p-4 rounded-xl bg-google-green/10 border-2 border-google-green/20">
                                 <CheckCircle2 className="h-6 w-6 text-google-green" />

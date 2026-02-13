@@ -5,7 +5,7 @@ import { Question } from "@/lib/data"
 import { QuestionCard } from "@/components/feature/QuestionCard"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
-import { ChevronRight, ChevronLeft, Flag } from "lucide-react"
+import { ChevronRight, ChevronLeft } from "lucide-react"
 
 interface StudySessionProps {
     questions: Question[]

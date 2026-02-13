@@ -22,18 +22,35 @@ export default function Home() {
               </p>
             </div>
             <div className="flex flex-wrap gap-4 justify-center pt-4">
-              <Link href="/study">
-                <Button size="lg" className="h-14 px-10 text-lg bg-google-blue hover:bg-google-blue/90 shadow-lg shadow-google-blue/20">
-                  <BookOpen className="mr-2 h-6 w-6" />
-                  Modo Estudio
-                </Button>
-              </Link>
-              <Link href="/exam">
-                <Button variant="outline" size="lg" className="h-14 px-10 text-lg border-2 border-google-gray/20 hover:bg-slate-100 transition-all">
-                  <Clock className="mr-2 h-6 w-6 text-google-red" />
-                  Simulador de Examen
-                </Button>
-              </Link>
+              <div className="relative group">
+                <Link href="/study">
+                  <Button size="lg" className="h-14 px-10 text-lg bg-google-blue hover:bg-google-blue/90 shadow-lg shadow-google-blue/20">
+                    <BookOpen className="mr-2 h-6 w-6" />
+                    Modo Estudio
+                  </Button>
+                </Link>
+                <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-64 p-3 bg-white dark:bg-slate-800 rounded-xl shadow-xl border-2 border-google-blue/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-300">
+                    Practica a tu ritmo con retroalimentación inmediata y explicaciones detalladas.
+                  </p>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white dark:border-t-slate-800"></div>
+                </div>
+              </div>
+
+              <div className="relative group">
+                <Link href="/exam">
+                  <Button variant="outline" size="lg" className="h-14 px-10 text-lg border-2 border-google-gray/20 hover:bg-slate-100 transition-all">
+                    <Clock className="mr-2 h-6 w-6 text-google-red" />
+                    Simulador de Examen
+                  </Button>
+                </Link>
+                <div className="absolute bottom-full mb-3 left-1/2 -translate-x-1/2 w-64 p-3 bg-white dark:bg-slate-800 rounded-xl shadow-xl border-2 border-google-red/20 opacity-0 group-hover:opacity-100 transition-opacity pointer-events-none z-20">
+                  <p className="text-sm font-medium text-slate-600 dark:text-slate-300">
+                    Ponte a prueba con un examen cronometrado de 60 preguntas en condiciones reales.
+                  </p>
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 border-8 border-transparent border-t-white dark:border-t-slate-800"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
