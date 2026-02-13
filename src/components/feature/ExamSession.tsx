@@ -5,9 +5,10 @@ import { Question } from "@/lib/data"
 import { QuestionCard } from "@/components/feature/QuestionCard"
 import { Button } from "@/components/ui/button"
 import { Progress } from "@/components/ui/progress"
-import { ChevronRight, ChevronLeft, Clock, AlertCircle } from "lucide-react"
+import { ChevronRight, ChevronLeft, Clock } from "lucide-react"
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { cn } from "@/lib/utils"
+import { ExitButton } from "@/components/feature/ExitButton"
 
 interface ExamSessionProps {
     questions: Question[]
@@ -153,6 +154,8 @@ export function ExamSession({ questions }: ExamSessionProps) {
         <div className="container max-w-4xl py-10 px-4 space-y-8">
             <div className="flex flex-col md:flex-row items-center justify-between sticky top-14 bg-background/95 backdrop-blur z-40 p-6 border-2 rounded-2xl shadow-lg gap-4">
                 <div className="flex items-center gap-6">
+                    <ExitButton variant="outline" className="h-12 w-12 border-2" />
+                    <div className="h-10 w-px bg-slate-200 hidden md:block"></div>
                     <div className="flex items-center gap-2 bg-google-red/10 px-4 py-2 rounded-xl border border-google-red/20">
                         <Clock className="h-6 w-6 text-google-red animate-pulse" />
                         <span className="text-2xl font-black font-mono text-google-red">{formatTime(timeLeft)}</span>

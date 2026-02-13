@@ -8,6 +8,8 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import Link from "next/link"
 import { ChevronLeft, BookOpen, Loader2 } from "lucide-react"
 
+import { ExitButton } from "@/components/feature/ExitButton"
+
 export default function StudyPage() {
     const [allQuestions, setAllQuestions] = React.useState<Question[]>([])
     const [selectedQuestions, setSelectedQuestions] = React.useState<Question[]>([])
@@ -93,7 +95,7 @@ export default function StudyPage() {
 
     return (
         <div className="min-h-screen bg-slate-50 dark:bg-slate-900">
-            <div className="container py-4">
+            <div className="container py-4 flex flex-col items-start gap-2">
                 <button
                     onClick={() => setCountSelected(null)}
                     className="inline-flex items-center text-sm text-muted-foreground hover:text-foreground font-medium"
@@ -101,6 +103,7 @@ export default function StudyPage() {
                     <ChevronLeft className="mr-1 h-4 w-4" />
                     Cambiar cantidad
                 </button>
+                <ExitButton variant="outline" className="h-9 px-4 text-sm" />
             </div>
             <StudySession questions={selectedQuestions} />
         </div>

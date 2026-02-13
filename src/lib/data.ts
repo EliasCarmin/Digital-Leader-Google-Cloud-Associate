@@ -18,6 +18,14 @@ const normalizeAnswer = (answer: string): string => {
 
 const API_URL = "https://gcpquestions-187204921288.us-central1.run.app";
 
+interface RawQuestion {
+    id: string;
+    question: string;
+    alternatives: string[];
+    correct_answer: string;
+    explanation: string | null;
+}
+
 export const getQuestions = async (): Promise<Question[]> => {
     try {
         const response = await fetch(API_URL);
@@ -27,9 +35,9 @@ export const getQuestions = async (): Promise<Question[]> => {
         const result = await response.json();
 
         // The API returns { data: Question[], count: number, status: "ok" }
-        const questionsData = Array.isArray(result) ? result : (result.data || []);
+        const questionsData: RawQuestion[] = Array.isArray(result) ? result : (result.data || []);
 
-        return questionsData.map((q: any, index: number) => {
+        return questionsData.map((q, index) => {
             // Extract a number for number_id. If q.id is a string number, use it.
             // Otherwise, try to extract from the question text (e.g. "1) ...")
             // Or just use index + 1 as fallback.
@@ -42,7 +50,7 @@ export const getQuestions = async (): Promise<Question[]> => {
             return {
                 number_id: numId,
                 question: q.question,
-                alternatives: Array.isArray(q.alternatives) ? q.alternatives.map((a: string) => a.trim()) : [],
+                alternatives: Array.isArray(q.alternatives) ? q.alternatives.map((a) => a.trim()) : [],
                 correct_answer: normalizeAnswer(q.correct_answer || ""),
                 explanation: q.explanation
             };
