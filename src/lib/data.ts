@@ -26,9 +26,10 @@ interface RawQuestion {
     explanation: string | null;
 }
 
-export const getQuestions = async (): Promise<Question[]> => {
+export const getQuestions = async (cantidad?: number): Promise<Question[]> => {
     try {
-        const response = await fetch(API_URL);
+        const url = cantidad ? `${API_URL}?cantidad=${cantidad}` : API_URL;
+        const response = await fetch(url);
         if (!response.ok) {
             throw new Error(`Error fetching questions: ${response.statusText}`);
         }

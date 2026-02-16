@@ -11,19 +11,28 @@ import { ChevronLeft, BookOpen, Loader2 } from "lucide-react"
 import { ExitButton } from "@/components/feature/ExitButton"
 
 export default function StudyPage() {
-    const [allQuestions, setAllQuestions] = React.useState<Question[]>([])
     const [selectedQuestions, setSelectedQuestions] = React.useState<Question[]>([])
-    const [loading, setLoading] = React.useState(true)
+    const [loading, setLoading] = React.useState(false) // Start false, only load when count selected
     const [countSelected, setCountSelected] = React.useState<number | null>(null)
+    const [error, setError] = React.useState<string | null>(null)
 
-    React.useEffect(() => {
-        const fetchQuestions = async () => {
-            const data = await getQuestions()
-            setAllQuestions(data)
+    const startStudy = async (count: number) => {
+        setLoading(true)
+        setError(null)
+        try {
+            const data = await getQuestions(count)
+            if (data.length === 0) {
+                setError("No se encontraron preguntas para la cantidad seleccionada.")
+            } else {
+                setSelectedQuestions(data)
+                setCountSelected(count)
+            }
+        } catch (err) {
+            setError("Error al cargar las preguntas. Intenta de nuevo.")
+        } finally {
             setLoading(false)
         }
-        fetchQuestions()
-    }, [])
+    }
 
     if (loading) {
         return (
@@ -36,22 +45,10 @@ export default function StudyPage() {
         )
     }
 
-    if (!allQuestions || allQuestions.length === 0) {
-        return (
-            <div className="container py-10 text-center">
-                <h2 className="text-xl font-bold mb-4">No se encontraron preguntas.</h2>
-                <p className="text-muted-foreground mb-8">Por favor verifica la configuración de datos.</p>
-                <Link href="/">
-                    <Button>Volver al Inicio</Button>
-                </Link>
-            </div>
-        )
-    }
+    // Initial selection screen
 
-    const startStudy = (count: number) => {
-        const shuffled = [...allQuestions].sort(() => 0.5 - Math.random())
-        setSelectedQuestions(shuffled.slice(0, count))
-        setCountSelected(count)
+    const startStudyAction = (count: number) => {
+        startStudy(count)
     }
 
     if (!countSelected) {
@@ -72,13 +69,18 @@ export default function StudyPage() {
                         {[5, 10, 30, 60].map((num) => (
                             <Button
                                 key={num}
-                                onClick={() => startStudy(num)}
+                                onClick={() => startStudyAction(num)}
+                                disabled={loading}
                                 className="h-24 text-2xl font-black bg-white dark:bg-slate-800 text-slate-900 dark:text-white border-2 border-slate-200 dark:border-slate-700 hover:border-google-blue hover:bg-google-blue/5 transition-all shadow-sm"
                             >
-                                {num}
+                                {loading ? <Loader2 className="h-6 w-6 animate-spin" /> : num}
                             </Button>
                         ))}
                     </div>
+
+                    {error && (
+                        <p className="text-google-red font-medium mt-4">{error}</p>
+                    )}
 
                     <div className="pt-4">
                         <Link href="/">
