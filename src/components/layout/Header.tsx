@@ -17,7 +17,7 @@ export function Header() {
                     <Link href="/" className="mr-6 flex items-center space-x-2 group">
                         <LayoutDashboard className="h-6 w-6 text-google-blue group-hover:rotate-12 transition-transform" />
                         <span className="hidden font-bold sm:inline-block">
-                            <span className="text-google-blue">GCP</span> Digital Leader
+                            <span className="text-google-blue">Cloud</span> Certs <span className="text-azure-blue">Prep</span>
                         </span>
                     </Link>
                     <nav className="flex items-center space-x-6 text-sm font-medium">
@@ -71,10 +71,10 @@ export function Header() {
                                 <SheetHeader>
                                     <SheetTitle className="flex items-center gap-2">
                                         <LayoutDashboard className="h-6 w-6 text-primary" />
-                                        GCP Digital Leader
+                                        Cloud Certs Prep
                                     </SheetTitle>
                                     <SheetDescription>
-                                        Herramienta de estudio para certificación.
+                                        GCP, Azure y más certificaciones.
                                     </SheetDescription>
                                 </SheetHeader>
                                 <div className="flex flex-col space-y-4 mt-8">

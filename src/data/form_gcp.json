@@ -1,0 +1,362 @@
+[
+  {
+    "number_id": 1,
+    "question": "¿Cómo puede Google Cloud ayudar a una organización a alcanzar sus objetivos de sustentabilidad?",
+    "alternatives": [
+      "A. Los centros de datos de Google Cloud no emiten carbono.",
+      "B. Los centros de datos cuentan con la máxima seguridad física.",
+      "C. Los centros de datos se distribuyen a nivel regional por todo el mundo.",
+      "D. Los centros de datos de Google Cloud cuentan con la certificación de normas ISO por su rendimiento y eficiencia ambiental."
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque la certificación con la norma ISO 14001 establece un framework para mejorar el rendimiento ambiental a través de la mejora de la eficiencia de los recursos y la reducción de los residuos[cite: 38]. La opción A es incorrecta porque, aunque este es el objetivo final de Google, se estima que no se alcanzará hasta 2030[cite: 35]. La seguridad física (opción B) y la ubicación regional (opción C) no contribuyen o afectan directamente a la sustentabilidad[cite: 36, 37]."
+  },
+  {
+    "number_id": 2,
+    "question": "En una organización se supervisa un indicador de nivel de servicio basado en el volumen de tráfico que recibe su aplicación. ¿Por qué es importante supervisar este indicador?",
+    "alternatives": [
+      "A. El volumen de tráfico siempre afecta la experiencia del usuario.",
+      "B. Los altos niveles de tráfico a menudo afectan el rendimiento.",
+      "C. Las tendencias históricas del tráfico pueden utilizarse para planificar la capacidad.",
+      "D. Un bajo volumen de tráfico siempre indica problemas de configuración."
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque el tráfico es un indicador de la demanda del sistema que puede utilizarse para planificar la capacidad[cite: 54]. El tráfico no afecta directamente la experiencia del usuario como lo hace la latencia (opción A) [cite: 52], ni necesariamente el rendimiento como lo hace la saturación (opción B)[cite: 53]. Un bajo volumen no siempre indica problemas de configuración, los cuales serían resaltados por la supervisión de errores (opción D)[cite: 55]."
+  },
+  {
+    "number_id": 3,
+    "question": "En una organización se ha planteado un caso de asistencia a Atención al cliente de Google Cloud. ¿Cuándo es oportuno derivar un caso?",
+    "alternatives": [
+      "A. Cuando un problema de alto impacto debe resolverse lo antes posible",
+      "B. Cuando existe un error en el establecimiento de la prioridad del ticket",
+      "C. Cuando se marca una interrupción en el proceso o un problema de comunicación",
+      "D. Cuando un caso se ha resuelto y debe reabrirse"
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque la derivación sirve para marcar interrupciones en el proceso o cuando el cliente y el equipo de atención no están en sincronía a pesar de la comunicación activa[cite: 75, 76]. Para problemas de alto impacto (opción A), la solución es asegurar la prioridad adecuada[cite: 73]. El cliente puede cambiar la prioridad (opción B) o reabrir un caso (opción D) sin necesidad de una derivación[cite: 74, 77]."
+  },
+  {
+    "number_id": 4,
+    "question": "En una organización desean realizar un seguimiento y comprender sus gastos en Google Cloud, además de recibir recomendaciones sobre optimización de costos. ¿Qué herramienta se debería utilizar?",
+    "alternatives": [
+      "A. Informes de facturación de Cloud",
+      "B. Cuotas y umbrales de recursos",
+      "C. Descuentos por compromiso de uso",
+      "D. Facturas"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta, ya que los informes de facturación de Cloud ofrecen un método reactivo que ayuda a realizar un seguimiento y comprender lo gastado, además de ofrecer formas de optimizar costos[cite: 91]. Las cuotas (opción B) solo limitan la cantidad de recursos[cite: 92]. Los descuentos por compromiso (opción C) son un mecanismo de ahorro a largo plazo[cite: 93]. Las facturas (opción D) solo muestran el costo global sin análisis ni recomendaciones[cite: 94]."
+  },
+  {
+    "number_id": 5,
+    "question": "En una organización desean analizar los datos recopilados de una flota de vehículos de alquiler. Los sensores integrados envían datos de localización cada 30 segundos y la organización desea transferir esos datos. ¿Qué producto o servicio de Google se debería utilizar?",
+    "alternatives": [
+      "A. Dataflow",
+      "B. Pub/Sub",
+      "C. Cloud SQL",
+      "D. Cloud Storage"
+    ],
+    "correct_answer": "B",
+    "explanation": "La opción B es correcta porque Pub/Sub es un servicio de mensajería que puede recibir datos de transmisiones de dispositivos al inicio de una canalización de datos[cite: 109]. Dataflow (opción A) se usa para transformar datos, no para la transferencia inicial[cite: 108]. Cloud SQL (opción C) no es adecuado para grandes volúmenes de datos de sensores[cite: 110]. Cloud Storage (opción D) es para almacenamiento, pero la transferencia confiable requiere mensajería[cite: 111]."
+  },
+  {
+    "number_id": 6,
+    "question": "En una organización desean comparar el costo total de propiedad (TCO) de operar en la nube en lugar de hacerlo de manera local. ¿Con qué costos locales deberían compararse los costos operativos en la nube?",
+    "alternatives": [
+      "A. El costo de la sobrecarga operativa local",
+      "B. El costo de la inversión inicial en hardware local",
+      "C. El costo de mantenimiento de reemplazar el hardware local",
+      "D. El costo de la inversión en hardware local, la sobrecarga operativa y los costos de oportunidades perdidas"
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque es importante tener en cuenta todos estos factores (inversión, sobrecarga y costos de oportunidad) al calcular el TCO para una comparación justa con la nube[cite: 127]. Las opciones A, B y C son incorrectas porque ignoran componentes esenciales del costo total de propiedad en un entorno local[cite: 124, 125, 126]."
+  },
+  {
+    "number_id": 7,
+    "question": "En una organización se planifica crear muchas aplicaciones nuevas y se necesita un sistema para administrar y organizar sus contenedores. ¿Por qué se debería utilizar Google Kubernetes Engine?",
+    "alternatives": [
+      "A. Optimiza el rendimiento de las máquinas virtuales.",
+      "B. Permite implementar y probar aplicaciones con rapidez.",
+      "C. Conecta los sistemas heredados a una aplicación.",
+      "D. Proporciona código fuente escrito previamente para el desarrollo de aplicaciones."
+    ],
+    "correct_answer": "B",
+    "explanation": "La opción B es correcta porque las aplicaciones en contenedores permiten una rápida implementación y pruebas independientes en arquitecturas de microservicios[cite: 145, 146]. GKE optimiza la cantidad de nodos, no el rendimiento de las VMs (opción A)[cite: 143, 144]. GKE Enterprise (Anthos) conecta sistemas heredados, no el GKE estándar (opción C)[cite: 147]. GKE no proporciona código fuente escrito previamente (opción D)[cite: 149, 151]."
+  },
+  {
+    "number_id": 8,
+    "question": "En una organización se están migrando las aplicaciones empresariales de un entorno local a la nube. ¿Cómo podría afectar esto a sus operaciones y costos de personal?",
+    "alternatives": [
+      "A. Aumento de los costos de mantenimiento del hardware local",
+      "B. Reducción de los costos de las licencias de software en la nube",
+      "C. Reducción de los costos de administración de la infraestructura local",
+      "D. Aumento de los costos de administración del hardware en la nube"
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque los proveedores de nube asumen la carga del hardware, energía y mantenimiento físico, permitiendo reducir los costos locales[cite: 164]. La migración implica transicionar el hardware, por lo que el costo local no aumenta (opción A)[cite: 162]. Las licencias suelen persistir (opción B)[cite: 163]. Los proveedores asumen la responsabilidad del hardware en la nube, por lo que sus costos de administración no aumentan para el cliente (opción D)[cite: 165]."
+  },
+  {
+    "number_id": 9,
+    "question": "En una organización se está implementando un centro de excelencia para la nube con la creación de una sociedad central entre los equipos de finanzas, tecnología y funciones empresariales. ¿Cuál es la ventaja de este enfoque?",
+    "alternatives": [
+      "A. Permitir que cada equipo de proyecto aplique su propio enfoque de seguridad.",
+      "B. Garantizar la visibilidad del gasto continuo en la nube.",
+      "C. Revisar trimestralmente las decisiones de la nube.",
+      "D. Ser propietario de todos los presupuestos de gastos en la nube de la organización."
+    ],
+    "correct_answer": "B",
+    "explanation": "La opción B es correcta porque esta sociedad proporciona visibilidad y responsabilidad combinando la experiencia financiera y tecnológica[cite: 180]. Un centro de excelencia debe promover prácticas centrales, no enfoques individuales de seguridad (opción A)[cite: 179]. Ayuda a identificar gastos innecesarios rápidamente, no solo trimestralmente (opción C)[cite: 181]. Los presupuestos deben ser responsabilidad de los equipos individuales para promover compromiso (opción D)[cite: 182]."
+  },
+  {
+    "number_id": 10,
+    "question": "En una organización desean implementar cargas de trabajo nuevas en la nube, pero se deben mantener algunos sistemas locales por motivos de cumplimiento. Necesitan administrar de forma centralizada ambos entornos. ¿Qué tipo de entorno convendría?",
+    "alternatives": [
+      "A. Entorno de múltiples nubes",
+      "B. Entorno de máquina virtual",
+      "C. Entorno de nube híbrida",
+      "D. Entorno de contenedor"
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque un entorno de nube híbrida permite que algunos componentes sigan siendo locales mientras otros se trasladan a la nube[cite: 199]. El entorno multi-nube implica varios proveedores sin asegurar un componente local (opción A)[cite: 197]. Las máquinas virtuales (opción B) y contenedores (opción D) son tipos de computación, no modelos de entorno que soporten sistemas locales por definición[cite: 198, 200]."
+  },
+  {
+    "number_id": 11,
+    "question": "En una organización se están estableciendo las prácticas recomendadas para la administración financiera en la nube. Cuentan con varios equipos que compilan aplicaciones. ¿Qué enfoque recomendado por Google se debería utilizar para administrar los gastos?",
+    "alternatives": [
+      "A. Definir la propiedad de los proyectos y establecer la responsabilidad financiera de los propietarios de los proyectos.",
+      "B. Definir la propiedad de los proyectos, pero centralizar la responsabilidad financiera.",
+      "C. Establecer un presupuesto fijo de gastos en la nube para todos los proyectos.",
+      "D. Centralizar la responsabilidad financiera y revisar los gastos mensualmente."
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque los gastos en la nube son variables y los equipos necesitan visibilidad y responsabilidad sobre lo que utilizan[cite: 214]. La centralización (opción B) o revisiones solo mensuales (opción D) restan visibilidad y capacidad de reacción[cite: 215, 217]. Presupuestos fijos (opción C) son problemáticos debido a la variabilidad del consumo entre proyectos[cite: 216]."
+  },
+  {
+    "number_id": 12,
+    "question": "¿Qué es la carga de trabajo?",
+    "alternatives": [
+      "A. Una aplicación, un servicio o una capacidad que deben ejecutarse en la nube",
+      "B. Una aplicación, un servicio o una capacidad que deben ejecutarse de manera local",
+      "C. Un componente específico de una aplicación más amplia",
+      "D. Una aplicación, un servicio o una capacidad que pueden ejecutarse en la nube o de manera local"
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es la definición adecuada de una carga de trabajo, ya que pueden ejecutarse en la nube, localmente o en ambos entornos[cite: 232, 229, 230]. Suele describir un servicio o capacidad general, no solo un componente pequeño (opción C)[cite: 231]."
+  },
+  {
+    "number_id": 13,
+    "question": "En una organización se busca una solución que los ayude a compilar aplicaciones utilizando su lenguaje de programación y herramientas preferidos. También desean minimizar el tiempo dedicado a la administración de la infraestructura. ¿Qué solución se debería utilizar?",
+    "alternatives": [
+      "A. Solución Bare Metal",
+      "B. Dataproc",
+      "C. Pub/Sub",
+      "D. Cloud Run"
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque Cloud Run es una solución de contenedores completamente administrada que minimiza la administración de infraestructura[cite: 251, 252]. Bare Metal requiere administración manual (opción A)[cite: 246]. Dataproc es para Hadoop (opción B) [cite: 247, 248] y Pub/Sub es para transmisión de eventos (opción C)[cite: 249, 250], no para compilar aplicaciones generales."
+  },
+  {
+    "number_id": 14,
+    "question": "¿Qué ofrecería una disponibilidad casi ilimitada de recursos informáticos sin que una organización tuviera que adquirir y aprovisionar equipos nuevos?",
+    "alternatives": [
+      "A. Nube pública",
+      "B. Nube privada",
+      "C. Microservicios",
+      "D. Contenedores"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque la nube pública ofrece escalabilidad masiva y elasticidad bajo un modelo de pago por uso sin adquirir hardware[cite: 265, 266]. La nube privada requiere propiedad y administración de hardware (opción B)[cite: 267]. Los microservicios (opción C) y contenedores (opción D) ayudan a la implementación, pero siguen necesitando hardware subyacente[cite: 268, 269, 270]."
+  },
+  {
+    "number_id": 15,
+    "question": "En el modelo de seguridad en la nube de Google, ¿qué aspecto destaca la importancia de mantener la información sensible segura y secreta?",
+    "alternatives": [
+      "A. Integridad",
+      "B. Confidencialidad",
+      "C. Disponibilidad",
+      "D. Cumplimiento"
+    ],
+    "correct_answer": "B",
+    "explanation": "La opción B es correcta porque la confidencialidad garantiza que solo personas autorizadas accedan a datos sensibles[cite: 283]. La integridad es la exactitud de los datos (opción A)[cite: 282]. La disponibilidad es el acceso constante (opción C)[cite: 284]. El cumplimiento son estándares legales que pueden incluir confidencialidad pero abarcan más temas (opción D)[cite: 285, 286]."
+  },
+  {
+    "number_id": 16,
+    "question": "En una organización es necesario almacenar datos estructurados, semiestructurados y no estructurados en su formato nativo en el mismo repositorio. ¿Qué solución de administración de datos en la nube se debería utilizar?",
+    "alternatives": [
+      "A. Data lake",
+      "B. Almacén de datos",
+      "C. Base de datos",
+      "D. Malla de datos"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque un data lake ofrece un repositorio centralizado escalable para cualquier volumen y formato de datos[cite: 299]. Los almacenes (opción B) y bases de datos (opción C) requieren esquemas predefinidos y datos estructurados/semiestructurados[cite: 300, 301]. La malla de datos es un enfoque arquitectónico descentralizado (opción D)[cite: 302]."
+  },
+  {
+    "number_id": 17,
+    "question": "¿Qué amenaza de seguridad cibernética puede dar como resultado el robo o daño de información sin que el usuario se dé cuenta?",
+    "alternatives": [
+      "A. Ataque de ransomware",
+      "B. Incumplimiento de la política del ANS",
+      "C. Ataque de software malicioso",
+      "D. Entrada de datos incompleta"
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque el malware está diseñado para funcionar meticulosamente sin conocimiento del usuario[cite: 318, 319]. El ransomware (opción A) suele ser evidente por las notas de rescate[cite: 315, 316]. El incumplimiento de ANS (opción B) es un tema contractual[cite: 317]. La entrada incompleta (opción D) se debe a calidad de datos, no es una amenaza de seguridad[cite: 320]."
+  },
+  {
+    "number_id": 18,
+    "question": "¿Cómo se beneficiaría una organización del uso de Looker?",
+    "alternatives": [
+      "A. Inteligencia empresarial y análisis avanzados",
+      "B. Administración óptima de identidades y accesos",
+      "C. Tecnología líder de almacenamiento sin servidores",
+      "D. Gran exactitud en la reversión de datos"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque Looker es una plataforma de IE para explorar y visualizar datos de diversas fuentes[cite: 332, 333]. No es una herramienta de acceso (opción B) [cite: 334], ni un almacén de datos (opción C) [cite: 335, 336], ni gestiona reversiones de datos de forma inherente (opción D)[cite: 337, 338]."
+  },
+  {
+    "number_id": 19,
+    "question": "En una organización se necesita una plataforma para crear modelos personalizados de Inteligencia Artificial de extremo a extremo. ¿Qué producto o servicio de Google Cloud se debería usar?",
+    "alternatives": [
+      "A. Recomendaciones IA",
+      "B. Dataproc",
+      "C. Compute Engine",
+      "D. Vertex AI"
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque Vertex AI es la plataforma integral para el ciclo de vida completo del ML[cite: 358]. Recomendaciones IA (opción A) es para un nicho específico[cite: 353]. Dataproc (opción B) ayuda en la preparación de datos pero no en el desarrollo de modelos[cite: 354, 356]. Compute Engine (opción C) ofrece VMs de uso general sin herramientas especializadas de IA[cite: 357]."
+  },
+  {
+    "number_id": 20,
+    "question": "En una organización es necesario controlar el acceso de usuarios y recursos dentro de Google Cloud. ¿Qué servicio se debería usar?",
+    "alternatives": [
+      "A. Encriptación basada en hardware",
+      "B. Cloud VPN",
+      "C. Cloud Interconnect",
+      "D. Cloud IAM"
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque Cloud IAM proporciona control detallado sobre quién accede y qué acciones realiza[cite: 376]. La encriptación (opción A) es para almacenamiento[cite: 373]. VPN (opción B) e Interconnect (opción C) son para conexión de redes[cite: 374, 375]."
+  },
+  {
+    "number_id": 21,
+    "question": "En una organización se están trasladando las operaciones a la nube, pero necesitan migrar una aplicación heredada sin realizar cambios en el código. ¿Qué ruta de migración se debería elegir?",
+    "alternatives": [
+      "A. Cambiar la plataforma",
+      "B. Refactorizar",
+      "C. Cambiar de host",
+      "D. Retirar la aplicación"
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque el cambio de host (lift and shift) permite la migración sin cambios importantes en el código[cite: 390]. Cambiar plataforma (opción A) o refactorizar (opción B) requieren modificaciones significativas[cite: 388, 389]. Retirar la aplicación (opción D) significa no migrarla[cite: 391]."
+  },
+  {
+    "number_id": 22,
+    "question": "En una organización tienen una pequeña aplicación que envía una notificación móvil a un cliente cada vez que se realiza un nuevo pedido en su sitio web. La organización necesita un servicio sencillo, basado en eventos y sin servidores para alojar el código. ¿Qué servicio se debería elegir?",
+    "alternatives": [
+      "A. Cloud Functions",
+      "B. Kubernetes Engine",
+      "C. Cloud Run",
+      "D. Compute Engine"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque Cloud Functions es ideal para tareas de un solo propósito disparadas por eventos[cite: 407]. GKE (opción B), Cloud Run (opción C) y Compute Engine (opción D) son plataformas más complejas o diseñadas para otro tipo de aplicaciones[cite: 408, 409, 410]."
+  },
+  {
+    "number_id": 23,
+    "question": "Según los principios de la IA de Google, ¿qué escenario es un uso irresponsable de la tecnología de la IA?",
+    "alternatives": [
+      "A. Creación masiva de entradas de blog con la IA generativa.",
+      "B. Utilización de datos sobre interacciones anteriores con los clientes.",
+      "C. Previsión de los clientes que probablemente tengan un mayor valor del ciclo de vida del cliente.",
+      "D. Seguimiento de la actividad de los usuarios en organizaciones financieras."
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque la creación masiva de información falsa es un intento deliberado de manipular la opinión pública[cite: 424]. Las opciones B, C y D son usos responsables que benefician al cliente o garantizan la legalidad y ética (como la detección de fraude)[cite: 425, 426, 427]."
+  },
+  {
+    "number_id": 24,
+    "question": "En una organización desean migrar varias máquinas virtuales a la nube. ¿Qué servicio de Google se debería elegir?",
+    "alternatives": [
+      "A. Compute Engine",
+      "B. Kubernetes Engine",
+      "C. Cloud Functions",
+      "D. Cloud Run"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque Compute Engine es el producto de IaaS diseñado específicamente para ejecutar máquinas virtuales[cite: 437]. GKE (opción B) y Cloud Run (opción D) son para contenedores[cite: 438, 440]. Cloud Functions (opción C) es para código basado en eventos[cite: 439]."
+  },
+  {
+    "number_id": 25,
+    "question": "Los desarrolladores de una organización se sienten cada vez más frustrados por las limitaciones de su infraestructura local. ¿Cómo se beneficiarían de la tecnología de la nube?",
+    "alternatives": [
+      "A. Pueden optimizar el mantenimiento de su infraestructura local.",
+      "B. Pueden esperar una disponibilidad del servicio del 100%.",
+      "C. Pueden evitar las limitaciones de la computación sin servidores.",
+      "D. Pueden disponer de herramientas nuevas para innovar y optimizar el uso de los recursos."
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque la nube ofrece herramientas para experimentación rápida y modelos flexibles de consumo[cite: 461]. La nube no optimiza la infraestructura local física (opción A) [cite: 457] ni garantiza disponibilidad del 100% (opción B)[cite: 458]. La computación sin servidores es una ventaja, no una limitación a evitar (opción C)[cite: 460]."
+  },
+  {
+    "number_id": 26,
+    "question": "En una organización global se está desarrollando una aplicación para administrar pagos y cuentas bancarias en línea en varias regiones. Cada transacción debe gestionarse de forma coherente en su base de datos, y se prevé un crecimiento casi ilimitado de la cantidad de datos almacenados. ¿Qué producto de Google Cloud se debería elegir?",
+    "alternatives": [
+      "A. Cloud Spanner",
+      "B. BigQuery",
+      "C. Cloud SQL",
+      "D. Cloud Storage"
+    ],
+    "correct_answer": "A",
+    "explanation": "La opción A es correcta porque Cloud Spanner escala horizontalmente entre regiones con coherencia y latencia baja[cite: 478]. BigQuery (opción B) es para analítica, no para transacciones[cite: 479, 480]. Cloud SQL (opción C) es para transacciones pero no maneja igual la escala global[cite: 481]. Cloud Storage (opción D) es para objetos, no una base de datos[cite: 482]."
+  },
+  {
+    "number_id": 27,
+    "question": "En una organización se busca una solución económica para almacenar datos como archivos, imágenes gráficas y videos, y acceder a ellos y compartirlos de forma segura. ¿Qué producto o servicio de Google Cloud se debería usar?",
+    "alternatives": [
+      "A. Cloud Spanner",
+      "B. Cloud SQL",
+      "C. Cloud Storage",
+      "D. BigQuery"
+    ],
+    "correct_answer": "C",
+    "explanation": "La opción C es correcta porque Cloud Storage almacena cualquier tipo de datos con costos flexibles y accesibilidad global[cite: 500, 501]. Las bases de datos como Spanner (opción A), SQL (opción B) o BigQuery (opción D) requieren datos estructurados o semiestructurados y no están optimizadas para archivos multimedia[cite: 496, 498, 502]."
+  },
+  {
+    "number_id": 28,
+    "question": "¿Por qué los datos almacenados en Google Cloud están seguros y son privados?",
+    "alternatives": [
+      "A. Los datos se encriptan cuando se aplica una etiqueta adecuada.",
+      "B. Security Command Center se encarga de encriptar los datos.",
+      "C. Cloud Data Loss Prevention se encarga de encriptar los datos.",
+      "D. Los datos se encriptan de forma predeterminada."
+    ],
+    "correct_answer": "D",
+    "explanation": "La opción D es correcta porque Google Cloud encripta todos los datos en reposo y en tránsito de forma predeterminada[cite: 520]. No se requieren etiquetas (opción A)[cite: 514]. Security Command Center (opción B) informa sobre la postura de seguridad[cite: 517]. DLP (opción C) detecta filtraciones pero no encripta[cite: 518, 519]."
+  },
+  {
+    "number_id": 29,
+    "question": "¿Cómo se define la privacidad en el contexto de la tecnología de la nube?",
+    "alternatives": [
+      "A. Procedimientos para autenticar la identidad de los usuarios",
+      "B. Restricciones en el intercambio y el acceso a los datos",
+      "C. Cumplimiento de estándares regulatorios",
+      "D. Susceptibilidad a las violaciones de la seguridad de los datos y los ciberataques"
+    ],
+    "correct_answer": "B",
+    "explanation": "La opción B es correcta porque privacidad significa restricciones en el acceso y en cómo/con quién se comparten los datos[cite: 537]. Las otras opciones definen autenticación (opción A), cumplimiento (opción C) o medida de riesgo (opción D), pero no la privacidad en sí misma[cite: 536, 538, 539]."
+  },
+  {
+    "number_id": 30,
+    "question": "Cuando una organización adopta la tecnología de la nube, ¿cómo cambia su costo total de propiedad (TCO)?",
+    "alternatives": [
+      "A. Pasa de los gastos operativos a los gastos de capital",
+      "B. Pasa de los gastos de capital a los gastos operativos",
+      "C. Pasa de la administración de costos a los gastos de capital",
+      "D. Pasa de los gastos operativos a la administración de costos"
+    ],
+    "correct_answer": "B",
+    "explanation": "La opción B es correcta porque el TCO pasa de gastos de capital (CapEx), como compra de hardware, a gastos operativos (OpEx) basados en el consumo[cite: 556, 557]. Adoptar la nube implica dejar de lado los gastos de capital, no incrementarlos (opciones A, C)[cite: 553, 558]."
+  }
+]

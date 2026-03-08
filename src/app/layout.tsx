@@ -8,8 +8,8 @@ import { cn } from "@/lib/utils";
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
 export const metadata: Metadata = {
-  title: "GCP Digital Leader Prep",
-  description: "Master the Google Cloud Digital Leader certification with our study mode and exam simulator.",
+  title: "Cloud Certifications Prep",
+  description: "La plataforma definitiva para preparar tus certificaciones en la nube: GCP Digital Leader, Azure AZ-900, SC-900 y más.",
 };
 
 export default function RootLayout({

@@ -12,15 +12,16 @@ import { ExitButton } from "@/components/feature/ExitButton"
 
 interface ExamSessionProps {
     questions: Question[]
+    providerColor?: string
+    passingScore?: number
+    duration?: number
 }
 
-const EXAM_DURATION_MINUTES = 90
-
-export function ExamSession({ questions }: ExamSessionProps) {
+export function ExamSession({ questions, providerColor = "#4285F4", passingScore = 70, duration = 90 }: ExamSessionProps) {
     const [currentIndex, setCurrentIndex] = React.useState(0)
     const [selectedAnswers, setSelectedAnswers] = React.useState<Record<number, string | string[]>>({})
     const [isFinished, setIsFinished] = React.useState(false)
-    const [timeLeft, setTimeLeft] = React.useState(EXAM_DURATION_MINUTES * 60)
+    const [timeLeft, setTimeLeft] = React.useState(duration * 60)
     const [score, setScore] = React.useState(0)
 
     React.useEffect(() => {
@@ -88,7 +89,7 @@ export function ExamSession({ questions }: ExamSessionProps) {
     }
 
     if (isFinished) {
-        const passed = score >= 70
+        const passed = score >= passingScore
         return (
             <div className="container max-w-2xl py-20 px-4">
                 <Card className="text-center overflow-hidden border-2 shadow-2xl">
@@ -133,7 +134,7 @@ export function ExamSession({ questions }: ExamSessionProps) {
                         </div>
 
                         <p className="text-muted-foreground text-lg">
-                            Puntaje mínimo para aprobar: <span className="font-bold text-foreground">70%</span>
+                            Puntaje mínimo para aprobar: <span className="font-bold text-foreground">{passingScore}%</span>
                         </p>
 
                         <div className="grid grid-cols-2 gap-4 pt-4">
@@ -156,9 +157,12 @@ export function ExamSession({ questions }: ExamSessionProps) {
                 <div className="flex items-center gap-6">
                     <ExitButton variant="outline" className="h-12 w-12 border-2" />
                     <div className="h-10 w-px bg-slate-200 hidden md:block"></div>
-                    <div className="flex items-center gap-2 bg-google-red/10 px-4 py-2 rounded-xl border border-google-red/20">
-                        <Clock className="h-6 w-6 text-google-red animate-pulse" />
-                        <span className="text-2xl font-black font-mono text-google-red">{formatTime(timeLeft)}</span>
+                    <div
+                        className="flex items-center gap-2 px-4 py-2 rounded-xl border"
+                        style={{ backgroundColor: `${providerColor}18`, borderColor: `${providerColor}30` }}
+                    >
+                        <Clock className="h-6 w-6 animate-pulse" style={{ color: providerColor }} />
+                        <span className="text-2xl font-black font-mono" style={{ color: providerColor }}>{formatTime(timeLeft)}</span>
                     </div>
                     <div className="h-10 w-px bg-slate-200 hidden md:block"></div>
                     <div className="flex flex-col">

@@ -9,8 +9,8 @@ export function Footer() {
                     <div className="flex flex-col items-center md:items-start gap-4">
                         <div className="flex flex-col items-center md:items-start gap-1">
                             <Link href="/" className="font-bold text-xl flex items-center gap-2">
-                                <span className="text-google-blue">GCP</span>
-                                <span>Digital Leader</span>
+                                <span className="text-google-blue">Cloud</span>
+                                <span>Certs <span className="text-azure-blue">Prep</span></span>
                             </Link>
                             <p className="text-sm text-muted-foreground">
                                 Una herramienta educativa para la comunidad Cloud.

@@ -90,7 +90,7 @@ export function QuestionCard({
             <CardContent className="space-y-6 px-8 py-6">
                 {isMultiSelect ? (
                     <div className="grid gap-4">
-                        {question.alternatives.map((alt, index) => {
+                        {question.options.map((alt, index) => {
                             const letter = getLetter(index)
                             return (
                                 <div
@@ -126,7 +126,7 @@ export function QuestionCard({
                         className="grid gap-4"
                         disabled={showFeedback}
                     >
-                        {question.alternatives.map((alt, index) => {
+                        {question.options.map((alt, index) => {
                             const letter = getLetter(index)
                             return (
                                 <div

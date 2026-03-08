@@ -43,6 +43,11 @@
   --color-google-green: #0F9D58;
   --color-google-gray: #5f6368;
 
+  /* Microsoft Azure */
+  --color-azure-blue: #0078D4;
+  --color-azure-light: #00B4F0;
+  --color-azure-dark: #005A9E;
+
   --animate-accordion-down: accordion-down 0.2s ease-out;
   --animate-accordion-up: accordion-up 0.2s ease-out;
 
